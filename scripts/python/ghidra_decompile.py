@@ -16,15 +16,17 @@ OUT_DIR = Path("findings/decompiled")
 
 # Cibles : (adresse, label, taille max ; on skip les très grosses pour le 1er pass)
 TARGETS = [
-    ("0x100c2282", "asset_decrypter",     5890),   # decryptImages/decryptSounds
-    ("0x1005e6b0", "gsc_vm_helper",       428),    # MAX_OPCODE_LOOKUP_SIZE
-    ("0x100ff16d", "world_parser",        12678),  # version/isInUse/planes
-    ("0x100bd117", "map_techset_table",   5268),   # wc_unlit_*/mp_*
+    ("0x100c2282", "zones_ctor_recheck",  5890),
+    ("0x1005e6b0", "scripterror_addopcodepos", 428),
+    ("0x100ff16d", "world_parser",        12678),
+    ("0x100bd117", "map_techset_table",   5268),
     ("0x10137efc", "protobuf_serializer", 6233),
     ("0x1017d3ee", "zlib_decompress",     5189),
     ("0x100f6bc9", "soundalias_regex",    426),
-    # WeaponDef : trop gros (58 Ko), à faire séparément si besoin
-    # ("0x100dbb62", "weapondef_parser", 58166),
+    # Lambdas decryptImages/decryptSounds (vues comme args dans Zones::Zones).
+    ("0x100c18c6", "decryptImages_lambda", None),
+    ("0x100c175a", "decryptSounds_lambda", None),
+    ("0x100c18bb", "decrypt_helper",       None),  # appele par decryptImages_lambda
 ]
 
 

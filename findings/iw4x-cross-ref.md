@@ -31,11 +31,24 @@ pseudo-C Ghidra et du `.cpp` source.
 - **Binaire** : `findings/decompiled/0x100c2282-asset_decrypter.c`
 - **Indice** : structure typique de constructeur C++ avec EH prolog, suivi de
   multiples `FUN_100047d1(rdata_ptr, lambda_ptr, 1)` → pattern de `Command::Add`.
-- **Correction du label** : ce n'est pas le déchiffreur d'assets lui-même
-  (initialement supposé), c'est le **module Zones qui *enregistre* la commande
-  console `decryptImages`**. Le déchiffreur réel est ailleurs (la lambda enregistrée).
-- **Prochaine étape** : suivre `FUN_100c18c6` (lambda de `decryptImages`) pour
-  trouver la routine de déchiffrement effective.
+- **Correction du label** : ce n'est pas le déchiffreur d'assets lui-même.
+
+### `0x100c18c6` / `0x100c175a` — lambdas `decryptImages` / `decryptSounds`
+
+- **Source** : `Components/Modules/Zones.cpp:3488-3552`
+- **Binaire** : `findings/decompiled/0x100c1*-decrypt*.c`
+- **Révélation** : malgré leur nom, ces commandes **NE DÉCHIFFRENT RIEN** au sens
+  cryptographique. Ce sont des utilitaires de **dump** en mode ZoneBuilder
+  uniquement (`if (ZoneBuilder::IsEnabled())`).
+- **Ce qu'elles font** :
+  1. Listent les fichiers `iw4x/images/*.iwi` (ou `iw4x/sound/*`) du système
+  2. Pour chaque, appellent `Game::FS_ReadFile(...)` — qui fait le décodage
+     IWD/IWI standard du moteur IW (pas du chiffrement)
+  3. Écrivent le buffer brut dans `raw/images/<file>` (ou `raw/sound/`)
+- **Cible réelle si on cherche du déchiffrement** : `FS_ReadFile` (dans
+  `iw4x.exe`, fonction du jeu original IW4 avant les mods IW4x).
+- **`FUN_100c18bb`** (juste avant la lambda) : identity function de 11 octets,
+  thunk Ghidra. Pas pertinent.
 
 ### `0x100dbb62` — `Components::AssetInterfaces::IWeapon` (parse weapon)
 
