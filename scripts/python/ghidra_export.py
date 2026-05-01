@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""Export d'un index JSON des fonctions découvertes par Ghidra.
+"""Export d'un index JSON enrichi des fonctions découvertes par Ghidra.
 
-Utilise pyghidra (Python 3 + JPype) pour ouvrir un projet Ghidra existant et
-parcourir le FunctionManager. Plus pratique que les scripts Jython 2.7
-historiques, et compatible avec notre venv.
-
-Sortie : findings/iw4x-functions.json — pour chaque fonction :
-- nom (FUN_xxxx, ou démangé / symbol si présent)
-- adresse, taille (en bytes), nombre de callers
-- nombre de strings référencées (heuristique : refs vers des données string)
-- catégorie heuristique (network / log / scriptengine / autre) basée sur le nom
+Utilise pyghidra (Python 3 + JPype) pour ouvrir un projet Ghidra existant.
+Pour chaque fonction, en plus des métadonnées de base, extrait :
+- les strings référencées (échantillon)
+- les imports appelés (DLL!func)
+- une catégorie déduite des strings/imports/nom
 
 Usage :
     .venv/bin/python3 scripts/python/ghidra_export.py
@@ -34,23 +30,38 @@ pyghidra.start()
 
 # Catégorisation heuristique par fragment de nom (attendus surtout dans les
 # fonctions exportées + symboles laissés par PDB le cas échéant).
-CATEGORIES = {
-    "network": ["recv", "send", "socket", "connect", "Net_", "NET_",
-                "packet", "Packet", "msg_", "Msg_"],
-    "log": ["Print", "print", "log", "Log", "Com_Print", "Sys_Print",
-            "Error", "Warning"],
-    "scriptengine": ["Scr_", "Script", "GScr_", "VM_", "OpCode"],
-    "filesystem": ["FS_", "File", "Read", "Write", "Open"],
-    "render": ["R_", "GFX_", "Draw", "Render", "Material"],
-    "audio": ["Snd_", "Sound", "Mss_", "Miles"],
-    "input": ["IN_", "Input", "Cl_Mouse", "Cl_Key"],
-}
+# Catégorisation par fragments — appliquée au nom de fonction, aux strings
+# référencées et aux imports appelés. Dans cet ordre, dès qu'un match est
+# trouvé on retourne la catégorie. Ordre = priorité.
+CATEGORIES = [
+    ("scriptengine", ["Scr_", "GScr_", "Script_", "scrVm", "scr_const",
+                      "OpCode", "g_script", "compileFile", "VM_Notify"]),
+    ("network",      ["recv", "send", "socket", "connect", "Net_",
+                      "NET_", "packet", "Packet", "Connectionless",
+                      "OOB", "ws2_32", "WSA", "Sys_GetPacket"]),
+    ("log",          ["Com_Print", "Com_Error", "Sys_Print", "Sys_Error",
+                      "PrintWarning", "Cmd_Printf", "Log_Print"]),
+    ("filesystem",   ["FS_FOpen", "FS_Read", "FS_Write", "FS_Close",
+                      "FS_Seek", "FS_Delete", "FS_LoadFile", "FS_Path"]),
+    ("render",       ["R_Add", "R_Init", "R_Set", "R_Draw", "R_Tess",
+                      "RB_", "GfxBuf", "Material_", "TextureFromMemory",
+                      "d3d9", "D3D9", "wined3d"]),
+    ("audio",        ["Snd_", "MSS", "Miles", "DSound", "AIL_"]),
+    ("input",        ["IN_Mouse", "IN_Key", "IN_Joy", "IN_Update",
+                      "Cl_Mouse", "Cl_Key", "Sys_GetInputEvent"]),
+    ("crypto",       ["bcrypt", "schannel", "BCrypt", "SHA", "MD5",
+                      "AES_", "RC4_"]),
+    ("dvar",         ["Dvar_", "dvar_"]),
+    ("cmd",          ["Cmd_Add", "Cmd_Exec", "Cmd_Argc", "Cmd_Argv"]),
+]
 
 
-def categorize(name: str) -> str:
-    for cat, fragments in CATEGORIES.items():
-        if any(f in name for f in fragments):
-            return cat
+def categorize(name: str, strings: list[str], imports: list[str]) -> str:
+    haystack = " | ".join([name] + strings + imports)
+    for cat, fragments in CATEGORIES:
+        for frag in fragments:
+            if frag in haystack:
+                return cat
     return "other"
 
 
@@ -66,8 +77,53 @@ def main():
         with pyghidra.program_context(project, "/iw4x.dll") as program:
             fm = program.getFunctionManager()
             refs = program.getReferenceManager()
+            listing = program.getListing()
+
+            def extract_strings_and_imports(func):
+                """Parcours des instructions : collecte strings refs + imports."""
+                strings = []
+                imports = []
+                seen_str = set()
+                seen_imp = set()
+                instructions = listing.getInstructions(func.getBody(), True)
+                while instructions.hasNext():
+                    instr = instructions.next()
+                    for ref in instr.getReferencesFrom():
+                        target = ref.getToAddress()
+                        # Call vers fonction → check si externe (import)
+                        if ref.getReferenceType().isCall():
+                            target_func = fm.getFunctionAt(target)
+                            if target_func is None:
+                                continue
+                            # Suit les thunks jusqu'à la cible finale
+                            while target_func.isThunk():
+                                target_func = target_func.getThunkedFunction(False)
+                                if target_func is None: break
+                            if target_func and target_func.isExternal():
+                                lib = target_func.getExternalLocation().getLibraryName()
+                                full = f"{lib}!{target_func.getName()}"
+                                if full not in seen_imp:
+                                    seen_imp.add(full)
+                                    imports.append(full)
+                            continue
+                        # Ref de données → check si string
+                        data = listing.getDataAt(target)
+                        if data is None:
+                            continue
+                        dt = data.getDataType().getName()
+                        if "string" in dt.lower() or dt in ("unicode", "char[]"):
+                            try:
+                                val = str(data.getValue())
+                                if 4 <= len(val) <= 100 and val not in seen_str:
+                                    seen_str.add(val)
+                                    strings.append(val)
+                            except Exception:
+                                pass
+                return strings[:8], imports[:8]
 
             out = []
+            print(f"[*] indexation de {fm.getFunctionCount()} fonctions...")
+            count = 0
             for f in fm.getFunctions(True):
                 addr = f.getEntryPoint()
                 body = f.getBody()
@@ -76,6 +132,7 @@ def main():
                 except Exception:
                     callers = 0
                 name = f.getName()
+                strings, imports = extract_strings_and_imports(f)
                 out.append({
                     "name": name,
                     "addr": "0x%08x" % addr.getOffset(),
@@ -83,8 +140,13 @@ def main():
                     "callers": callers,
                     "is_thunk": bool(f.isThunk()),
                     "is_external": bool(f.isExternal()),
-                    "category": categorize(name),
+                    "strings": strings,
+                    "imports": imports,
+                    "category": categorize(name, strings, imports),
                 })
+                count += 1
+                if count % 2000 == 0:
+                    print(f"    {count}/{fm.getFunctionCount()}...")
 
             out.sort(key=lambda f: -f["size"])
 
