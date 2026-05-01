@@ -26,7 +26,8 @@ TARGETS = [
     # Lambdas decryptImages/decryptSounds (vues comme args dans Zones::Zones).
     ("0x100c18c6", "decryptImages_lambda", None),
     ("0x100c175a", "decryptSounds_lambda", None),
-    ("0x100c18bb", "decrypt_helper",       None),  # appele par decryptImages_lambda
+    ("0x100c18bb", "decrypt_helper",       None),
+    ("0x100dbb62", "weapondef_parser",     58166),  # le gros, 58 Ko
 ]
 
 
