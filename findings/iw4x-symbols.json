@@ -1,6 +1,15 @@
 {
-  "symbol_count": 317,
+  "symbol_count": 915,
   "symbols": [
+    {
+      "addr": "0x004014c0",
+      "addr_int": 4199616,
+      "name": "SV_GetClientPersistentDataBuffer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:23"
+      ]
+    },
     {
       "addr": "0x00401950",
       "addr_int": 4200784,
@@ -15,11 +24,31 @@
       "addr_int": 4203776,
       "name": "Com_DPrintf",
       "alt_names": [
+        "Com_Printf",
         "logger"
       ],
       "sources": [
         "src/Components/Modules/QuickPatch.cpp:357",
-        "src/Components/Modules/Sound.cpp:10"
+        "src/Components/Modules/Sound.cpp:10",
+        "src/Game/Common.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x004027a0",
+      "addr_int": 4204448,
+      "name": "UI_ParseInfos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:208"
+      ]
+    },
+    {
+      "addr": "0x00402bd0",
+      "addr_int": 4205520,
+      "name": "NET_IsLocalAddress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:128"
       ]
     },
     {
@@ -50,6 +79,51 @@
       ]
     },
     {
+      "addr": "0x00403770",
+      "addr_int": 4208496,
+      "name": "G_SpawnItem",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x00403960",
+      "addr_int": 4208992,
+      "name": "Load_MaterialHandle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:83"
+      ]
+    },
+    {
+      "addr": "0x00403b60",
+      "addr_int": 4209504,
+      "name": "ParseConfigStringToStruct",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:211"
+      ]
+    },
+    {
+      "addr": "0x00404b20",
+      "addr_int": 4213536,
+      "name": "Cbuf_AddText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x00404c60",
+      "addr_int": 4213856,
+      "name": "Live_GetXp",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:137"
+      ]
+    },
+    {
       "addr": "0x00404ca0",
       "addr_int": 4213920,
       "name": "CL_InitOnceForAllClients",
@@ -77,6 +151,15 @@
       ]
     },
     {
+      "addr": "0x00406530",
+      "addr_int": 4220208,
+      "name": "Dvar_GetUnpackedColorByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:16"
+      ]
+    },
+    {
       "addr": "0x00406d10",
       "addr_int": 4222224,
       "name": "Win_InitLocalization",
@@ -92,6 +175,15 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Party.cpp:318"
+      ]
+    },
+    {
+      "addr": "0x00407930",
+      "addr_int": 4225328,
+      "name": "DB_FindXAssetHeader",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:9"
       ]
     },
     {
@@ -122,12 +214,49 @@
       ]
     },
     {
+      "addr": "0x00408260",
+      "addr_int": 4227680,
+      "name": "Key_RemoveCatcher",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:65"
+      ]
+    },
+    {
+      "addr": "0x00409010",
+      "addr_int": 4231184,
+      "name": "NET_StringToAdr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:129"
+      ]
+    },
+    {
+      "addr": "0x0040bb20",
+      "addr_int": 4242208,
+      "name": "Dvar_SetFloat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:32"
+      ]
+    },
+    {
+      "addr": "0x0040bb60",
+      "addr_int": 4242272,
+      "name": "SV_Cmd_ArgvBuffer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:12"
+      ]
+    },
+    {
       "addr": "0x0040bdd0",
       "addr_int": 4242896,
       "name": "MSG_ReadShort",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/Theatre.cpp:907"
+        "src/Components/Modules/Theatre.cpp:907",
+        "src/Game/Functions.cpp:104"
       ]
     },
     {
@@ -136,7 +265,26 @@
       "name": "Load_XModelSurfsFixup",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/Zones.cpp:179"
+        "src/Components/Modules/Zones.cpp:179",
+        "src/Game/Functions.cpp:74"
+      ]
+    },
+    {
+      "addr": "0x00410bb0",
+      "addr_int": 4262832,
+      "name": "FS_FOpenFileAppend",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x00411560",
+      "addr_int": 4265312,
+      "name": "Scr_GetVector",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:34"
       ]
     },
     {
@@ -149,12 +297,75 @@
       ]
     },
     {
+      "addr": "0x00412310",
+      "addr_int": 4268816,
+      "name": "Scr_AddString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:45"
+      ]
+    },
+    {
       "addr": "0x00412370",
       "addr_int": 4268912,
       "name": "SV_SteamAuthClient",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Security.cpp:183"
+      ]
+    },
+    {
+      "addr": "0x00412490",
+      "addr_int": 4269200,
+      "name": "CL_DrawStretchPic",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x00412540",
+      "addr_int": 4269376,
+      "name": "PM_GetEffectiveStance",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x004127a0",
+      "addr_int": 4269984,
+      "name": "LargeLocalBegin",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:269"
+      ]
+    },
+    {
+      "addr": "0x00412e40",
+      "addr_int": 4271680,
+      "name": "Dvar_RegisterEnum",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x00413490",
+      "addr_int": 4273296,
+      "name": "Com_DPrintf",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x00413de0",
+      "addr_int": 4275680,
+      "name": "Com_sprintf",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:16"
       ]
     },
     {
@@ -179,12 +390,102 @@
       ]
     },
     {
+      "addr": "0x00415ad0",
+      "addr_int": 4283088,
+      "name": "Menu_Setup",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:97"
+      ]
+    },
+    {
+      "addr": "0x00415ba0",
+      "addr_int": 4283296,
+      "name": "BG_IsWeaponValid",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x004165e0",
+      "addr_int": 4285920,
+      "name": "Scr_GetEntityId",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:39"
+      ]
+    },
+    {
       "addr": "0x0041698e",
       "addr_int": 4286862,
       "name": "Disable",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Security.cpp:186"
+      ]
+    },
+    {
+      "addr": "0x004169c0",
+      "addr_int": 4286912,
+      "name": "Sys_Sleep",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x00416f70",
+      "addr_int": 4288368,
+      "name": "Vec2Normalize",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:257"
+      ]
+    },
+    {
+      "addr": "0x00418380",
+      "addr_int": 4293504,
+      "name": "DB_AllocStreamPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:45"
+      ]
+    },
+    {
+      "addr": "0x00419970",
+      "addr_int": 4299120,
+      "name": "GetVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x0041a0b0",
+      "addr_int": 4300976,
+      "name": "StringTable_GetAsset_FastFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:277"
+      ]
+    },
+    {
+      "addr": "0x0041aab0",
+      "addr_int": 4303536,
+      "name": "PC_Directive_elif",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x0041b8c0",
+      "addr_int": 4307136,
+      "name": "Sys_LeaveCriticalSection",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:20"
       ]
     },
     {
@@ -206,12 +507,39 @@
       ]
     },
     {
+      "addr": "0x0041bf20",
+      "addr_int": 4308768,
+      "name": "unzClose",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:220"
+      ]
+    },
+    {
+      "addr": "0x0041ca20",
+      "addr_int": 4311584,
+      "name": "MSG_WriteLong",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:110"
+      ]
+    },
+    {
       "addr": "0x0041d010",
       "addr_int": 4313104,
       "name": "CL_CheckForResend",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:206"
+      ]
+    },
+    {
+      "addr": "0x0041d7d0",
+      "addr_int": 4315088,
+      "name": "Scr_AddInt",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:50"
       ]
     },
     {
@@ -224,12 +552,48 @@
       ]
     },
     {
+      "addr": "0x00420700",
+      "addr_int": 4327168,
+      "name": "UI_GetMapDisplayName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:209"
+      ]
+    },
+    {
       "addr": "0x00420830",
       "addr_int": 4327472,
       "name": "Com_InitHunkMemory",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:955"
+      ]
+    },
+    {
+      "addr": "0x00420a6d",
+      "addr_int": 4328045,
+      "name": "Live_MPAcceptInvite",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:134"
+      ]
+    },
+    {
+      "addr": "0x00421da0",
+      "addr_int": 4332960,
+      "name": "Dvar_SetInt",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:34"
+      ]
+    },
+    {
+      "addr": "0x00421e00",
+      "addr_int": 4333056,
+      "name": "PC_FindHashedDefine",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:6"
       ]
     },
     {
@@ -242,12 +606,84 @@
       ]
     },
     {
+      "addr": "0x004226f0",
+      "addr_int": 4335344,
+      "name": "G_Spawn",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x00422900",
+      "addr_int": 4335872,
+      "name": "Scr_GetType",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:61"
+      ]
+    },
+    {
+      "addr": "0x00422e70",
+      "addr_int": 4337264,
+      "name": "GetClearedMemory",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:173"
+      ]
+    },
+    {
+      "addr": "0x004234f0",
+      "addr_int": 4338928,
+      "name": "Scr_GetFunctionHandle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:27"
+      ]
+    },
+    {
       "addr": "0x004236a5",
       "addr_int": 4339365,
       "name": "CL_InitCGame",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Events.cpp:377"
+      ]
+    },
+    {
+      "addr": "0x00424680",
+      "addr_int": 4343424,
+      "name": "Weapon_RocketLauncher_Fire",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:236"
+      ]
+    },
+    {
+      "addr": "0x004255a0",
+      "addr_int": 4347296,
+      "name": "SV_SendServerCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x004256f0",
+      "addr_int": 4347632,
+      "name": "SV_WaitServer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x00425900",
+      "addr_int": 4348160,
+      "name": "Scr_GetString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:30"
       ]
     },
     {
@@ -266,6 +702,33 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:195"
+      ]
+    },
+    {
+      "addr": "0x00426360",
+      "addr_int": 4350816,
+      "name": "IN_Shutdown",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:245"
+      ]
+    },
+    {
+      "addr": "0x00426450",
+      "addr_int": 4351056,
+      "name": "FS_WriteFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x00426b80",
+      "addr_int": 4352896,
+      "name": "ScriptCompile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:94"
       ]
     },
     {
@@ -386,6 +849,24 @@
       ]
     },
     {
+      "addr": "0x004291a0",
+      "addr_int": 4362656,
+      "name": "Z_Free",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004295a0",
+      "addr_int": 4363680,
+      "name": "Playlist_ParsePlaylists",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:152"
+      ]
+    },
+    {
       "addr": "0x0042961c",
       "addr_int": 4363804,
       "name": "Playlist_ParsePlaylists",
@@ -395,12 +876,48 @@
       ]
     },
     {
+      "addr": "0x0042a660",
+      "addr_int": 4367968,
+      "name": "Sys_Milliseconds",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:13"
+      ]
+    },
+    {
       "addr": "0x0042bbb0",
       "addr_int": 4373424,
       "name": "DB_GetLoadedFlags",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Theatre.cpp:761"
+      ]
+    },
+    {
+      "addr": "0x0042bc70",
+      "addr_int": 4373616,
+      "name": "player_die",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:253"
+      ]
+    },
+    {
+      "addr": "0x0042c160",
+      "addr_int": 4374880,
+      "name": "PC_Directive_pragma",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x0042ce90",
+      "addr_int": 4378256,
+      "name": "CL_DownloadsComplete",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:8"
       ]
     },
     {
@@ -440,12 +957,57 @@
       ]
     },
     {
+      "addr": "0x0042e460",
+      "addr_int": 4383840,
+      "name": "PC_Directive_define",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x0042eca0",
+      "addr_int": 4385952,
+      "name": "FS_FOpenFileReadDatabase",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x0042ef10",
+      "addr_int": 4386576,
+      "name": "PC_Directive_ifndef",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x0042ef40",
+      "addr_int": 4386624,
+      "name": "Scr_ObjectError",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:58"
+      ]
+    },
+    {
       "addr": "0x0042f0a0",
       "addr_int": 4386976,
       "name": "Com_InitCriticalSections",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:945"
+      ]
+    },
+    {
+      "addr": "0x0042f0e0",
+      "addr_int": 4387040,
+      "name": "StringTable_Lookup",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:275"
       ]
     },
     {
@@ -458,6 +1020,105 @@
       ]
     },
     {
+      "addr": "0x004305e0",
+      "addr_int": 4392416,
+      "name": "Sys_ShowConsole",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x00430630",
+      "addr_int": 4392496,
+      "name": "LargeLocalReset",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:271"
+      ]
+    },
+    {
+      "addr": "0x00430d50",
+      "addr_int": 4394320,
+      "name": "Menus_CloseRequest",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:90"
+      ]
+    },
+    {
+      "addr": "0x00430e10",
+      "addr_int": 4394512,
+      "name": "CG_PlayBoltedEffect",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x00430f40",
+      "addr_int": 4394816,
+      "name": "Scr_AddObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:52"
+      ]
+    },
+    {
+      "addr": "0x00430f90",
+      "addr_int": 4394896,
+      "name": "Live_GetPrestige",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:136"
+      ]
+    },
+    {
+      "addr": "0x004319d0",
+      "addr_int": 4397520,
+      "name": "MSG_WriteBitsCompress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:117"
+      ]
+    },
+    {
+      "addr": "0x004326e0",
+      "addr_int": 4400864,
+      "name": "Sys_DefaultInstallPath",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x00433700",
+      "addr_int": 4404992,
+      "name": "CG_GetClientNum",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x00433d30",
+      "addr_int": 4406576,
+      "name": "CL_ConnectFromParty",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x00434320",
+      "addr_int": 4408096,
+      "name": "AllocObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:8"
+      ]
+    },
+    {
       "addr": "0x00434bd4",
       "addr_int": 4410324,
       "name": "CL_CheckNotify",
@@ -467,12 +1128,120 @@
       ]
     },
     {
+      "addr": "0x00434ee0",
+      "addr_int": 4411104,
+      "name": "SL_FindString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:88"
+      ]
+    },
+    {
+      "addr": "0x00435580",
+      "addr_int": 4412800,
+      "name": "Con_CancelAutoComplete",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:42"
+      ]
+    },
+    {
+      "addr": "0x00435880",
+      "addr_int": 4413568,
+      "name": "Sys_LockWrite",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:16"
+      ]
+    },
+    {
       "addr": "0x00435950",
       "addr_int": 4413776,
       "name": "LSP",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Network.cpp:410"
+      ]
+    },
+    {
+      "addr": "0x00436ae0",
+      "addr_int": 4418272,
+      "name": "Info_Validate",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:62"
+      ]
+    },
+    {
+      "addr": "0x00437190",
+      "addr_int": 4419984,
+      "name": "RemoveRefToObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x00437280",
+      "addr_int": 4420224,
+      "name": "Scr_MakeArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:48"
+      ]
+    },
+    {
+      "addr": "0x00437eb0",
+      "addr_int": 4423344,
+      "name": "Field_Clear",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:51"
+      ]
+    },
+    {
+      "addr": "0x004386e0",
+      "addr_int": 4425440,
+      "name": "Scr_ClearOutParams",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:64"
+      ]
+    },
+    {
+      "addr": "0x00438720",
+      "addr_int": 4425504,
+      "name": "Scr_StartupGameType",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x00438dc0",
+      "addr_int": 4427200,
+      "name": "AngleNormalize360",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:217"
+      ]
+    },
+    {
+      "addr": "0x0043a0e0",
+      "addr_int": 4432096,
+      "name": "BG_GetEntityTypeName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x0043bd00",
+      "addr_int": 4439296,
+      "name": "Key_SetCatcher",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:64"
       ]
     },
     {
@@ -487,6 +1256,33 @@
       ]
     },
     {
+      "addr": "0x0043d570",
+      "addr_int": 4445552,
+      "name": "Sys_Error",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x0043ded0",
+      "addr_int": 4447952,
+      "name": "PM_UpdateLean",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x0043eb20",
+      "addr_int": 4451104,
+      "name": "CL_IsCgameInitialized",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:6"
+      ]
+    },
+    {
       "addr": "0x0043ebb0",
       "addr_int": 4451248,
       "name": "check",
@@ -496,13 +1292,32 @@
       ]
     },
     {
+      "addr": "0x0043fd90",
+      "addr_int": 4455824,
+      "name": "FS_FOpenTextFileWrite",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x004402c0",
+      "addr_int": 4457152,
+      "name": "Bullet_Fire",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:237"
+      ]
+    },
+    {
       "addr": "0x00440eb0",
       "addr_int": 4460208,
       "name": "BG_GetWeaponDef",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Weapon.cpp:331",
-        "src/Components/Modules/Weapon.cpp:352"
+        "src/Components/Modules/Weapon.cpp:352",
+        "src/Game/BothGames.cpp:9"
       ]
     },
     {
@@ -516,6 +1331,69 @@
       ]
     },
     {
+      "addr": "0x00441280",
+      "addr_int": 4461184,
+      "name": "Sys_IsDatabaseReady2",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x00441650",
+      "addr_int": 4462160,
+      "name": "Scr_ShutdownAllocNode",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:82"
+      ]
+    },
+    {
+      "addr": "0x004416b0",
+      "addr_int": 4462256,
+      "name": "FS_FreeFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x00441bb0",
+      "addr_int": 4463536,
+      "name": "FS_ListFiles",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x00441f60",
+      "addr_int": 4464480,
+      "name": "PM_Trace",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x00441fc0",
+      "addr_int": 4464576,
+      "name": "Live_GetLocalClientName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:138"
+      ]
+    },
+    {
+      "addr": "0x00443140",
+      "addr_int": 4469056,
+      "name": "Scr_GetFloat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:33"
+      ]
+    },
+    {
       "addr": "0x00444810",
       "addr_int": 4474896,
       "name": "IsDynClassname",
@@ -525,12 +1403,186 @@
       ]
     },
     {
+      "addr": "0x00445240",
+      "addr_int": 4477504,
+      "name": "ClientUserinfoChanged",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:251"
+      ]
+    },
+    {
+      "addr": "0x00445460",
+      "addr_int": 4478048,
+      "name": "DB_LoadXFileData",
+      "alt_names": [
+        "DB_ReadXFile"
+      ],
+      "sources": [
+        "src/Game/Database.cpp:16",
+        "src/Game/Database.cpp:17"
+      ]
+    },
+    {
       "addr": "0x004454c0",
       "addr_int": 4478144,
       "name": "Item_SetupKeywordHash",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:995"
+      ]
+    },
+    {
+      "addr": "0x00446b60",
+      "addr_int": 4483936,
+      "name": "FS_FileOpenReadText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x00446e20",
+      "addr_int": 4484640,
+      "name": "Com_SetSlowMotion",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x00447130",
+      "addr_int": 4485424,
+      "name": "Com_MatchToken",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x004499f0",
+      "addr_int": 4495856,
+      "name": "Load_snd_alias_list_nameArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:87"
+      ]
+    },
+    {
+      "addr": "0x00449de0",
+      "addr_int": 4496864,
+      "name": "CG_NextWeapon_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x00449e30",
+      "addr_int": 4496944,
+      "name": "CL_ControllerIndexFromClientNum",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x0044a430",
+      "addr_int": 4498480,
+      "name": "CL_ConsoleFixPosition",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x0044adb0",
+      "addr_int": 4500912,
+      "name": "CL_GetConfigString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x0044add0",
+      "addr_int": 4500944,
+      "name": "SV_ClientThink",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x0044ba30",
+      "addr_int": 4504112,
+      "name": "CL_GetMaxRank",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x0044bb30",
+      "addr_int": 4504368,
+      "name": "SEH_StringEd_GetString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:179"
+      ]
+    },
+    {
+      "addr": "0x0044be90",
+      "addr_int": 4505232,
+      "name": "PartyHost_GetMemberName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:149"
+      ]
+    },
+    {
+      "addr": "0x0044c380",
+      "addr_int": 4506496,
+      "name": "PM_Weapon",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:157"
+      ]
+    },
+    {
+      "addr": "0x0044c6c0",
+      "addr_int": 4507328,
+      "name": "SourceError",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x0044c9d0",
+      "addr_int": 4508112,
+      "name": "G_FreeEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x0044ce00",
+      "addr_int": 4509184,
+      "name": "BG_GetWeaponCompleteDef",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x0044e100",
+      "addr_int": 4514048,
+      "name": "PartyHost_GetMemberAddressBySlot",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:148"
       ]
     },
     {
@@ -552,12 +1604,111 @@
       ]
     },
     {
+      "addr": "0x0044f060",
+      "addr_int": 4517984,
+      "name": "Dvar_SetStringByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x0044f450",
+      "addr_int": 4518992,
+      "name": "SV_FindClientByAddress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x0044fa20",
+      "addr_int": 4520480,
+      "name": "Touch_Item",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:247"
+      ]
+    },
+    {
+      "addr": "0x004511f0",
+      "addr_int": 4526576,
+      "name": "G_TempEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:11"
+      ]
+    },
+    {
       "addr": "0x0045148b",
       "addr_int": 4527243,
       "name": "Disable",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:221"
+      ]
+    },
+    {
+      "addr": "0x00452690",
+      "addr_int": 4531856,
+      "name": "XNAddrToString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:264"
+      ]
+    },
+    {
+      "addr": "0x004527c0",
+      "addr_int": 4532160,
+      "name": "MSG_ReadData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:102"
+      ]
+    },
+    {
+      "addr": "0x004533c0",
+      "addr_int": 4535232,
+      "name": "UI_AddMenuList",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:192"
+      ]
+    },
+    {
+      "addr": "0x00453500",
+      "addr_int": 4535552,
+      "name": "Vec3Normalize",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:255"
+      ]
+    },
+    {
+      "addr": "0x00453580",
+      "addr_int": 4535680,
+      "name": "DB_SetXAssetName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x00454a70",
+      "addr_int": 4541040,
+      "name": "CG_DrawDisconnect",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x00454e20",
+      "addr_int": 4541984,
+      "name": "ScrPlace_ApplyRect",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:204"
       ]
     },
     {
@@ -570,12 +1721,138 @@
       ]
     },
     {
+      "addr": "0x00454f40",
+      "addr_int": 4542272,
+      "name": "CL_AddReliableCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x00455510",
+      "addr_int": 4543760,
+      "name": "NET_CompareBaseAdr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:124"
+      ]
+    },
+    {
+      "addr": "0x00455f20",
+      "addr_int": 4546336,
+      "name": "Scr_AddIString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:49"
+      ]
+    },
+    {
+      "addr": "0x004563d0",
+      "addr_int": 4547536,
+      "name": "CL_GetClientName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004576c0",
+      "addr_int": 4552384,
+      "name": "FS_Write",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x00458160",
+      "addr_int": 4555104,
+      "name": "Com_ServerPacketEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004582f0",
+      "addr_int": 4555504,
+      "name": "G_LocalizedStringIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x00458980",
+      "addr_int": 4557184,
+      "name": "PM_playerTrace",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x00458a20",
+      "addr_int": 4557344,
+      "name": "DB_PushStreamPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:46"
+      ]
+    },
+    {
+      "addr": "0x00459320",
+      "addr_int": 4559648,
+      "name": "FS_Printf",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x0045a190",
+      "addr_int": 4563344,
+      "name": "Sys_SuspendOtherThreads",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:24"
+      ]
+    },
+    {
       "addr": "0x0045a5bf",
       "addr_int": 4564415,
       "name": "SV_ClipMoveToEntity",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/PlayerMovement.cpp:498"
+      ]
+    },
+    {
+      "addr": "0x0045a660",
+      "addr_int": 4564576,
+      "name": "Sys_ListFiles",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x0045ad10",
+      "addr_int": 4566288,
+      "name": "vectoryaw",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:216"
+      ]
+    },
+    {
+      "addr": "0x0045ad90",
+      "addr_int": 4566416,
+      "name": "Load_FxElemDef",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:78"
       ]
     },
     {
@@ -714,12 +1991,120 @@
       ]
     },
     {
+      "addr": "0x0045c4d0",
+      "addr_int": 4572368,
+      "name": "Dvar_SetBoolByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x0045ca90",
+      "addr_int": 4573840,
+      "name": "Vec3UnpackUnitVec",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:215"
+      ]
+    },
+    {
+      "addr": "0x0045cba0",
+      "addr_int": 4574112,
+      "name": "Win_GetLanguage",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:213"
+      ]
+    },
+    {
+      "addr": "0x0045ce80",
+      "addr_int": 4574848,
+      "name": "Scr_AddArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:47"
+      ]
+    },
+    {
+      "addr": "0x0045d1c0",
+      "addr_int": 4575680,
+      "name": "Hunk_UserAlloc",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x0045d620",
+      "addr_int": 4576800,
+      "name": "IN_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:244"
+      ]
+    },
+    {
+      "addr": "0x0045d680",
+      "addr_int": 4576896,
+      "name": "Cmd_ForEach",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:38"
+      ]
+    },
+    {
+      "addr": "0x0045d940",
+      "addr_int": 4577600,
+      "name": "Scr_LoadScript",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:25"
+      ]
+    },
+    {
       "addr": "0x0045d959",
       "addr_int": 4577625,
       "name": "Scr_LoadScript",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/GSC/ScriptError.cpp:900"
+      ]
+    },
+    {
+      "addr": "0x0045f940",
+      "addr_int": 4585792,
+      "name": "Scr_ConstructMessageString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:72"
+      ]
+    },
+    {
+      "addr": "0x0045fca0",
+      "addr_int": 4586656,
+      "name": "MSG_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:99"
+      ]
+    },
+    {
+      "addr": "0x0045fcf0",
+      "addr_int": 4586736,
+      "name": "Sys_QuitAndStartProcess",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x00460480",
+      "addr_int": 4588672,
+      "name": "SV_DirectConnect",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:13"
       ]
     },
     {
@@ -750,12 +2135,22 @@
       ]
     },
     {
+      "addr": "0x004613a0",
+      "addr_int": 4592544,
+      "name": "TempMalloc",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:12"
+      ]
+    },
+    {
       "addr": "0x00461a50",
       "addr_int": 4594256,
       "name": "FS_Restart",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/FileSystem.cpp:308"
+        "src/Components/Modules/FileSystem.cpp:308",
+        "src/Game/FileSystem.cpp:27"
       ]
     },
     {
@@ -777,12 +2172,93 @@
       ]
     },
     {
+      "addr": "0x00462000",
+      "addr_int": 4595712,
+      "name": "FS_FCloseFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x00462100",
+      "addr_int": 4595968,
+      "name": "Scr_GetObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:36"
+      ]
+    },
+    {
+      "addr": "0x00462460",
+      "addr_int": 4596832,
+      "name": "Scr_GetGameTypeNameForScript",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x00462ab0",
+      "addr_int": 4598448,
+      "name": "Encode_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:49"
+      ]
+    },
+    {
+      "addr": "0x00463500",
+      "addr_int": 4601088,
+      "name": "Com_LoadInfoString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x00463820",
+      "addr_int": 4601888,
+      "name": "MSG_WriteString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:112"
+      ]
+    },
+    {
       "addr": "0x00463c61",
       "addr_int": 4602977,
       "name": "getBuildNumberAsInt",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Network.cpp:407"
+      ]
+    },
+    {
+      "addr": "0x00463d80",
+      "addr_int": 4603264,
+      "name": "IN_RecenterMouse",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:241"
+      ]
+    },
+    {
+      "addr": "0x00464750",
+      "addr_int": 4605776,
+      "name": "SV_Cmd_EndTokenizedString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x00464a60",
+      "addr_int": 4606560,
+      "name": "Com_SyncThreads",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:30"
       ]
     },
     {
@@ -795,12 +2271,57 @@
       ]
     },
     {
+      "addr": "0x00464f30",
+      "addr_int": 4607792,
+      "name": "Con_DrawMiniConsole",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:40"
+      ]
+    },
+    {
       "addr": "0x004656a7",
       "addr_int": 4609703,
       "name": "Scr_BeginLoadScripts",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/GSC/ScriptError.cpp:896"
+      ]
+    },
+    {
+      "addr": "0x00466060",
+      "addr_int": 4612192,
+      "name": "Huff_offsetReceive",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:118"
+      ]
+    },
+    {
+      "addr": "0x004660f0",
+      "addr_int": 4612336,
+      "name": "FS_Remove",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x00466320",
+      "addr_int": 4612896,
+      "name": "Dvar_SetFloatByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:33"
+      ]
+    },
+    {
+      "addr": "0x00467a00",
+      "addr_int": 4618752,
+      "name": "PC_SourceError",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:11"
       ]
     },
     {
@@ -813,12 +2334,66 @@
       ]
     },
     {
+      "addr": "0x00468380",
+      "addr_int": 4621184,
+      "name": "DB_GetLoadedFraction",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x00468500",
+      "addr_int": 4621568,
+      "name": "SV_GetConfigstringConst",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:15"
+      ]
+    },
+    {
       "addr": "0x00468960",
       "addr_int": 4622688,
       "name": "some",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:209"
+      ]
+    },
+    {
+      "addr": "0x004691a0",
+      "addr_int": 4624800,
+      "name": "AngleVectors",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x00469880",
+      "addr_int": 4626560,
+      "name": "NET_AdrToString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:122"
+      ]
+    },
+    {
+      "addr": "0x00469a50",
+      "addr_int": 4627024,
+      "name": "G_AddEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x00469ac0",
+      "addr_int": 4627136,
+      "name": "SV_GameClientNum_Score",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:7"
       ]
     },
     {
@@ -830,7 +2405,110 @@
       ],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:203",
-        "src/Components/Modules/ZoneBuilder.cpp:974"
+        "src/Components/Modules/ZoneBuilder.cpp:974",
+        "src/Game/Functions.cpp:183"
+      ]
+    },
+    {
+      "addr": "0x0046b660",
+      "addr_int": 4634208,
+      "name": "DB_EndRecoverLostDevice",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x0046b7c0",
+      "addr_int": 4634560,
+      "name": "CL_GetSnapshot",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:33"
+      ]
+    },
+    {
+      "addr": "0x0046cbf0",
+      "addr_int": 4639728,
+      "name": "FS_FOpenFileRead",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x00470090",
+      "addr_int": 4653200,
+      "name": "Cmd_AddCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:35"
+      ]
+    },
+    {
+      "addr": "0x004702c0",
+      "addr_int": 4653760,
+      "name": "FS_BuildPathToFile",
+      "alt_names": [
+        "FS_BuildOSPath"
+      ],
+      "sources": [
+        "src/Game/FileSystem.cpp:28",
+        "src/Game/FileSystem.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x004705e0",
+      "addr_int": 4654560,
+      "name": "DB_ReadXFileUncompressed",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x004707c0",
+      "addr_int": 4655040,
+      "name": "CL_WriteDemoMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x00470e30",
+      "addr_int": 4656688,
+      "name": "Load_Stream",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:71"
+      ]
+    },
+    {
+      "addr": "0x00470e80",
+      "addr_int": 4656768,
+      "name": "Free_String",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:54"
+      ]
+    },
+    {
+      "addr": "0x00471500",
+      "addr_int": 4658432,
+      "name": "Dvar_RegisterVec4",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x00471f60",
+      "addr_int": 4661088,
+      "name": "LiveStorage_GetStat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:141"
       ]
     },
     {
@@ -843,12 +2521,84 @@
       ]
     },
     {
+      "addr": "0x00474d60",
+      "addr_int": 4672864,
+      "name": "Com_Parse",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:22"
+      ]
+    },
+    {
       "addr": "0x0047548b",
       "addr_int": 4674699,
       "name": "G_LoadGame",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Events.cpp:368"
+      ]
+    },
+    {
+      "addr": "0x00475b30",
+      "addr_int": 4676400,
+      "name": "Hunk_AllocateTempMemoryHigh",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x00475e10",
+      "addr_int": 4677136,
+      "name": "IN_Frame",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:239"
+      ]
+    },
+    {
+      "addr": "0x00475eb0",
+      "addr_int": 4677296,
+      "name": "StringTable_HashString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:276"
+      ]
+    },
+    {
+      "addr": "0x00476d20",
+      "addr_int": 4680992,
+      "name": "MSG_ReadBit",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:100"
+      ]
+    },
+    {
+      "addr": "0x00478680",
+      "addr_int": 4687488,
+      "name": "Sys_TempPriorityAtLeastNormalBegin",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x00478f80",
+      "addr_int": 4689792,
+      "name": "Vec3NormalizeFast",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:256"
+      ]
+    },
+    {
+      "addr": "0x00479830",
+      "addr_int": 4692016,
+      "name": "Dvar_RegisterInt",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:10"
       ]
     },
     {
@@ -861,12 +2611,49 @@
       ]
     },
     {
+      "addr": "0x0047a5c0",
+      "addr_int": 4695488,
+      "name": "CG_ScrollScoreboardUp",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x0047acb0",
+      "addr_int": 4697264,
+      "name": "Menus_MenuIsInStack",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:94"
+      ]
+    },
+    {
       "addr": "0x0047c820",
       "addr_int": 4704288,
       "name": "Info_ValueForKey",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/ClanTags.cpp:147"
+        "src/Components/Modules/ClanTags.cpp:147",
+        "src/Game/Functions.cpp:61"
+      ]
+    },
+    {
+      "addr": "0x0047cd00",
+      "addr_int": 4705536,
+      "name": "PC_UnreadSourceToken",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x0047cd70",
+      "addr_int": 4705648,
+      "name": "SL_RemoveRefToString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:91"
       ]
     },
     {
@@ -888,12 +2675,48 @@
       ]
     },
     {
+      "addr": "0x0047e310",
+      "addr_int": 4711184,
+      "name": "SL_GetString_",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:87"
+      ]
+    },
+    {
+      "addr": "0x0047e990",
+      "addr_int": 4712848,
+      "name": "Load_PhysCollmapPtr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:84"
+      ]
+    },
+    {
       "addr": "0x0047f390",
       "addr_int": 4715408,
       "name": "Swap_Init",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:953"
+      ]
+    },
+    {
+      "addr": "0x0047fda0",
+      "addr_int": 4717984,
+      "name": "Load_XString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:72"
+      ]
+    },
+    {
+      "addr": "0x00480b40",
+      "addr_int": 4721472,
+      "name": "RemoveVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:12"
       ]
     },
     {
@@ -906,12 +2729,147 @@
       ]
     },
     {
+      "addr": "0x00482740",
+      "addr_int": 4728640,
+      "name": "AddRefToValue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x004828e0",
+      "addr_int": 4729056,
+      "name": "Scr_GetPointerType",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:62"
+      ]
+    },
+    {
+      "addr": "0x00486220",
+      "addr_int": 4743712,
+      "name": "PC_Directive_if",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x00486560",
+      "addr_int": 4744544,
+      "name": "SEH_ReadCharFromString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:180"
+      ]
+    },
+    {
+      "addr": "0x00487240",
+      "addr_int": 4747840,
+      "name": "Menus_FindByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:92"
+      ]
+    },
+    {
+      "addr": "0x00488860",
+      "addr_int": 4753504,
+      "name": "Scr_AddConstString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:46"
+      ]
+    },
+    {
+      "addr": "0x00488c10",
+      "addr_int": 4754448,
+      "name": "Field_AdjustScroll",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:233"
+      ]
+    },
+    {
+      "addr": "0x0048a4f0",
+      "addr_int": 4760816,
+      "name": "ScriptParse",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:93"
+      ]
+    },
+    {
+      "addr": "0x0048a5b0",
+      "addr_int": 4761008,
+      "name": "FS_Delete",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x0048ad30",
+      "addr_int": 4762928,
+      "name": "SV_AddTestClient",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x0048b1d0",
+      "addr_int": 4764112,
+      "name": "CG_LocationalTrace",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x0048b9d0",
+      "addr_int": 4766160,
+      "name": "GetObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:14"
+      ]
+    },
+    {
       "addr": "0x0048bb1f",
       "addr_int": 4766495,
       "name": "Exit",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Weapon.cpp:364"
+      ]
+    },
+    {
+      "addr": "0x0048c520",
+      "addr_int": 4769056,
+      "name": "MSG_WriteByte",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:108"
+      ]
+    },
+    {
+      "addr": "0x0048e170",
+      "addr_int": 4776304,
+      "name": "RemoveRefToValue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x0048e6a0",
+      "addr_int": 4777632,
+      "name": "DB_IsXAssetDefault",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:14"
       ]
     },
     {
@@ -933,6 +2891,87 @@
       ]
     },
     {
+      "addr": "0x00490a70",
+      "addr_int": 4786800,
+      "name": "PC_Directive_if_def",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x00491860",
+      "addr_int": 4790368,
+      "name": "NET_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:127"
+      ]
+    },
+    {
+      "addr": "0x004918b0",
+      "addr_int": 4790448,
+      "name": "Dvar_RegisterVec3Color",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x00491920",
+      "addr_int": 4790560,
+      "name": "PC_Directive_endif",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x00491f00",
+      "addr_int": 4792064,
+      "name": "MSG_ReadDeltaUsercmdKey",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:115"
+      ]
+    },
+    {
+      "addr": "0x00492630",
+      "addr_int": 4793904,
+      "name": "G_GetItemClassname",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x00492d50",
+      "addr_int": 4795728,
+      "name": "Scr_RegisterFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:81"
+      ]
+    },
+    {
+      "addr": "0x00493090",
+      "addr_int": 4796560,
+      "name": "Load_TracerDefPtr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:86"
+      ]
+    },
+    {
+      "addr": "0x00493b50",
+      "addr_int": 4799312,
+      "name": "CG_ScrollScoreboardDown",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:29"
+      ]
+    },
+    {
       "addr": "0x00494060",
       "addr_int": 4800608,
       "name": "DB_LoadDelayedImages",
@@ -948,6 +2987,222 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:1454"
+      ]
+    },
+    {
+      "addr": "0x004940b0",
+      "addr_int": 4800688,
+      "name": "Cbuf_InsertText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x00494290",
+      "addr_int": 4801168,
+      "name": "Dvar_ClearModified",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x00494830",
+      "addr_int": 4802608,
+      "name": "Scr_GetConstString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x00494aa0",
+      "addr_int": 4803232,
+      "name": "PC_Directive_error",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x00494c90",
+      "addr_int": 4803728,
+      "name": "Key_SetBinding",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:67"
+      ]
+    },
+    {
+      "addr": "0x00495310",
+      "addr_int": 4805392,
+      "name": "PC_Directive_include",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x00495580",
+      "addr_int": 4806016,
+      "name": "RandWithSeed",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:229"
+      ]
+    },
+    {
+      "addr": "0x00496850",
+      "addr_int": 4810832,
+      "name": "TeleportPlayer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:190"
+      ]
+    },
+    {
+      "addr": "0x004970f0",
+      "addr_int": 4813040,
+      "name": "UI_KeyEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:205"
+      ]
+    },
+    {
+      "addr": "0x00497330",
+      "addr_int": 4813616,
+      "name": "PartyHost_CountMembers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:147"
+      ]
+    },
+    {
+      "addr": "0x004977f0",
+      "addr_int": 4814832,
+      "name": "Load_XStringArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:75"
+      ]
+    },
+    {
+      "addr": "0x00497de0",
+      "addr_int": 4816352,
+      "name": "Sys_QueEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x00498220",
+      "addr_int": 4817440,
+      "name": "Com_Compress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x004982e0",
+      "addr_int": 4817632,
+      "name": "SV_SetConfigstring",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x0049b6b0",
+      "addr_int": 4830896,
+      "name": "Load_SndAliasCustom",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:82"
+      ]
+    },
+    {
+      "addr": "0x0049c0d0",
+      "addr_int": 4833488,
+      "name": "UI_DrawText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:202"
+      ]
+    },
+    {
+      "addr": "0x0049c4a0",
+      "addr_int": 4834464,
+      "name": "GetPlayerEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:79"
+      ]
+    },
+    {
+      "addr": "0x0049c7e0",
+      "addr_int": 4835296,
+      "name": "NET_OutOfBandData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:131"
+      ]
+    },
+    {
+      "addr": "0x0049cc30",
+      "addr_int": 4836400,
+      "name": "RMesg_SendMessages",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:170"
+      ]
+    },
+    {
+      "addr": "0x0049cf70",
+      "addr_int": 4837232,
+      "name": "Steam_JoinLobby",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:188"
+      ]
+    },
+    {
+      "addr": "0x0049e540",
+      "addr_int": 4842816,
+      "name": "G_GetWeaponIndexForName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x0049f0b0",
+      "addr_int": 4845744,
+      "name": "Com_ClientPacketEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x004a0220",
+      "addr_int": 4850208,
+      "name": "Scr_CreateCanonicalFilename",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x004a04c0",
+      "addr_int": 4850880,
+      "name": "FS_Read",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:23"
       ]
     },
     {
@@ -978,12 +3233,30 @@
       ]
     },
     {
+      "addr": "0x004a4560",
+      "addr_int": 4867424,
+      "name": "CL_SelectStringTableEntryInDvar_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:20"
+      ]
+    },
+    {
       "addr": "0x004a46c0",
       "addr_int": 4867776,
       "name": "FS_Shutdown",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/FileSystem.cpp:316"
+      ]
+    },
+    {
+      "addr": "0x004a4750",
+      "addr_int": 4867920,
+      "name": "Scr_Notify",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:53"
       ]
     },
     {
@@ -1032,12 +3305,40 @@
       ]
     },
     {
+      "addr": "0x004a5de0",
+      "addr_int": 4873696,
+      "name": "FS_FreeFileList",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:9"
+      ]
+    },
+    {
       "addr": "0x004a62a0",
       "addr_int": 4874912,
       "name": "LargeLocalInit",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/ZoneBuilder.cpp:956"
+        "src/Components/Modules/ZoneBuilder.cpp:956",
+        "src/Game/Functions.cpp:69"
+      ]
+    },
+    {
+      "addr": "0x004a63d0",
+      "addr_int": 4875216,
+      "name": "FS_Seek",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x004a6df0",
+      "addr_int": 4877808,
+      "name": "Scr_SetClientField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:69"
       ]
     },
     {
@@ -1059,12 +3360,66 @@
       ]
     },
     {
+      "addr": "0x004a7b30",
+      "addr_int": 4881200,
+      "name": "CL_GetRankIcon",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:17"
+      ]
+    },
+    {
       "addr": "0x004a7cf0",
       "addr_int": 4881648,
       "name": "GScr_AddFieldsForClient",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/GSC/Field.cpp:36"
+      ]
+    },
+    {
+      "addr": "0x004a8830",
+      "addr_int": 4884528,
+      "name": "CL_ResetViewport",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x004a9510",
+      "addr_int": 4887824,
+      "name": "Dvar_SetBool",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x004a9580",
+      "addr_int": 4887936,
+      "name": "Dvar_SetString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x004a95b0",
+      "addr_int": 4887984,
+      "name": "UI_UpdateArenas",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:196"
+      ]
+    },
+    {
+      "addr": "0x004a9e90",
+      "addr_int": 4890256,
+      "name": "CL_ParseServerMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:14"
       ]
     },
     {
@@ -1096,6 +3451,87 @@
       ]
     },
     {
+      "addr": "0x004aa830",
+      "addr_int": 4892720,
+      "name": "Com_PrintMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x004aab80",
+      "addr_int": 4893568,
+      "name": "Com_BeginParseSession",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x004ab530",
+      "addr_int": 4896048,
+      "name": "BG_PlayerHasWeapon",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x004ab650",
+      "addr_int": 4896336,
+      "name": "FindVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x004ac180",
+      "addr_int": 4899200,
+      "name": "StringTable_LookupRowNumForValue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:278"
+      ]
+    },
+    {
+      "addr": "0x004acc70",
+      "addr_int": 4902000,
+      "name": "free_expression",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:175"
+      ]
+    },
+    {
+      "addr": "0x004accd0",
+      "addr_int": 4902096,
+      "name": "PC_ReadToken",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004ad0b0",
+      "addr_int": 4903088,
+      "name": "Scr_ExecThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:41"
+      ]
+    },
+    {
+      "addr": "0x004ad470",
+      "addr_int": 4904048,
+      "name": "I_CleanStr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:261"
+      ]
+    },
+    {
       "addr": "0x004ae560",
       "addr_int": 4908384,
       "name": "Info_SetValueForKey",
@@ -1103,6 +3539,33 @@
       "sources": [
         "src/Components/Modules/ClanTags.cpp:111",
         "src/Components/Modules/ClanTags.cpp:114"
+      ]
+    },
+    {
+      "addr": "0x004aea60",
+      "addr_int": 4909664,
+      "name": "UI_GetFontHandle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:203"
+      ]
+    },
+    {
+      "addr": "0x004aef00",
+      "addr_int": 4910848,
+      "name": "NET_OutOfBandPrint",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:130"
+      ]
+    },
+    {
+      "addr": "0x004aff10",
+      "addr_int": 4914960,
+      "name": "Menu_GetFocused",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:96"
       ]
     },
     {
@@ -1115,12 +3578,120 @@
       ]
     },
     {
+      "addr": "0x004b0150",
+      "addr_int": 4915536,
+      "name": "G_LogPrintf",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004b0270",
+      "addr_int": 4915824,
+      "name": "Sys_IsServerThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x004b0e90",
+      "addr_int": 4918928,
+      "name": "Scr_GetNumParam",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:38"
+      ]
+    },
+    {
       "addr": "0x004b0fc3",
       "addr_int": 4919235,
       "name": "make",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:199"
+      ]
+    },
+    {
+      "addr": "0x004b16f0",
+      "addr_int": 4921072,
+      "name": "PC_ReadSourceToken",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x004b20e0",
+      "addr_int": 4923616,
+      "name": "Sys_IsRenderThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x004b22d0",
+      "addr_int": 4924112,
+      "name": "Com_Error",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x004b24e0",
+      "addr_int": 4924640,
+      "name": "Scr_IsSystemActive",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:83"
+      ]
+    },
+    {
+      "addr": "0x004b2e60",
+      "addr_int": 4927072,
+      "name": "Sys_OutOfMemErrorInternal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x004b2ef0",
+      "addr_int": 4927216,
+      "name": "Sys_CreateFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x004b2f50",
+      "addr_int": 4927312,
+      "name": "Sys_SetValue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:25"
+      ]
+    },
+    {
+      "addr": "0x004b3830",
+      "addr_int": 4929584,
+      "name": "PM_IsSprinting",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x004b3890",
+      "addr_int": 4929680,
+      "name": "Jump_ClearState",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PlayerMovement.cpp:5"
       ]
     },
     {
@@ -1133,12 +3704,156 @@
       ]
     },
     {
+      "addr": "0x004b4b40",
+      "addr_int": 4934464,
+      "name": "NetadrToSockadr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:120"
+      ]
+    },
+    {
       "addr": "0x004b4eef",
       "addr_int": 4935407,
       "name": "same",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:217"
+      ]
+    },
+    {
+      "addr": "0x004b5530",
+      "addr_int": 4937008,
+      "name": "Dvar_DisplayableValue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x004b55b0",
+      "addr_int": 4937136,
+      "name": "PC_Directive_else",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x004b5780",
+      "addr_int": 4937600,
+      "name": "SV_Cmd_TokenizeString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x004b5f10",
+      "addr_int": 4939536,
+      "name": "BG_LoadWeaponCompleteDefInternal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x004b6210",
+      "addr_int": 4940304,
+      "name": "CG_GetTeamName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x004b6a70",
+      "addr_int": 4942448,
+      "name": "Svcmd_EntityList_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:56"
+      ]
+    },
+    {
+      "addr": "0x004b76d0",
+      "addr_int": 4945616,
+      "name": "DB_EnumXAssets",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004b80b0",
+      "addr_int": 4948144,
+      "name": "Com_EndParseSession",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x004b8300",
+      "addr_int": 4948736,
+      "name": "Com_SkipRestOfLine",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x004ba530",
+      "addr_int": 4957488,
+      "name": "FS_FOpenFileWrite",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x004ba5b0",
+      "addr_int": 4957616,
+      "name": "Menus_CloseAll",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:89"
+      ]
+    },
+    {
+      "addr": "0x004bb9b0",
+      "addr_int": 4962736,
+      "name": "Cbuf_AddServerText_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x004bc270",
+      "addr_int": 4964976,
+      "name": "GetEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:78"
+      ]
+    },
+    {
+      "addr": "0x004bc2a0",
+      "addr_int": 4965024,
+      "name": "PC_Directive_evalfloat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x004bc3a0",
+      "addr_int": 4965280,
+      "name": "SV_GameSendServerCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:8"
       ]
     },
     {
@@ -1151,6 +3866,24 @@
       ]
     },
     {
+      "addr": "0x004bd320",
+      "addr_int": 4969248,
+      "name": "Scr_FreeThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:42"
+      ]
+    },
+    {
+      "addr": "0x004bd520",
+      "addr_int": 4969760,
+      "name": "CG_SetupWeaponConfigString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:31"
+      ]
+    },
+    {
       "addr": "0x004bd900",
       "addr_int": 4970752,
       "name": "main",
@@ -1160,12 +3893,102 @@
       ]
     },
     {
+      "addr": "0x004be4d0",
+      "addr_int": 4973776,
+      "name": "BG_GetViewModelWeaponIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x004be6e0",
+      "addr_int": 4974304,
+      "name": "CG_ExecuteNewServerCommands",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x004be790",
+      "addr_int": 4974480,
+      "name": "UI_GetActiveMenu",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:193"
+      ]
+    },
+    {
+      "addr": "0x004bfb40",
+      "addr_int": 4979520,
+      "name": "Scr_AddEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:44"
+      ]
+    },
+    {
       "addr": "0x004bfbe0",
       "addr_int": 4979680,
       "name": "Con_InitChannels",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:969"
+      ]
+    },
+    {
+      "addr": "0x004bff90",
+      "addr_int": 4980624,
+      "name": "DB_BeginRecoverLostDevice",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004c0350",
+      "addr_int": 4981584,
+      "name": "Com_ParseOnLine",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x004c06e0",
+      "addr_int": 4982496,
+      "name": "FS_WriteToDemo",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x004c0700",
+      "addr_int": 4982528,
+      "name": "FS_FOpenFileByMode",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:17"
+      ]
+    },
+    {
+      "addr": "0x004c0e70",
+      "addr_int": 4984432,
+      "name": "Scr_AddClassField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:70"
+      ]
+    },
+    {
+      "addr": "0x004c13d0",
+      "addr_int": 4985808,
+      "name": "Load_GfxImagePtr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:79"
       ]
     },
     {
@@ -1183,7 +4006,26 @@
       "name": "MSG_ReadByte",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/Theatre.cpp:906"
+        "src/Components/Modules/Theatre.cpp:906",
+        "src/Game/Functions.cpp:114"
+      ]
+    },
+    {
+      "addr": "0x004c3280",
+      "addr_int": 4993664,
+      "name": "G_DebugLineWithDuration",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x004c37d0",
+      "addr_int": 4995024,
+      "name": "Sys_IsMainThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:8"
       ]
     },
     {
@@ -1196,6 +4038,60 @@
       ]
     },
     {
+      "addr": "0x004c3900",
+      "addr_int": 4995328,
+      "name": "MSG_ReadBits",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:101"
+      ]
+    },
+    {
+      "addr": "0x004c47e0",
+      "addr_int": 4999136,
+      "name": "Dvar_GetVariantString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x004c4a00",
+      "addr_int": 4999680,
+      "name": "Menu_HandleKey",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:95"
+      ]
+    },
+    {
+      "addr": "0x004c6020",
+      "addr_int": 5005344,
+      "name": "Sys_IsDatabaseThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x004c63e0",
+      "addr_int": 5006304,
+      "name": "SL_FindLowercaseString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:89"
+      ]
+    },
+    {
+      "addr": "0x004c84d0",
+      "addr_int": 5014736,
+      "name": "IN_MouseEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:240"
+      ]
+    },
+    {
       "addr": "0x004c8609",
       "addr_int": 5015049,
       "name": "FS_ConditionalRestart",
@@ -1205,12 +4101,31 @@
       ]
     },
     {
+      "addr": "0x004c8630",
+      "addr_int": 5015088,
+      "name": "UI_TextHeight",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:201"
+      ]
+    },
+    {
+      "addr": "0x004c8aa0",
+      "addr_int": 5016224,
+      "name": "NET_DeferPacketToClient",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:125"
+      ]
+    },
+    {
       "addr": "0x004c9550",
       "addr_int": 5018960,
       "name": "MSG_ReadLong",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/Theatre.cpp:908"
+        "src/Components/Modules/Theatre.cpp:908",
+        "src/Game/Functions.cpp:103"
       ]
     },
     {
@@ -1223,12 +4138,102 @@
       ]
     },
     {
+      "addr": "0x004ca4a0",
+      "addr_int": 5022880,
+      "name": "Sys_IsDatabaseReady",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x004cc520",
+      "addr_int": 5031200,
+      "name": "GetNewVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x004cc5d0",
+      "addr_int": 5031376,
+      "name": "LiveStorage_SetStat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:142"
+      ]
+    },
+    {
+      "addr": "0x004cce60",
+      "addr_int": 5033568,
+      "name": "Menus_OpenByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:91"
+      ]
+    },
+    {
+      "addr": "0x004cdc10",
+      "addr_int": 5037072,
+      "name": "SL_GetString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:86"
+      ]
+    },
+    {
+      "addr": "0x004cdc50",
+      "addr_int": 5037136,
+      "name": "DB_GetRawBuffer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:10"
+      ]
+    },
+    {
       "addr": "0x004cdeec",
       "addr_int": 5037804,
       "name": "Don",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ServerList.cpp:1396"
+      ]
+    },
+    {
+      "addr": "0x004ce1a0",
+      "addr_int": 5038496,
+      "name": "Dvar_RegisterBool",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004cf2f0",
+      "addr_int": 5042928,
+      "name": "FindObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x004cfba0",
+      "addr_int": 5045152,
+      "name": "Z_VirtualAlloc",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004cfcf0",
+      "addr_int": 5045488,
+      "name": "DB_GetXAssetTypeName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:13"
       ]
     },
     {
@@ -1241,12 +4246,66 @@
       ]
     },
     {
+      "addr": "0x004d03c0",
+      "addr_int": 5047232,
+      "name": "CL_AddDebugStarWithText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:28"
+      ]
+    },
+    {
       "addr": "0x004d06ba",
       "addr_int": 5047994,
       "name": "G_ShutdownGame",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Events.cpp:369"
+      ]
+    },
+    {
+      "addr": "0x004d0aa0",
+      "addr_int": 5048992,
+      "name": "NET_CompareAdr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:123"
+      ]
+    },
+    {
+      "addr": "0x004d0ea0",
+      "addr_int": 5050016,
+      "name": "UI_DrawHandlePic",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:198"
+      ]
+    },
+    {
+      "addr": "0x004d1600",
+      "addr_int": 5051904,
+      "name": "SV_DropClient",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x004d1d60",
+      "addr_int": 5053792,
+      "name": "DB_PopStreamPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:47"
+      ]
+    },
+    {
+      "addr": "0x004d2060",
+      "addr_int": 5054560,
+      "name": "PC_ReadTokenHandle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:8"
       ]
     },
     {
@@ -1259,12 +4318,30 @@
       ]
     },
     {
+      "addr": "0x004d3210",
+      "addr_int": 5059088,
+      "name": "Load_GfxTextureLoad",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:81"
+      ]
+    },
+    {
       "addr": "0x004d3665",
       "addr_int": 5060197,
       "name": "SV_Init",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Events.cpp:381"
+      ]
+    },
+    {
+      "addr": "0x004d4000",
+      "addr_int": 5062656,
+      "name": "Com_Quit_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:25"
       ]
     },
     {
@@ -1277,12 +4354,58 @@
       ]
     },
     {
+      "addr": "0x004d5390",
+      "addr_int": 5067664,
+      "name": "Dvar_FindVar",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x004d5c50",
+      "addr_int": 5069904,
+      "name": "StructuredDataDef_GetAsset",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:273"
+      ]
+    },
+    {
+      "addr": "0x004d6640",
+      "addr_int": 5072448,
+      "name": "FreeMemory",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:53"
+      ]
+    },
+    {
+      "addr": "0x004d6970",
+      "addr_int": 5073264,
+      "name": "Sys_Quit",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x004d6e40",
+      "addr_int": 5074496,
+      "name": "SV_IsTestClient",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:6"
+      ]
+    },
+    {
       "addr": "0x004d6f80",
       "addr_int": 5074816,
       "name": "I_strncpyz",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/PlayerName.cpp:88"
+        "src/Components/Modules/PlayerName.cpp:88",
+        "src/Game/Functions.cpp:260"
       ]
     },
     {
@@ -1295,6 +4418,24 @@
       ]
     },
     {
+      "addr": "0x004d77d0",
+      "addr_int": 5076944,
+      "name": "Menu_IsVisible",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:93"
+      ]
+    },
+    {
+      "addr": "0x004d7c50",
+      "addr_int": 5078096,
+      "name": "CL_MouseEvent",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:25"
+      ]
+    },
+    {
       "addr": "0x004d8220",
       "addr_int": 5079584,
       "name": "Dvar_Init",
@@ -1304,12 +4445,111 @@
       ]
     },
     {
+      "addr": "0x004d8580",
+      "addr_int": 5080448,
+      "name": "Sys_FreeFileList",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004d8840",
+      "addr_int": 5081152,
+      "name": "G_SpawnEntitiesFromString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004d8ba0",
+      "addr_int": 5082016,
+      "name": "BG_GetEquippedWeaponIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:12"
+      ]
+    },
+    {
       "addr": "0x004d9210",
       "addr_int": 5083664,
       "name": "Cbuf_Init",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:952"
+      ]
+    },
+    {
+      "addr": "0x004d9520",
+      "addr_int": 5084448,
+      "name": "Scr_LoadGameType",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x004d98a0",
+      "addr_int": 5085344,
+      "name": "Dvar_InfoString_Big",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x004d9b00",
+      "addr_int": 5085952,
+      "name": "SL_AddRefToString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:90"
+      ]
+    },
+    {
+      "addr": "0x004d9b90",
+      "addr_int": 5086096,
+      "name": "Load_FxEffectDefHandle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:77"
+      ]
+    },
+    {
+      "addr": "0x004d9c30",
+      "addr_int": 5086256,
+      "name": "Scr_NotifyLevel",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:54"
+      ]
+    },
+    {
+      "addr": "0x004d9d20",
+      "addr_int": 5086496,
+      "name": "Voice_IsClientTalking",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:267"
+      ]
+    },
+    {
+      "addr": "0x004da010",
+      "addr_int": 5087248,
+      "name": "Key_IsCatcherActive",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:66"
+      ]
+    },
+    {
+      "addr": "0x004daa80",
+      "addr_int": 5089920,
+      "name": "DB_GetRawFileLen",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:11"
       ]
     },
     {
@@ -1331,6 +4571,24 @@
       ]
     },
     {
+      "addr": "0x004dcc30",
+      "addr_int": 5098544,
+      "name": "MSG_ReadBitsCompress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:116"
+      ]
+    },
+    {
+      "addr": "0x004dce00",
+      "addr_int": 5099008,
+      "name": "Cmd_AddServerCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:36"
+      ]
+    },
+    {
       "addr": "0x004dcec9",
       "addr_int": 5099209,
       "name": "some",
@@ -1349,12 +4607,75 @@
       ]
     },
     {
+      "addr": "0x004dcf00",
+      "addr_int": 5099264,
+      "name": "Sys_TempPriorityEnd",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:18"
+      ]
+    },
+    {
+      "addr": "0x004defa0",
+      "addr_int": 5107616,
+      "name": "FS_FileExists",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004e0200",
+      "addr_int": 5112320,
+      "name": "Com_PrintWarning",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x004e0d60",
+      "addr_int": 5115232,
+      "name": "PC_FreeDefine",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004e0dd0",
+      "addr_int": 5115344,
+      "name": "Load_XStringCustom",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:76"
+      ]
+    },
+    {
       "addr": "0x004e0fb0",
       "addr_int": 5115824,
       "name": "DB_InitThread",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:970"
+      ]
+    },
+    {
+      "addr": "0x004e1480",
+      "addr_int": 5117056,
+      "name": "Add_Ammo",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:249"
+      ]
+    },
+    {
+      "addr": "0x004e1820",
+      "addr_int": 5117984,
+      "name": "PC_Directive_undef",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:25"
       ]
     },
     {
@@ -1373,7 +4694,8 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:1009",
-        "src/Components/Modules/ZoneBuilder.cpp:932"
+        "src/Components/Modules/ZoneBuilder.cpp:932",
+        "src/Game/Functions.cpp:14"
       ]
     },
     {
@@ -1395,12 +4717,156 @@
       ]
     },
     {
+      "addr": "0x004e5930",
+      "addr_int": 5134640,
+      "name": "DB_LoadXAssets",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x004e6760",
+      "addr_int": 5138272,
+      "name": "FS_FTell",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:25"
+      ]
+    },
+    {
+      "addr": "0x004e67b0",
+      "addr_int": 5138352,
+      "name": "GetMemory",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:172"
+      ]
+    },
+    {
       "addr": "0x004e6870",
       "addr_int": 5138544,
       "name": "GamerProfile_UpdateSystemVarsFromProfile",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/QuickPatch.cpp:606"
+      ]
+    },
+    {
+      "addr": "0x004e6950",
+      "addr_int": 5138768,
+      "name": "PS_CreatePunctuationTable",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:174"
+      ]
+    },
+    {
+      "addr": "0x004e6a50",
+      "addr_int": 5139024,
+      "name": "G_PrintEntities",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x004e6ec0",
+      "addr_int": 5140160,
+      "name": "BG_GetWeaponName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x004e71e0",
+      "addr_int": 5140960,
+      "name": "I_isdigit",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:262"
+      ]
+    },
+    {
+      "addr": "0x004e7720",
+      "addr_int": 5142304,
+      "name": "NET_ErrorString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:126"
+      ]
+    },
+    {
+      "addr": "0x004e79e0",
+      "addr_int": 5143008,
+      "name": "BG_GetEquippedWeaponState",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:14"
+      ]
+    },
+    {
+      "addr": "0x004e8390",
+      "addr_int": 5145488,
+      "name": "Scr_GetEntityField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:68"
+      ]
+    },
+    {
+      "addr": "0x004e9740",
+      "addr_int": 5150528,
+      "name": "UI_ReplaceConversions",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:207"
+      ]
+    },
+    {
+      "addr": "0x004eb0b0",
+      "addr_int": 5157040,
+      "name": "UI_GetGameTypeDisplayName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:210"
+      ]
+    },
+    {
+      "addr": "0x004eb810",
+      "addr_int": 5158928,
+      "name": "G_GetEntityTypeName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x004ebf50",
+      "addr_int": 5160784,
+      "name": "Scr_GetDebugString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:32"
+      ]
+    },
+    {
+      "addr": "0x004ec1d0",
+      "addr_int": 5161424,
+      "name": "SL_ConvertToString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:85"
+      ]
+    },
+    {
+      "addr": "0x004ec6b0",
+      "addr_int": 5162672,
+      "name": "Dvar_GetString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:17"
       ]
     },
     {
@@ -1431,12 +4897,183 @@
       ]
     },
     {
+      "addr": "0x004ed9a0",
+      "addr_int": 5167520,
+      "name": "GScr_LoadGameTypeScript",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:76"
+      ]
+    },
+    {
+      "addr": "0x004ee3e0",
+      "addr_int": 5170144,
+      "name": "SV_Loaded",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x004ee430",
+      "addr_int": 5170224,
+      "name": "Dvar_SetCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x004ef8e0",
+      "addr_int": 5175520,
+      "name": "Dvar_RegisterVec3",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x004eff10",
+      "addr_int": 5177104,
+      "name": "Scr_GetTypeName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:37"
+      ]
+    },
+    {
+      "addr": "0x004f10c0",
+      "addr_int": 5181632,
+      "name": "Party_InParty",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:150"
+      ]
+    },
+    {
+      "addr": "0x004f1700",
+      "addr_int": 5183232,
+      "name": "UI_SafeTranslateString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:206"
+      ]
+    },
+    {
+      "addr": "0x004f1850",
+      "addr_int": 5183568,
+      "name": "MSG_ReadInt64",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:105"
+      ]
+    },
+    {
+      "addr": "0x004f1b60",
+      "addr_int": 5184352,
+      "name": "Scr_IsValidGameType",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x004f20f0",
+      "addr_int": 5185776,
+      "name": "Scr_SetObjectField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:67"
+      ]
+    },
+    {
       "addr": "0x004f2470",
       "addr_int": 5186672,
       "name": "FireWeaponMelee",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/QuickPatch.cpp:103"
+      ]
+    },
+    {
+      "addr": "0x004f28e0",
+      "addr_int": 5187808,
+      "name": "Dvar_RegisterColor",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x004f2c80",
+      "addr_int": 5188736,
+      "name": "StringTable_GetColumnValueForRow",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:279"
+      ]
+    },
+    {
+      "addr": "0x004f31d0",
+      "addr_int": 5190096,
+      "name": "Scr_GetInt",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:35"
+      ]
+    },
+    {
+      "addr": "0x004f3680",
+      "addr_int": 5191296,
+      "name": "Z_Malloc",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Zone.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x004f3c80",
+      "addr_int": 5192832,
+      "name": "CopyStringInternal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x004f4120",
+      "addr_int": 5194016,
+      "name": "MSG_WriteData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:109"
+      ]
+    },
+    {
+      "addr": "0x004f4ac0",
+      "addr_int": 5196480,
+      "name": "SV_GetClientPersistentDataModifiedFlags",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x004f4b90",
+      "addr_int": 5196688,
+      "name": "FS_ReadFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004f4ed0",
+      "addr_int": 5197520,
+      "name": "PC_Directive_ifdef",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:18"
       ]
     },
     {
@@ -1448,7 +5085,107 @@
       ],
       "sources": [
         "src/Components/Modules/Dedicated.cpp:200",
-        "src/Components/Modules/ZoneBuilder.cpp:973"
+        "src/Components/Modules/ZoneBuilder.cpp:973",
+        "src/Game/Functions.cpp:184"
+      ]
+    },
+    {
+      "addr": "0x004f52e0",
+      "addr_int": 5198560,
+      "name": "Dvar_SetFromStringByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x004f56d0",
+      "addr_int": 5199568,
+      "name": "MSG_Discard",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:113"
+      ]
+    },
+    {
+      "addr": "0x004f5b40",
+      "addr_int": 5200704,
+      "name": "Field_Draw",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:232"
+      ]
+    },
+    {
+      "addr": "0x004f5cb0",
+      "addr_int": 5201072,
+      "name": "Live_IsSystemUiActive",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:139"
+      ]
+    },
+    {
+      "addr": "0x004f5cc0",
+      "addr_int": 5201088,
+      "name": "BG_GetNumWeapons",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x004f5d60",
+      "addr_int": 5201248,
+      "name": "Party_GetMaxPlayers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:146"
+      ]
+    },
+    {
+      "addr": "0x004f6070",
+      "addr_int": 5202032,
+      "name": "Dvar_RegisterVec2",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x004f6110",
+      "addr_int": 5202192,
+      "name": "SEH_GetCurrentLanguage",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:181"
+      ]
+    },
+    {
+      "addr": "0x004f6440",
+      "addr_int": 5203008,
+      "name": "Live_GetMapIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:135"
+      ]
+    },
+    {
+      "addr": "0x004f78c0",
+      "addr_int": 5208256,
+      "name": "AllocThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x004f8460",
+      "addr_int": 5211232,
+      "name": "SockadrToNetadr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:186"
       ]
     },
     {
@@ -1470,12 +5207,114 @@
       ]
     },
     {
-      "addr": "0x004f8c70",
-      "addr_int": 5213296,
-      "name": "Print",
+      "addr": "0x004f8940",
+      "addr_int": 5212480,
+      "name": "ScrPlace_GetActivePlacement",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/AssetHandler.cpp:500"
+        "src/Game/Functions.cpp:199"
+      ]
+    },
+    {
+      "addr": "0x004f8c70",
+      "addr_int": 5213296,
+      "name": "Com_PrintError",
+      "alt_names": [
+        "Print"
+      ],
+      "sources": [
+        "src/Components/Modules/AssetHandler.cpp:500",
+        "src/Game/Common.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x004fad30",
+      "addr_int": 5221680,
+      "name": "Load_PhysPresetPtr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:85"
+      ]
+    },
+    {
+      "addr": "0x004fb010",
+      "addr_int": 5222416,
+      "name": "UI_CheckStringTranslation",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:194"
+      ]
+    },
+    {
+      "addr": "0x004fbc70",
+      "addr_int": 5225584,
+      "name": "Scr_ParamError",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:59"
+      ]
+    },
+    {
+      "addr": "0x004fc120",
+      "addr_int": 5226784,
+      "name": "CL_DrawStretchPicPhysical",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:9"
+      ]
+    },
+    {
+      "addr": "0x004fc200",
+      "addr_int": 5227008,
+      "name": "Sys_EnterCriticalSection",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x004fc710",
+      "addr_int": 5228304,
+      "name": "Com_SetSpaceDelimited",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x004fc770",
+      "addr_int": 5228400,
+      "name": "Dvar_SetFromStringByNameFromSource",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x004fc7e0",
+      "addr_int": 5228512,
+      "name": "Dvar_RegisterString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x004fca70",
+      "addr_int": 5229168,
+      "name": "Load_XModelPtr",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:73"
+      ]
+    },
+    {
+      "addr": "0x004fcc90",
+      "addr_int": 5229712,
+      "name": "NET_OutOfBandVoiceData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:132"
       ]
     },
     {
@@ -1497,12 +5336,57 @@
       ]
     },
     {
+      "addr": "0x004fd8a0",
+      "addr_int": 5232800,
+      "name": "PC_Directive_line",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x004fe910",
+      "addr_int": 5237008,
+      "name": "Byte4PackRgba",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:228"
+      ]
+    },
+    {
+      "addr": "0x004fef30",
+      "addr_int": 5238576,
+      "name": "MSG_ReadStringLine",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:107"
+      ]
+    },
+    {
+      "addr": "0x004fefd0",
+      "addr_int": 5238736,
+      "name": "Dvar_Reset",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:24"
+      ]
+    },
+    {
       "addr": "0x004ff220",
       "addr_int": 5239328,
       "name": "Com_InitParse",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:948"
+      ]
+    },
+    {
+      "addr": "0x004ff3d0",
+      "addr_int": 5239760,
+      "name": "Scr_GetObjectField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:66"
       ]
     },
     {
@@ -1515,12 +5399,39 @@
       ]
     },
     {
+      "addr": "0x004ff8a0",
+      "addr_int": 5240992,
+      "name": "CL_GetRankForXP",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x005001a0",
+      "addr_int": 5243296,
+      "name": "Voice_IncomingVoiceData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:266"
+      ]
+    },
+    {
       "addr": "0x00501bc0",
       "addr_int": 5249984,
       "name": "Menu_SetupKeywordHash",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:996"
+      ]
+    },
+    {
+      "addr": "0x00501f00",
+      "addr_int": 5250816,
+      "name": "CG_WorldTrace",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:19"
       ]
     },
     {
@@ -1533,6 +5444,15 @@
       ]
     },
     {
+      "addr": "0x00502a30",
+      "addr_int": 5253680,
+      "name": "SE_Load",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:177"
+      ]
+    },
+    {
       "addr": "0x00503b50",
       "addr_int": 5258064,
       "name": "Party_SetDisplayMapName",
@@ -1542,12 +5462,84 @@
       ]
     },
     {
+      "addr": "0x00503b90",
+      "addr_int": 5258128,
+      "name": "MSG_WriteShort",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:111"
+      ]
+    },
+    {
+      "addr": "0x00504f20",
+      "addr_int": 5263136,
+      "name": "CG_GetBoneIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:25"
+      ]
+    },
+    {
+      "addr": "0x00505670",
+      "addr_int": 5265008,
+      "name": "R_RegisterFont",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:162"
+      ]
+    },
+    {
+      "addr": "0x005056a0",
+      "addr_int": 5265056,
+      "name": "R_NormalizedTextScale",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:224"
+      ]
+    },
+    {
+      "addr": "0x005056c0",
+      "addr_int": 5265088,
+      "name": "R_TextWidth",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:165"
+      ]
+    },
+    {
       "addr": "0x00505721",
       "addr_int": 5265185,
       "name": "R_TextWidth",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/TextRenderer.cpp:1580"
+      ]
+    },
+    {
+      "addr": "0x00505770",
+      "addr_int": 5265264,
+      "name": "R_TextHeight",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:166"
+      ]
+    },
+    {
+      "addr": "0x00506090",
+      "addr_int": 5267600,
+      "name": "Material_Process2DTextureCoordsForAtlasing",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:226"
+      ]
+    },
+    {
+      "addr": "0x00506ac0",
+      "addr_int": 5270208,
+      "name": "R_LoadGraphicsAssets",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:164"
       ]
     },
     {
@@ -1569,6 +5561,33 @@
       ]
     },
     {
+      "addr": "0x005084d0",
+      "addr_int": 5276880,
+      "name": "_VectorMA",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:218"
+      ]
+    },
+    {
+      "addr": "0x00509770",
+      "addr_int": 5281648,
+      "name": "R_AddCmdDrawStretchPic",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:159"
+      ]
+    },
+    {
+      "addr": "0x00509d80",
+      "addr_int": 5283200,
+      "name": "R_AddCmdDrawText",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:163"
+      ]
+    },
+    {
       "addr": "0x005196c0",
       "addr_int": 5347008,
       "name": "R_RegisterDvars",
@@ -1578,12 +5597,102 @@
       ]
     },
     {
+      "addr": "0x0051c5b0",
+      "addr_int": 5359024,
+      "name": "R_Cinematic_StartPlayback_Now",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:161"
+      ]
+    },
+    {
+      "addr": "0x0051e7a0",
+      "addr_int": 5367712,
+      "name": "R_AllocStaticIndexBuffer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:160"
+      ]
+    },
+    {
+      "addr": "0x0051f010",
+      "addr_int": 5369872,
+      "name": "Image_Release",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:59"
+      ]
+    },
+    {
+      "addr": "0x0051f4e0",
+      "addr_int": 5371104,
+      "name": "Load_Texture",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:80"
+      ]
+    },
+    {
+      "addr": "0x00534ea0",
+      "addr_int": 5459616,
+      "name": "RB_DrawCursor",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:222"
+      ]
+    },
+    {
+      "addr": "0x005351c0",
+      "addr_int": 5460416,
+      "name": "GetDecayingLetterInfo",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:230"
+      ]
+    },
+    {
       "addr": "0x00535629",
       "addr_int": 5461545,
       "name": "DrawText2d",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/TextRenderer.cpp:1575"
+      ]
+    },
+    {
+      "addr": "0x0053abf0",
+      "addr_int": 5483504,
+      "name": "Image_LoadFromFileWithReader",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:58"
+      ]
+    },
+    {
+      "addr": "0x0053dc10",
+      "addr_int": 5495824,
+      "name": "R_SortWorldSurfaces",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:168"
+      ]
+    },
+    {
+      "addr": "0x0053fb50",
+      "addr_int": 5503824,
+      "name": "R_FlushSun",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:167"
+      ]
+    },
+    {
+      "addr": "0x0056a360",
+      "addr_int": 5677920,
+      "name": "AimAssist_ApplyAutoMelee",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:234"
       ]
     },
     {
@@ -1605,6 +5714,15 @@
       ]
     },
     {
+      "addr": "0x00573d00",
+      "addr_int": 5717248,
+      "name": "PM_CheckLadderMove",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:156"
+      ]
+    },
+    {
       "addr": "0x00573fef",
       "addr_int": 5717999,
       "name": "pitch",
@@ -1623,6 +5741,15 @@
       ]
     },
     {
+      "addr": "0x005743e0",
+      "addr_int": 5719008,
+      "name": "PMoveSingle",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:154"
+      ]
+    },
+    {
       "addr": "0x00574960",
       "addr_int": 5720416,
       "name": "PmoveSingle",
@@ -1638,6 +5765,42 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/PlayerMovement.cpp:509"
+      ]
+    },
+    {
+      "addr": "0x0057b5f0",
+      "addr_int": 5748208,
+      "name": "BG_LoadWeaponDef_LoadObj",
+      "alt_names": [],
+      "sources": [
+        "src/Game/BothGames.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x0057db20",
+      "addr_int": 5757728,
+      "name": "PC_Directive_eval",
+      "alt_names": [],
+      "sources": [
+        "src/Game/PreProcessor.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x005802c0",
+      "addr_int": 5767872,
+      "name": "CG_ScoresUp_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x00580370",
+      "addr_int": 5768048,
+      "name": "CG_ScoresDown_f",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:26"
       ]
     },
     {
@@ -1695,12 +5858,57 @@
       ]
     },
     {
+      "addr": "0x005a1f50",
+      "addr_int": 5906256,
+      "name": "CL_ConfigstringModified",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:813"
+      ]
+    },
+    {
       "addr": "0x005a210d",
       "addr_int": 5906701,
       "name": "Game",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ConfigStrings.cpp:33"
+      ]
+    },
+    {
+      "addr": "0x005a3ff0",
+      "addr_int": 5914608,
+      "name": "Con_IsDvarCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:43"
+      ]
+    },
+    {
+      "addr": "0x005a5040",
+      "addr_int": 5918784,
+      "name": "Con_DrawSolidConsole",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:41"
+      ]
+    },
+    {
+      "addr": "0x005a7f00",
+      "addr_int": 5930752,
+      "name": "Key_ClearStates",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x005a8020",
+      "addr_int": 5931040,
+      "name": "CL_WriteDemoClientArchive",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:26"
       ]
     },
     {
@@ -1718,7 +5926,8 @@
       "name": "CL_HandleRelayPacket",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/Security.cpp:184"
+        "src/Components/Modules/Security.cpp:184",
+        "src/Game/Client.cpp:18"
       ]
     },
     {
@@ -1776,12 +5985,30 @@
       ]
     },
     {
+      "addr": "0x005abd40",
+      "addr_int": 5946688,
+      "name": "CL_ParseSnapshot",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:13"
+      ]
+    },
+    {
       "addr": "0x005abd7c",
       "addr_int": 5946748,
       "name": "CL_ParseSnapshot",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Theatre.cpp:917"
+      ]
+    },
+    {
+      "addr": "0x005ac250",
+      "addr_int": 5947984,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:12"
       ]
     },
     {
@@ -1911,6 +6138,33 @@
       ]
     },
     {
+      "addr": "0x005bac50",
+      "addr_int": 6007888,
+      "name": "DB_XModelSurfsFixup",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:20"
+      ]
+    },
+    {
+      "addr": "0x005bad90",
+      "addr_int": 6008208,
+      "name": "CL_GetLocalClientActiveCount",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x005bb0a0",
+      "addr_int": 6008992,
+      "name": "DB_EnumXAssets_Internal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:8"
+      ]
+    },
+    {
       "addr": "0x005bb9ad",
       "addr_int": 6011309,
       "name": "limit",
@@ -1935,6 +6189,15 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:1456"
+      ]
+    },
+    {
+      "addr": "0x005e1120",
+      "addr_int": 6164768,
+      "name": "Scr_FreeHudElemConstStrings",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:74"
       ]
     },
     {
@@ -1983,6 +6246,15 @@
       ]
     },
     {
+      "addr": "0x005fc830",
+      "addr_int": 6277168,
+      "name": "Vec2NormalizeFast",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:258"
+      ]
+    },
+    {
       "addr": "0x006094da",
       "addr_int": 6329562,
       "name": "Cmd_ExecuteServerString",
@@ -1992,12 +6264,30 @@
       ]
     },
     {
+      "addr": "0x00609540",
+      "addr_int": 6329664,
+      "name": "Cmd_ExecuteSingleCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:37"
+      ]
+    },
+    {
       "addr": "0x006095d7",
       "addr_int": 6329815,
       "name": "Cmd_ExecuteSingleCommand",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/NetworkDebug.cpp:64"
+      ]
+    },
+    {
+      "addr": "0x0060a8d0",
+      "addr_int": 6334672,
+      "name": "Com_OpenLogFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:26"
       ]
     },
     {
@@ -2027,6 +6317,15 @@
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ServerList.cpp:1434"
+      ]
+    },
+    {
+      "addr": "0x0060b2d0",
+      "addr_int": 6337232,
+      "name": "Com_UpdateSlowMotion",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:27"
       ]
     },
     {
@@ -2098,7 +6397,26 @@
       "name": "Com_AddStartupCommands",
       "alt_names": [],
       "sources": [
-        "src/Components/Modules/ZoneBuilder.cpp:1001"
+        "src/Components/Modules/ZoneBuilder.cpp:1001",
+        "src/Game/Common.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x0060e2b0",
+      "addr_int": 6349488,
+      "name": "MSG_ReadBigString",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:106"
+      ]
+    },
+    {
+      "addr": "0x0060fdc0",
+      "addr_int": 6356416,
+      "name": "Sys_SendPacket",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:22"
       ]
     },
     {
@@ -2597,12 +6915,66 @@
       ]
     },
     {
+      "addr": "0x0061aab0",
+      "addr_int": 6400688,
+      "name": "Scr_ReadFile_FastFile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x0061abc0",
+      "addr_int": 6400960,
+      "name": "Scr_AddSourceBuffer",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:144"
+      ]
+    },
+    {
+      "addr": "0x0061c360",
+      "addr_int": 6407008,
+      "name": "AddRefToObject",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x0061db10",
+      "addr_int": 6413072,
+      "name": "Scr_ErrorInternal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:56"
+      ]
+    },
+    {
       "addr": "0x0061e3ad",
       "addr_int": 6415277,
       "name": "VM_Notify",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/GSC/ScriptError.cpp:902"
+      ]
+    },
+    {
+      "addr": "0x0061e860",
+      "addr_int": 6416480,
+      "name": "Scr_AddFloat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:51"
+      ]
+    },
+    {
+      "addr": "0x0061e8b0",
+      "addr_int": 6416560,
+      "name": "Scr_Error",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:57"
       ]
     },
     {
@@ -2615,12 +6987,39 @@
       ]
     },
     {
+      "addr": "0x006222a0",
+      "addr_int": 6431392,
+      "name": "VM_Execute_0",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:18"
+      ]
+    },
+    {
       "addr": "0x0062246e",
       "addr_int": 6431854,
       "name": "VM_Execute_0",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/GSC/ScriptError.cpp:904"
+      ]
+    },
+    {
+      "addr": "0x006242b0",
+      "addr_int": 6439600,
+      "name": "SV_GetPlayerByName",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:19"
+      ]
+    },
+    {
+      "addr": "0x00624390",
+      "addr_int": 6439824,
+      "name": "SV_GetPlayerByNum",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:20"
       ]
     },
     {
@@ -2633,12 +7032,30 @@
       ]
     },
     {
+      "addr": "0x00630ae0",
+      "addr_int": 6490848,
+      "name": "UI_SortArenas",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:197"
+      ]
+    },
+    {
       "addr": "0x006310a0",
       "addr_int": 6492320,
       "name": "Dvar_RegisterVec2",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Branding.cpp:127"
+      ]
+    },
+    {
+      "addr": "0x006315c0",
+      "addr_int": 6493632,
+      "name": "UI_TextWidth",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:200"
       ]
     },
     {
@@ -2696,6 +7113,42 @@
       ]
     },
     {
+      "addr": "0x00641460",
+      "addr_int": 6558816,
+      "name": "UI_LoadMenus",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:195"
+      ]
+    },
+    {
+      "addr": "0x00642440",
+      "addr_int": 6562880,
+      "name": "FS_IsShippedIWD",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x00643270",
+      "addr_int": 6566512,
+      "name": "FS_FOpenFileReadForThread",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:16"
+      ]
+    },
+    {
+      "addr": "0x00644140",
+      "addr_int": 6570304,
+      "name": "LargeLocalBeginRight",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:270"
+      ]
+    },
+    {
       "addr": "0x00646515",
       "addr_int": 6579477,
       "name": "Dvar_IsCheatProtected",
@@ -2705,12 +7158,30 @@
       ]
     },
     {
+      "addr": "0x00648440",
+      "addr_int": 6587456,
+      "name": "Dvar_RegisterFloat",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Dvars.cpp:6"
+      ]
+    },
+    {
       "addr": "0x0064a020",
       "addr_int": 6594592,
       "name": "PMem_Init",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/ZoneBuilder.cpp:958"
+      ]
+    },
+    {
+      "addr": "0x0064c490",
+      "addr_int": 6603920,
+      "name": "IN_MouseMove",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:243"
       ]
     },
     {
@@ -2741,12 +7212,48 @@
       ]
     },
     {
+      "addr": "0x006b8898",
+      "addr_int": 7047320,
+      "name": "longjmp_internal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:281"
+      ]
+    },
+    {
+      "addr": "0x006baa2f",
+      "addr_int": 7055919,
+      "name": "__tmainCRTStartup",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x006ca062",
+      "addr_int": 7118946,
+      "name": "__security_init_cookie",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:6"
+      ]
+    },
+    {
       "addr": "0x00739bb8",
       "addr_int": 7576504,
       "name": "Count",
       "alt_names": [],
       "sources": [
         "src/Game/Functions.cpp:372"
+      ]
+    },
+    {
+      "addr": "0x0073b848",
+      "addr_int": 7583816,
+      "name": "s_elemFields",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:339"
       ]
     },
     {
@@ -2759,12 +7266,113 @@
       ]
     },
     {
-      "addr": "0x007982f0",
-      "addr_int": 7963376,
-      "name": "Count",
+      "addr": "0x007471d0",
+      "addr_int": 7631312,
+      "name": "mapnames",
       "alt_names": [],
       "sources": [
+        "src/Game/Functions.cpp:323"
+      ]
+    },
+    {
+      "addr": "0x00797f80",
+      "addr_int": 7962496,
+      "name": "default_punctuations",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:412"
+      ]
+    },
+    {
+      "addr": "0x007982f0",
+      "addr_int": 7963376,
+      "name": "visionDefFields",
+      "alt_names": [
+        "Count"
+      ],
+      "sources": [
         "src/Game/Functions.cpp:341"
+      ]
+    },
+    {
+      "addr": "0x0079854c",
+      "addr_int": 7963980,
+      "name": "g_console_field_width",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:350"
+      ]
+    },
+    {
+      "addr": "0x00798550",
+      "addr_int": 7963984,
+      "name": "g_console_char_height",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:351"
+      ]
+    },
+    {
+      "addr": "0x00798580",
+      "addr_int": 7964032,
+      "name": "keyNames",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:363"
+      ]
+    },
+    {
+      "addr": "0x00798880",
+      "addr_int": 7964800,
+      "name": "localizedKeyNames",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:364"
+      ]
+    },
+    {
+      "addr": "0x00799328",
+      "addr_int": 7967528,
+      "name": "DB_GetXAssetNameHandlers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:23"
+      ]
+    },
+    {
+      "addr": "0x007993d8",
+      "addr_int": 7967704,
+      "name": "DB_SetXAssetNameHandlers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x00799488",
+      "addr_int": 7967880,
+      "name": "DB_GetXAssetSizeHandlers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:24"
+      ]
+    },
+    {
+      "addr": "0x007998a8",
+      "addr_int": 7968936,
+      "name": "DB_XAssetPool",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x00799ab8",
+      "addr_int": 7969464,
+      "name": "DB_ReleaseXAssetHandlers",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:25"
       ]
     },
     {
@@ -2779,10 +7387,48 @@
     {
       "addr": "0x0079d260",
       "addr_int": 7983712,
-      "name": "Count",
-      "alt_names": [],
+      "name": "infoParams",
+      "alt_names": [
+        "Count"
+      ],
       "sources": [
         "src/Game/Functions.cpp:343"
+      ]
+    },
+    {
+      "addr": "0x007a2110",
+      "addr_int": 8003856,
+      "name": "aaGlobArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:361"
+      ]
+    },
+    {
+      "addr": "0x007a2fc0",
+      "addr_int": 8007616,
+      "name": "aaInputGraph",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:366"
+      ]
+    },
+    {
+      "addr": "0x007c4ba0",
+      "addr_int": 8145824,
+      "name": "numtokens",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:413"
+      ]
+    },
+    {
+      "addr": "0x007ed3b8",
+      "addr_int": 8311736,
+      "name": "cgsArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:45"
       ]
     },
     {
@@ -2795,6 +7441,105 @@
       ]
     },
     {
+      "addr": "0x007f0f78",
+      "addr_int": 8327032,
+      "name": "cgArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:44"
+      ]
+    },
+    {
+      "addr": "0x008f3ca8",
+      "addr_int": 9387176,
+      "name": "cg_entitiesArray",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:46"
+      ]
+    },
+    {
+      "addr": "0x009fccf8",
+      "addr_int": 10472696,
+      "name": "con",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:347"
+      ]
+    },
+    {
+      "addr": "0x009fd6f8",
+      "addr_int": 10475256,
+      "name": "conDrawInputGlob",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:348"
+      ]
+    },
+    {
+      "addr": "0x00a15f3c",
+      "addr_int": 10575676,
+      "name": "safeArea",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:315"
+      ]
+    },
+    {
+      "addr": "0x00a15f48",
+      "addr_int": 10575688,
+      "name": "con_screenMin",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/TextRenderer.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x00a1a9a8",
+      "addr_int": 10594728,
+      "name": "playersKb",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:360"
+      ]
+    },
+    {
+      "addr": "0x00a1b6b0",
+      "addr_int": 10598064,
+      "name": "g_consoleField",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:352"
+      ]
+    },
+    {
+      "addr": "0x00a1b7d0",
+      "addr_int": 10598352,
+      "name": "playerKeys",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:359"
+      ]
+    },
+    {
+      "addr": "0x00a1e878",
+      "addr_int": 10610808,
+      "name": "clientConnections",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:34"
+      ]
+    },
+    {
+      "addr": "0x00a1e888",
+      "addr_int": 10610824,
+      "name": "connectedHost",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:311"
+      ]
+    },
+    {
       "addr": "0x00a5ea0c",
       "addr_int": 10873356,
       "name": "clientConnections",
@@ -2802,6 +7547,114 @@
       "sources": [
         "src/Components/Modules/Theatre.cpp:509",
         "src/Components/Modules/Theatre.cpp:528"
+      ]
+    },
+    {
+      "addr": "0x00a7fe90",
+      "addr_int": 11009680,
+      "name": "cls",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:36"
+      ]
+    },
+    {
+      "addr": "0x00b2bb88",
+      "addr_int": 11713416,
+      "name": "clientUIActives",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:38"
+      ]
+    },
+    {
+      "addr": "0x00b2c698",
+      "addr_int": 11716248,
+      "name": "clients",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:40"
+      ]
+    },
+    {
+      "addr": "0x00b2f884",
+      "addr_int": 11729028,
+      "name": "cgameFOVSensitivityScale",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:290"
+      ]
+    },
+    {
+      "addr": "0x00b2f8d0",
+      "addr_int": 11729104,
+      "name": "cl_angles",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:32"
+      ]
+    },
+    {
+      "addr": "0x01079da0",
+      "addr_int": 17276320,
+      "name": "cl_voiceCommunication",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:49"
+      ]
+    },
+    {
+      "addr": "0x0107d3e8",
+      "addr_int": 17290216,
+      "name": "gamerSettings",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:402"
+      ]
+    },
+    {
+      "addr": "0x0107e500",
+      "addr_int": 17294592,
+      "name": "g_partyData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:304"
+      ]
+    },
+    {
+      "addr": "0x01081c00",
+      "addr_int": 17308672,
+      "name": "g_lobbyData",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:303"
+      ]
+    },
+    {
+      "addr": "0x01084378",
+      "addr_int": 17318776,
+      "name": "scrPlaceView",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:357"
+      ]
+    },
+    {
+      "addr": "0x010843f0",
+      "addr_int": 17318896,
+      "name": "scrPlaceFull",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:355"
+      ]
+    },
+    {
+      "addr": "0x01084460",
+      "addr_int": 17319008,
+      "name": "scrPlaceFullUnsafe",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:356"
       ]
     },
     {
@@ -2832,6 +7685,90 @@
       ]
     },
     {
+      "addr": "0x014c0f80",
+      "addr_int": 21761920,
+      "name": "zoneData",
+      "alt_names": [
+        "g_zones"
+      ],
+      "sources": [
+        "src/Game/Database.cpp:36",
+        "src/Game/Database.cpp:94"
+      ]
+    },
+    {
+      "addr": "0x016b8a34",
+      "addr_int": 23824948,
+      "name": "zoneIndices",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:93"
+      ]
+    },
+    {
+      "addr": "0x016b8a54",
+      "addr_int": 23824980,
+      "name": "db_hashCritSect",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:34"
+      ]
+    },
+    {
+      "addr": "0x016e5554",
+      "addr_int": 24008020,
+      "name": "g_streamPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x016e5578",
+      "addr_int": 24008056,
+      "name": "g_streamPosIndex",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Database.cpp:32"
+      ]
+    },
+    {
+      "addr": "0x018565a8",
+      "addr_int": 25519528,
+      "name": "g_hudelems",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:106"
+      ]
+    },
+    {
+      "addr": "0x018835d8",
+      "addr_int": 25703896,
+      "name": "g_entities",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:21"
+      ]
+    },
+    {
+      "addr": "0x019bd680",
+      "addr_int": 26990208,
+      "name": "level_bgs",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:393"
+      ]
+    },
+    {
+      "addr": "0x01a831a8",
+      "addr_int": 27799976,
+      "name": "level",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:374"
+      ]
+    },
+    {
       "addr": "0x01a83554",
       "addr_int": 27800916,
       "name": "level",
@@ -2839,6 +7776,24 @@
       "sources": [
         "src/Components/Modules/QuickPatch.cpp:69",
         "src/Components/Modules/QuickPatch.cpp:97"
+      ]
+    },
+    {
+      "addr": "0x01a83de8",
+      "addr_int": 27803112,
+      "name": "spawnVars",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:317"
+      ]
+    },
+    {
+      "addr": "0x01aa2e00",
+      "addr_int": 27930112,
+      "name": "scr_const",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:96"
       ]
     },
     {
@@ -2869,12 +7824,474 @@
       ]
     },
     {
+      "addr": "0x01aac5d0",
+      "addr_int": 27968976,
+      "name": "cmd_args",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:283"
+      ]
+    },
+    {
+      "addr": "0x01acf8a0",
+      "addr_int": 28113056,
+      "name": "sv_cmd_args",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:284"
+      ]
+    },
+    {
+      "addr": "0x01ad3680",
+      "addr_int": 28128896,
+      "name": "s_havePlaylists",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:415"
+      ]
+    },
+    {
       "addr": "0x01ad5690",
       "addr_int": 28137104,
       "name": "LiveStorage_DoWeHaveStats",
       "alt_names": [],
       "sources": [
         "src/Components/Modules/Friends.cpp:620"
+      ]
+    },
+    {
+      "addr": "0x01ad7910",
+      "addr_int": 28145936,
+      "name": "com_errorPrintsCount",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:36"
+      ]
+    },
+    {
+      "addr": "0x01ad7eb4",
+      "addr_int": 28147380,
+      "name": "errorcode",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:38"
+      ]
+    },
+    {
+      "addr": "0x01ad8ec8",
+      "addr_int": 28151496,
+      "name": "com_fixedConsolePosition",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:34"
+      ]
+    },
+    {
+      "addr": "0x01ad8f28",
+      "addr_int": 28151592,
+      "name": "logfile",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:400"
+      ]
+    },
+    {
+      "addr": "0x01ad8f3c",
+      "addr_int": 28151612,
+      "name": "com_frameTime",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:32"
+      ]
+    },
+    {
+      "addr": "0x01ad8f84",
+      "addr_int": 28151684,
+      "name": "com_consoleLogOpenFailed",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:40"
+      ]
+    },
+    {
+      "addr": "0x01ad8fa8",
+      "addr_int": 28151720,
+      "name": "opening_qconsole",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Common.cpp:41"
+      ]
+    },
+    {
+      "addr": "0x01cb9ec0",
+      "addr_int": 30121664,
+      "name": "msgHuff",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:417"
+      ]
+    },
+    {
+      "addr": "0x01cc2ce8",
+      "addr_int": 30158056,
+      "name": "deferredQueue",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:385"
+      ]
+    },
+    {
+      "addr": "0x01cdeaa0",
+      "addr_int": 30272160,
+      "name": "scrAnimPub",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:101"
+      ]
+    },
+    {
+      "addr": "0x01cdeec0",
+      "addr_int": 30273216,
+      "name": "scrCompilePub",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:100"
+      ]
+    },
+    {
+      "addr": "0x01dc2208",
+      "addr_int": 31203848,
+      "name": "g_loadedImpureScript",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:104"
+      ]
+    },
+    {
+      "addr": "0x0201a408",
+      "addr_int": 33661960,
+      "name": "scrVarPub",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:99"
+      ]
+    },
+    {
+      "addr": "0x02040cf0",
+      "addr_int": 33819888,
+      "name": "scrVmPub",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:98"
+      ]
+    },
+    {
+      "addr": "0x02045498",
+      "addr_int": 33838232,
+      "name": "g_EndPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Script.cpp:103"
+      ]
+    },
+    {
+      "addr": "0x02089dc0",
+      "addr_int": 34119104,
+      "name": "sv_serverId_value",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:28"
+      ]
+    },
+    {
+      "addr": "0x02089e14",
+      "addr_int": 34119188,
+      "name": "sv_timeResidual",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:27"
+      ]
+    },
+    {
+      "addr": "0x031d9384",
+      "addr_int": 52269956,
+      "name": "svs_time",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:26"
+      ]
+    },
+    {
+      "addr": "0x031d938c",
+      "addr_int": 52269964,
+      "name": "svs_clientCount",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x031d9390",
+      "addr_int": 52269968,
+      "name": "svs_clients",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Server.cpp:30"
+      ]
+    },
+    {
+      "addr": "0x062d2788",
+      "addr_int": 103622536,
+      "name": "ui_numArenas",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:409"
+      ]
+    },
+    {
+      "addr": "0x062d278c",
+      "addr_int": 103622540,
+      "name": "ui_arenaBufPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:410"
+      ]
+    },
+    {
+      "addr": "0x062e2858",
+      "addr_int": 103688280,
+      "name": "uiInfoArray",
+      "alt_names": [
+        "uiContext"
+      ],
+      "sources": [
+        "src/Game/Functions.cpp:292",
+        "src/Game/Functions.cpp:398"
+      ]
+    },
+    {
+      "addr": "0x062e4b78",
+      "addr_int": 103697272,
+      "name": "sharedUiInfo",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:354"
+      ]
+    },
+    {
+      "addr": "0x062e50a0",
+      "addr_int": 103698592,
+      "name": "gameTypeCount",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:299"
+      ]
+    },
+    {
+      "addr": "0x062e50a4",
+      "addr_int": 103698596,
+      "name": "gameTypes",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:300"
+      ]
+    },
+    {
+      "addr": "0x062e6930",
+      "addr_int": 103704880,
+      "name": "arenaCount",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:296"
+      ]
+    },
+    {
+      "addr": "0x062e6934",
+      "addr_int": 103704884,
+      "name": "arenas",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:297"
+      ]
+    },
+    {
+      "addr": "0x063a50fc",
+      "addr_int": 104485116,
+      "name": "g_waitingForKey",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:387"
+      ]
+    },
+    {
+      "addr": "0x063d0bb8",
+      "addr_int": 104663992,
+      "name": "fs_gamedir",
+      "alt_names": [],
+      "sources": [
+        "src/Game/FileSystem.cpp:35"
+      ]
+    },
+    {
+      "addr": "0x063d9780",
+      "addr_int": 104699776,
+      "name": "g_largeLocalRightPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:406"
+      ]
+    },
+    {
+      "addr": "0x063d97b4",
+      "addr_int": 104699828,
+      "name": "g_largeLocalPos",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:405"
+      ]
+    },
+    {
+      "addr": "0x06499bc8",
+      "addr_int": 105487304,
+      "name": "s_criticalSection",
+      "alt_names": [],
+      "sources": [
+        "src/Game/System.cpp:35"
+      ]
+    },
+    {
+      "addr": "0x0649a1a0",
+      "addr_int": 105488800,
+      "name": "milesGlobal",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:29"
+      ]
+    },
+    {
+      "addr": "0x0649d630",
+      "addr_int": 105502256,
+      "name": "window_center_y",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:383"
+      ]
+    },
+    {
+      "addr": "0x0649d638",
+      "addr_int": 105502264,
+      "name": "window_center_x",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:382"
+      ]
+    },
+    {
+      "addr": "0x0649d640",
+      "addr_int": 105502272,
+      "name": "s_wmv",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:380"
+      ]
+    },
+    {
+      "addr": "0x0649fb61",
+      "addr_int": 105511777,
+      "name": "g_quitRequested",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:22"
+      ]
+    },
+    {
+      "addr": "0x064a1e28",
+      "addr_int": 105520680,
+      "name": "localIP",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:309"
+      ]
+    },
+    {
+      "addr": "0x064a1e68",
+      "addr_int": 105520744,
+      "name": "numIP",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:308"
+      ]
+    },
+    {
+      "addr": "0x064a3008",
+      "addr_int": 105525256,
+      "name": "ip_socket",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:313"
+      ]
+    },
+    {
+      "addr": "0x064a3ac8",
+      "addr_int": 105528008,
+      "name": "g_wv",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Game.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x066b7008",
+      "addr_int": 107704328,
+      "name": "g_serverSession",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:306"
+      ]
+    },
+    {
+      "addr": "0x066c9bc2",
+      "addr_int": 107781058,
+      "name": "g_lobbyCreateInProgress",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:302"
+      ]
+    },
+    {
+      "addr": "0x066e1c90",
+      "addr_int": 107879568,
+      "name": "gfxCfg",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Client.cpp:42"
+      ]
+    },
+    {
+      "addr": "0x06944914",
+      "addr_int": 110381332,
+      "name": "scene",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:345"
+      ]
+    },
+    {
+      "addr": "0x069f105c",
+      "addr_int": 111087708,
+      "name": "specular1",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:555"
+      ]
+    },
+    {
+      "addr": "0x069f92d4",
+      "addr_int": 111121108,
+      "name": "specular2",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:556"
       ]
     }
   ]

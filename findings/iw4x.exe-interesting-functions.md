@@ -117,7 +117,7 @@ EXE_MIGRATION_IN_PROGRESS`, `    rejected connect: host migration in progress
 
 ## 📁 Par catégorie
 
-### `network` — 154
+### `network` — 165
 
 | Adresse | Taille | Callers | Strings/Imports |
 |---|---|---|---|
@@ -149,14 +149,12 @@ EXE_MIGRATION_IN_PROGRESS` |
 | `0x00487eb0` | 1,233 | 3 | `%s: Delta request from out of date packet - delta is against %i, needs to be < %i.
 `, `%s: Delta against baseline snapshot (by client request)
 ` |
+| `0x0041d010` | 1,213 | 2 | `stats`, `protocol` |
 | `0x005ab550` | 1,167 | 1 | `%3i:  unchanged: %i
 `, `%3i:  delta: %i
 ` |
 | `0x006aa6a0` | 1,101 | 2 | `Connection time-out`, `%hu.%hu.%hu.%hu`, `WSOCK32.DLL!Ordinal_9`, `WSOCK32.DLL!Ordinal_15` |
-| `0x004e38a0` | 1,070 | 1 | `Couldn't find our own XUID in the session.
-`, `Received voice packet from ourself?  (our client num is %i)  relayList is %i
-` |
-| … | (139 autres) | | |
+| … | (150 autres) | | |
 
 ### `audio` — 94
 
@@ -184,7 +182,51 @@ EXE_MIGRATION_IN_PROGRESS` |
 | `0x00449bf0` | 145 | 1 | `MSS32.DLL!_AIL_stream_sample_handle@4` |
 | … | (79 autres) | | |
 
-### `render` — 14
+### `scriptengine` — 57
+
+| Adresse | Taille | Callers | Strings/Imports |
+|---|---|---|---|
+| `0x004066a0` | 1,156 | 5 | `Scr_DumpScriptThreads`, `Cannot dump script threads: out of memory
+` |
+| `0x004ed9a0` | 1,046 | 1 | `maps/mp/gametypes/%s`, `maps/mp/gametypes/_callbacksetup` |
+| `0x0045f940` | 581 | 2 | `%s is too long. Max length is %i
+`, `Entity is not a player` |
+| `0x0061c7f0` | 463 | 1 | `Scr_AddFields`, `float` |
+| `0x00421ee0` | 371 | 2 | — |
+| `0x004c0e70` | 226 | 5 | — |
+| `0x00411560` | 196 | 90 | `type %s is not a vector`, `parameter %d does not exist` |
+| `0x00462100` | 179 | 4 | `type %s is not an object`, `parameter %d does not exist` |
+| `0x004f31d0` | 179 | 36 | `type %s is not an int`, `parameter %d does not exist` |
+| `0x00443140` | 153 | 92 | `type %s is not a float`, `parameter %d does not exist` |
+| `0x004e8390` | 147 | 1 | — |
+| `0x004165e0` | 141 | 3 | — |
+| `0x004828e0` | 139 | 13 | `type %s is not an object`, `parameter %d does not exist` |
+| `0x004234f0` | 137 | 15 | — |
+| `0x005937f0` | 132 | 1 | `cg_objectiveText`, `hud_drawHud` |
+| … | (42 autres) | | |
+
+### `dvar` — 31
+
+| Adresse | Taille | Callers | Strings/Imports |
+|---|---|---|---|
+| `0x004f28e0` | 461 | 36 | — |
+| `0x004f1bf0` | 304 | 1 | `toggle`, `togglep` |
+| `0x004ee430` | 180 | 8 | `External Dvar` |
+| `0x0048b8d0` | 140 | 2 | `dvar_restart` |
+| `0x00466320` | 123 | 2 | `External Dvar` |
+| `0x00471500` | 117 | 27 | — |
+| `0x004d8220` | 115 | 1 | `External Dvar` |
+| `0x0045c4d0` | 114 | 13 | `External Dvar` |
+| `0x004ef8e0` | 109 | 19 | — |
+| `0x004918b0` | 107 | 4 | — |
+| `0x004fc770` | 107 | 2 | `External Dvar` |
+| `0x0044f060` | 104 | 36 | `External Dvar` |
+| `0x004f6070` | 101 | 33 | — |
+| `0x00648440` | 93 | 743 | — |
+| `0x00412e40` | 85 | 35 | — |
+| … | (16 autres) | | |
+
+### `render` — 18
 
 | Adresse | Taille | Callers | Strings/Imports |
 |---|---|---|---|
@@ -193,69 +235,80 @@ EXE_MIGRATION_IN_PROGRESS` |
 | `0x0050cc10` | 504 | 4 | `R_AddDObjSurfaces` |
 | `0x0050c7d0` | 364 | 8 | `R_AddXModelSurfaces` |
 | `0x0050c390` | 341 | 2 | `R_AddBModelSurfacesCamera` |
+| `0x00509d80` | 303 | 10 | — |
 | `0x00509770` | 257 | 11 | `R_AddCmdDrawStretchPic: NOT DRAWING WITH MATERIAL "%s", because it has a fogable technique.
 ` |
 | `0x00509880` | 257 | 1 | `R_AddCmdDrawStretchPicFlipST: NOT DRAWING WITH MATERIAL "%s", because it has a fogable technique.
 ` |
+| `0x00506090` | 236 | 5 | `WINMM.DLL!timeGetTime` |
 | `0x0050c4f0` | 201 | 8 | `R_AddBModelSurfaces` |
 | `0x0051d0a0` | 194 | 2 | `R_AddDebugString` |
+| `0x00534ea0` | 185 | 2 | — |
 | `0x0051ceb0` | 183 | 3 | `R_AddDebugLine` |
+| `0x004f84c0` | 151 | 8 | `console`, `fonts/consoleFont` |
 | `0x004eef40` | 142 | 1 | `Unknown video card`, `D3D9.DLL!Direct3DCreate9` |
-| `0x00507bb0` | 138 | 1 | `----- R_Init -----
-`, `fonts/smalldevfont` |
-| `0x00523390` | 101 | 1 | `ERROR: Material_GetTextureSize: invalid material
-`, `ERROR: Material_GetTextureSize: texture count is %d expected to be exactly 1.
-` |
-| `0x005073f0` | 95 | 1 | `Getting Direct3D 9 interface...
-`, `Direct3D 9 failed to initialize
-`, `D3D9.DLL!Direct3DCreate9` |
+| … | (3 autres) | | |
 
-### `scriptengine` — 7
-
-| Adresse | Taille | Callers | Strings/Imports |
-|---|---|---|---|
-| `0x004066a0` | 1,156 | 5 | `Scr_DumpScriptThreads`, `Cannot dump script threads: out of memory
-` |
-| `0x0061c7f0` | 463 | 1 | `Scr_AddFields`, `float` |
-| `0x005937f0` | 132 | 1 | `cg_objectiveText`, `hud_drawHud` |
-| `0x005f1080` | 122 | 0 | `Scr_RandomFloatRange parms: %d %d `, `Scr_RandomFloatRange's second parameter must be greater than the first.
-` |
-| `0x00611b60` | 96 | 1 | `Scr_AnimTreeParse`, `bad token` |
-| `0x004b8740` | 28 | 1 | `Scr_InitAllocNode` |
-| `0x004e1ed0` | 28 | 1 | `Scr_BeginLoadScripts` |
-
-### `filesystem` — 5
+### `filesystem` — 16
 
 | Adresse | Taille | Callers | Strings/Imports |
 |---|---|---|---|
 | `0x00643270` | 1,625 | 7 | `Can't find %s
 `, `Impure client detected. Invalid .IWD files referenced!`, `KERNEL32.DLL!InterlockedCompareExchange` |
+| `0x004a63d0` | 362 | 3 | — |
 | `0x0043fd90` | 216 | 2 | `FS_FOpenFileWrite: %s
 ` |
 | `0x00410bb0` | 208 | 2 | `FS_FOpenFileAppend: %s
 ` |
+| `0x004a04c0` | 202 | 17 | — |
+| `0x004c0700` | 184 | 10 | — |
+| `0x004f4b90` | 149 | 10 | — |
 | `0x00412200` | 145 | 1 | `FS_FOpenFileOverWrite: Failed to open %s for writing.  It either does not exist or is in a iwd file.`, `FS_FOpenFileOverWrite: %s
 `, `KERNEL32.DLL!GetFileAttributesA`, `KERNEL32.DLL!SetFileAttributesA` |
+| `0x004576c0` | 126 | 29 | — |
 | `0x00642250` | 115 | 5 | `FS_FOpenFileWrite: %s
 ` |
+| `0x00426450` | 104 | 1 | `Failed to open %s
+` |
+| `0x0048a5b0` | 78 | 2 | — |
+| `0x004c06e0` | 32 | 8 | — |
+| `0x0046cbf0` | 31 | 8 | — |
+| `0x004ba530` | 22 | 5 | — |
+| … | (1 autres) | | |
 
-### `cmd` — 3
+### `log` — 5
+
+| Adresse | Taille | Callers | Strings/Imports |
+|---|---|---|---|
+| `0x0046a630` | 890 | 2 | `
+------- sound system initialization -------
+`, `Cause a Com_Error if a sound file is missing.` |
+| `0x004b22d0` | 521 | 602 | `error start: ---
+`, `--- error end
+` |
+| `0x0043d570` | 212 | 81 | `USER32.DLL!GetMessageA`, `USER32.DLL!TranslateMessage` |
+| `0x004aa830` | 127 | 10 | — |
+| `0x004e0200` | 120 | 298 | — |
+
+### `cmd` — 5
 
 | Adresse | Taille | Callers | Strings/Imports |
 |---|---|---|---|
 | `0x0048f660` | 424 | 1 | `cmdlist`, `Cmd_AddCommand: %s already defined
 ` |
+| `0x00609540` | 311 | 13 | — |
 | `0x004dce00` | 137 | 29 | `Cmd_AddServerCommand: %s already defined
 ` |
 | `0x00470090` | 79 | 294 | `Cmd_AddCommand: %s already defined
 ` |
+| `0x0040bb60` | 73 | 7 | — |
 
-### `dvar` — 2
+### `input` — 2
 
 | Adresse | Taille | Callers | Strings/Imports |
 |---|---|---|---|
-| `0x004f1bf0` | 304 | 1 | `toggle`, `togglep` |
-| `0x0048b8d0` | 140 | 2 | `dvar_restart` |
+| `0x0064c490` | 177 | 3 | `USER32.DLL!GetForegroundWindow`, `USER32.DLL!GetCursorPos` |
+| `0x004c84d0` | 100 | 1 | — |
 
 ### `crypto` — 1
 
@@ -263,12 +316,4 @@ EXE_MIGRATION_IN_PROGRESS` |
 |---|---|---|---|
 | `0x006abff0` | 971 | 1 | `Digest`, `nonce` |
 
-### `log` — 1
-
-| Adresse | Taille | Callers | Strings/Imports |
-|---|---|---|---|
-| `0x0046a630` | 890 | 2 | `
-------- sound system initialization -------
-`, `Cause a Com_Error if a sound file is missing.` |
-
-### `other` — 11,198 (non listées)
+### `other` — 11,085 (non listées)

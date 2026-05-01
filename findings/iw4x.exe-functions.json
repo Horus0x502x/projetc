@@ -3,16 +3,17 @@
   "image_base": "0x400000",
   "function_count": 11479,
   "by_category": {
-    "other": 11198,
-    "network": 154,
-    "filesystem": 5,
-    "scriptengine": 7,
+    "other": 11085,
+    "network": 165,
+    "filesystem": 16,
+    "scriptengine": 57,
     "audio": 94,
     "crypto": 1,
-    "log": 1,
-    "render": 14,
-    "cmd": 3,
-    "dvar": 2
+    "log": 5,
+    "render": 18,
+    "dvar": 31,
+    "cmd": 5,
+    "input": 2
   },
   "functions": [
     {
@@ -155,7 +156,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005196c0",
+      "name": "R_RegisterDvars",
       "addr": "0x005196c0",
       "size": 6930,
       "callers": 2,
@@ -327,7 +328,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004295a0",
+      "name": "Playlist_ParsePlaylists",
       "addr": "0x004295a0",
       "size": 4010,
       "callers": 1,
@@ -347,7 +348,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00460480",
+      "name": "SV_DirectConnect",
       "addr": "0x00460480",
       "size": 3797,
       "callers": 1,
@@ -482,7 +483,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00404ca0",
+      "name": "CL_InitOnceForAllClients",
       "addr": "0x00404ca0",
       "size": 3460,
       "callers": 1,
@@ -1181,7 +1182,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005743e0",
+      "name": "PMoveSingle",
       "addr": "0x005743e0",
       "size": 2157,
       "callers": 1,
@@ -1878,7 +1879,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00643270",
+      "name": "FS_FOpenFileReadForThread",
       "addr": "0x00643270",
       "size": 1625,
       "callers": 7,
@@ -2575,7 +2576,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c4a00",
+      "name": "Menu_HandleKey",
       "addr": "0x004c4a00",
       "size": 1408,
       "callers": 2,
@@ -3066,7 +3067,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e5930",
+      "name": "DB_LoadXAssets",
       "addr": "0x004e5930",
       "size": 1302,
       "callers": 12,
@@ -3154,7 +3155,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005ac250",
+      "name": "CL_ParseGamestate",
       "addr": "0x005ac250",
       "size": 1292,
       "callers": 1,
@@ -3202,7 +3203,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005abd40",
+      "name": "CL_ParseSnapshot",
       "addr": "0x005abd40",
       "size": 1280,
       "callers": 1,
@@ -3358,7 +3359,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00491f00",
+      "name": "MSG_ReadDeltaUsercmdKey",
       "addr": "0x00491f00",
       "size": 1253,
       "callers": 1,
@@ -3489,7 +3490,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060ad10",
+      "name": "Com_InitDvars",
       "addr": "0x0060ad10",
       "size": 1222,
       "callers": 2,
@@ -3531,7 +3532,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041d010",
+      "name": "CL_CheckForResend",
       "addr": "0x0041d010",
       "size": 1213,
       "callers": 2,
@@ -3548,7 +3549,7 @@
         "steamid"
       ],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_0056a700",
@@ -4455,7 +4456,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00401950",
+      "name": "SV_UserinfoChanged",
       "addr": "0x00401950",
       "size": 1060,
       "callers": 3,
@@ -4530,7 +4531,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ed9a0",
+      "name": "GScr_LoadGameTypeScript",
       "addr": "0x004ed9a0",
       "size": 1046,
       "callers": 1,
@@ -4547,7 +4548,7 @@
         "CodeCallback_VehicleDamage"
       ],
       "imports": [],
-      "category": "network"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0054a2e0",
@@ -5737,7 +5738,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004823a0",
+      "name": "FS_Startup",
       "addr": "0x004823a0",
       "size": 921,
       "callers": 2,
@@ -6192,7 +6193,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0046a630",
+      "name": "SND_Init",
       "addr": "0x0046a630",
       "size": 890,
       "callers": 2,
@@ -7107,7 +7108,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00642440",
+      "name": "FS_IsShippedIWD",
       "addr": "0x00642440",
       "size": 832,
       "callers": 1,
@@ -7186,7 +7187,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00426b80",
+      "name": "ScriptCompile",
       "addr": "0x00426b80",
       "size": 828,
       "callers": 1,
@@ -7268,7 +7269,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a95b0",
+      "name": "UI_UpdateArenas",
       "addr": "0x004a95b0",
       "size": 824,
       "callers": 15,
@@ -7508,7 +7509,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0056a360",
+      "name": "AimAssist_ApplyAutoMelee",
       "addr": "0x0056a360",
       "size": 814,
       "callers": 1,
@@ -8232,7 +8233,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045a660",
+      "name": "Sys_ListFiles",
       "addr": "0x0045a660",
       "size": 778,
       "callers": 2,
@@ -8398,7 +8399,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043ded0",
+      "name": "PM_UpdateLean",
       "addr": "0x0043ded0",
       "size": 771,
       "callers": 2,
@@ -9102,7 +9103,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00407930",
+      "name": "DB_FindXAssetHeader",
       "addr": "0x00407930",
       "size": 727,
       "callers": 39,
@@ -9910,7 +9911,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00573d00",
+      "name": "PM_CheckLadderMove",
       "addr": "0x00573d00",
       "size": 691,
       "callers": 1,
@@ -10386,7 +10387,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00468960",
+      "name": "some",
       "addr": "0x00468960",
       "size": 671,
       "callers": 2,
@@ -10683,7 +10684,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a4d50",
+      "name": "FireWeapon",
       "addr": "0x004a4d50",
       "size": 659,
       "callers": 1,
@@ -10716,7 +10717,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00402d30",
+      "name": "StuckInClient",
       "addr": "0x00402d30",
       "size": 658,
       "callers": 1,
@@ -10903,7 +10904,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0051f4e0",
+      "name": "Load_Texture",
       "addr": "0x0051f4e0",
       "size": 649,
       "callers": 1,
@@ -11043,7 +11044,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00462ab0",
+      "name": "Encode_Init",
       "addr": "0x00462ab0",
       "size": 645,
       "callers": 1,
@@ -11668,7 +11669,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00488c10",
+      "name": "Field_AdjustScroll",
       "addr": "0x00488c10",
       "size": 616,
       "callers": 8,
@@ -11988,7 +11989,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004582f0",
+      "name": "G_LocalizedStringIndex",
       "addr": "0x004582f0",
       "size": 604,
       "callers": 1,
@@ -12764,7 +12765,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045f940",
+      "name": "Scr_ConstructMessageString",
       "addr": "0x0045f940",
       "size": 581,
       "callers": 2,
@@ -12777,10 +12778,10 @@
         "non-localized %s strings are not allowed to have letters in them: \"%s\""
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
-      "name": "FUN_004a57d0",
+      "name": "CAll",
       "addr": "0x004a57d0",
       "size": 581,
       "callers": 1,
@@ -12937,7 +12938,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004402c0",
+      "name": "Bullet_Fire",
       "addr": "0x004402c0",
       "size": 576,
       "callers": 4,
@@ -13046,7 +13047,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042bc70",
+      "name": "player_die",
       "addr": "0x0042bc70",
       "size": 573,
       "callers": 2,
@@ -13095,7 +13096,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a9e90",
+      "name": "CL_ParseServerMessage",
       "addr": "0x004a9e90",
       "size": 572,
       "callers": 2,
@@ -13755,7 +13756,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0046b7c0",
+      "name": "CL_GetSnapshot",
       "addr": "0x0046b7c0",
       "size": 549,
       "callers": 1,
@@ -14513,7 +14514,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044c380",
+      "name": "PM_Weapon",
       "addr": "0x0044c380",
       "size": 526,
       "callers": 3,
@@ -14741,7 +14742,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b22d0",
+      "name": "Com_Error",
       "addr": "0x004b22d0",
       "size": 521,
       "callers": 602,
@@ -14752,7 +14753,7 @@
         "--- error end\n"
       ],
       "imports": [],
-      "category": "other"
+      "category": "log"
     },
     {
       "name": "FUN_0050c5c0",
@@ -15652,7 +15653,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004accd0",
+      "name": "PC_ReadToken",
       "addr": "0x004accd0",
       "size": 501,
       "callers": 3,
@@ -16255,7 +16256,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a1f50",
+      "name": "CL_ConfigstringModified",
       "addr": "0x005a1f50",
       "size": 489,
       "callers": 1,
@@ -16441,7 +16442,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d1600",
+      "name": "SV_DropClient",
       "addr": "0x004d1600",
       "size": 483,
       "callers": 21,
@@ -16616,7 +16617,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_006222a0",
+      "name": "VM_Execute_0",
       "addr": "0x006222a0",
       "size": 480,
       "callers": 3,
@@ -17171,7 +17172,7 @@
       "category": "audio"
     },
     {
-      "name": "FUN_004ae560",
+      "name": "Info_SetValueForKey",
       "addr": "0x004ae560",
       "size": 468,
       "callers": 18,
@@ -17433,7 +17434,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f28e0",
+      "name": "Dvar_RegisterColor",
       "addr": "0x004f28e0",
       "size": 461,
       "callers": 36,
@@ -17441,10 +17442,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
-      "name": "FUN_00433d30",
+      "name": "CL_ConnectFromParty",
       "addr": "0x00433d30",
       "size": 460,
       "callers": 1,
@@ -18284,7 +18285,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d03c0",
+      "name": "CL_AddDebugStarWithText",
       "addr": "0x004d03c0",
       "size": 444,
       "callers": 4,
@@ -18621,7 +18622,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0053dc10",
+      "name": "R_SortWorldSurfaces",
       "addr": "0x0053dc10",
       "size": 435,
       "callers": 2,
@@ -18678,7 +18679,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0053abf0",
+      "name": "Image_LoadFromFileWithReader",
       "addr": "0x0053abf0",
       "size": 434,
       "callers": 4,
@@ -19197,7 +19198,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048f660",
+      "name": "Cmd_Init",
       "addr": "0x0048f660",
       "size": 424,
       "callers": 1,
@@ -19260,7 +19261,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004027a0",
+      "name": "UI_ParseInfos",
       "addr": "0x004027a0",
       "size": 421,
       "callers": 1,
@@ -21256,7 +21257,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00435950",
+      "name": "LSP",
       "addr": "0x00435950",
       "size": 393,
       "callers": 1,
@@ -22240,7 +22241,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042ce90",
+      "name": "CL_DownloadsComplete",
       "addr": "0x0042ce90",
       "size": 381,
       "callers": 1,
@@ -22294,7 +22295,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005909e0",
+      "name": "DrawListString",
       "addr": "0x005909e0",
       "size": 381,
       "callers": 7,
@@ -22984,7 +22985,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00421ee0",
+      "name": "Scr_ShutdownSystem",
       "addr": "0x00421ee0",
       "size": 371,
       "callers": 2,
@@ -22992,7 +22993,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00487960",
@@ -23524,7 +23525,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00403770",
+      "name": "G_SpawnItem",
       "addr": "0x00403770",
       "size": 363,
       "callers": 2,
@@ -23610,7 +23611,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a63d0",
+      "name": "FS_Seek",
       "addr": "0x004a63d0",
       "size": 362,
       "callers": 3,
@@ -23618,7 +23619,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_00504410",
@@ -23678,7 +23679,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044c9d0",
+      "name": "G_FreeEntity",
       "addr": "0x0044c9d0",
       "size": 361,
       "callers": 22,
@@ -23856,7 +23857,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005351c0",
+      "name": "GetDecayingLetterInfo",
       "addr": "0x005351c0",
       "size": 359,
       "callers": 1,
@@ -24033,7 +24034,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004982e0",
+      "name": "SV_SetConfigstring",
       "addr": "0x004982e0",
       "size": 357,
       "callers": 49,
@@ -24104,7 +24105,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004691a0",
+      "name": "AngleVectors",
       "addr": "0x004691a0",
       "size": 355,
       "callers": 61,
@@ -24212,7 +24213,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045ad90",
+      "name": "Load_FxElemDef",
       "addr": "0x0045ad90",
       "size": 353,
       "callers": 1,
@@ -24493,7 +24494,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00424680",
+      "name": "Weapon_RocketLauncher_Fire",
       "addr": "0x00424680",
       "size": 350,
       "callers": 3,
@@ -25219,7 +25220,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e7720",
+      "name": "NET_ErrorString",
       "addr": "0x004e7720",
       "size": 343,
       "callers": 16,
@@ -25348,7 +25349,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00683370",
+      "name": "steam",
       "addr": "0x00683370",
       "size": 342,
       "callers": 1,
@@ -25512,7 +25513,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00454a70",
+      "name": "CG_DrawDisconnect",
       "addr": "0x00454a70",
       "size": 340,
       "callers": 2,
@@ -25673,7 +25674,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047c820",
+      "name": "Info_ValueForKey",
       "addr": "0x0047c820",
       "size": 338,
       "callers": 52,
@@ -25948,7 +25949,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049cc30",
+      "name": "RMesg_SendMessages",
       "addr": "0x0049cc30",
       "size": 335,
       "callers": 4,
@@ -25961,7 +25962,7 @@
       "category": "network"
     },
     {
-      "name": "FUN_004aa430",
+      "name": "ClientDisconnect",
       "addr": "0x004aa430",
       "size": 335,
       "callers": 1,
@@ -26312,7 +26313,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00461a50",
+      "name": "FS_Restart",
       "addr": "0x00461a50",
       "size": 331,
       "callers": 4,
@@ -26351,7 +26352,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044fa20",
+      "name": "Touch_Item",
       "addr": "0x0044fa20",
       "size": 330,
       "callers": 0,
@@ -26891,7 +26892,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00445240",
+      "name": "ClientUserinfoChanged",
       "addr": "0x00445240",
       "size": 325,
       "callers": 5,
@@ -27661,7 +27662,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0051c5b0",
+      "name": "R_Cinematic_StartPlayback_Now",
       "addr": "0x0051c5b0",
       "size": 318,
       "callers": 1,
@@ -27887,7 +27888,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e1820",
+      "name": "PC_Directive_undef",
       "addr": "0x004e1820",
       "size": 316,
       "callers": 2,
@@ -28119,7 +28120,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004aef00",
+      "name": "NET_OutOfBandPrint",
       "addr": "0x004aef00",
       "size": 314,
       "callers": 52,
@@ -28380,7 +28381,7 @@
       "category": "network"
     },
     {
-      "name": "FUN_0049f0b0",
+      "name": "Com_ClientPacketEvent",
       "addr": "0x0049f0b0",
       "size": 312,
       "callers": 1,
@@ -28388,7 +28389,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_005189d0",
@@ -28572,7 +28573,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00609540",
+      "name": "Cmd_ExecuteSingleCommand",
       "addr": "0x00609540",
       "size": 311,
       "callers": 13,
@@ -28580,7 +28581,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "cmd"
     },
     {
       "name": "FUN_00650910",
@@ -29075,7 +29076,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045d1c0",
+      "name": "Hunk_UserAlloc",
       "addr": "0x0045d1c0",
       "size": 306,
       "callers": 19,
@@ -29438,7 +29439,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00509d80",
+      "name": "R_AddCmdDrawText",
       "addr": "0x00509d80",
       "size": 303,
       "callers": 10,
@@ -29446,7 +29447,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "render"
     },
     {
       "name": "FUN_0056b060",
@@ -29592,7 +29593,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00458160",
+      "name": "Com_ServerPacketEvent",
       "addr": "0x00458160",
       "size": 301,
       "callers": 2,
@@ -29600,7 +29601,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_004dca50",
@@ -30900,7 +30901,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a7f00",
+      "name": "Key_ClearStates",
       "addr": "0x005a7f00",
       "size": 287,
       "callers": 1,
@@ -31242,7 +31243,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004970f0",
+      "name": "UI_KeyEvent",
       "addr": "0x004970f0",
       "size": 283,
       "callers": 5,
@@ -31255,7 +31256,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b16f0",
+      "name": "PC_ReadSourceToken",
       "addr": "0x004b16f0",
       "size": 283,
       "callers": 15,
@@ -31616,7 +31617,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049c7e0",
+      "name": "NET_OutOfBandData",
       "addr": "0x0049c7e0",
       "size": 279,
       "callers": 18,
@@ -32078,7 +32079,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00506ac0",
+      "name": "R_LoadGraphicsAssets",
       "addr": "0x00506ac0",
       "size": 276,
       "callers": 1,
@@ -32495,7 +32496,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004aab80",
+      "name": "Com_BeginParseSession",
       "addr": "0x004aab80",
       "size": 273,
       "callers": 19,
@@ -33019,7 +33020,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00502580",
+      "name": "Netchan_Init",
       "addr": "0x00502580",
       "size": 270,
       "callers": 1,
@@ -33714,7 +33715,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fe910",
+      "name": "Byte4PackRgba",
       "addr": "0x004fe910",
       "size": 264,
       "callers": 4,
@@ -34693,7 +34694,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00509770",
+      "name": "R_AddCmdDrawStretchPic",
       "addr": "0x00509770",
       "size": 257,
       "callers": 11,
@@ -34870,7 +34871,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00409010",
+      "name": "NET_StringToAdr",
       "addr": "0x00409010",
       "size": 256,
       "callers": 1,
@@ -34880,7 +34881,7 @@
         "localhost"
       ],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_00455610",
@@ -35066,7 +35067,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d77d0",
+      "name": "Menu_IsVisible",
       "addr": "0x004d77d0",
       "size": 255,
       "callers": 3,
@@ -35310,7 +35311,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e9740",
+      "name": "UI_ReplaceConversions",
       "addr": "0x004e9740",
       "size": 253,
       "callers": 5,
@@ -35429,7 +35430,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d4000",
+      "name": "Com_Quit_f",
       "addr": "0x004d4000",
       "size": 252,
       "callers": 4,
@@ -35823,7 +35824,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00463820",
+      "name": "MSG_WriteString",
       "addr": "0x00463820",
       "size": 249,
       "callers": 48,
@@ -36743,7 +36744,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005001a0",
+      "name": "Voice_IncomingVoiceData",
       "addr": "0x005001a0",
       "size": 244,
       "callers": 2,
@@ -37245,7 +37246,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004563d0",
+      "name": "CL_GetClientName",
       "addr": "0x004563d0",
       "size": 241,
       "callers": 7,
@@ -37584,7 +37585,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b3b10",
+      "name": "Party_UpdateClanName",
       "addr": "0x004b3b10",
       "size": 239,
       "callers": 1,
@@ -37784,7 +37785,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00437190",
+      "name": "RemoveRefToObject",
       "addr": "0x00437190",
       "size": 238,
       "callers": 59,
@@ -37806,7 +37807,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bfbe0",
+      "name": "Con_InitChannels",
       "addr": "0x004bfbe0",
       "size": 238,
       "callers": 1,
@@ -37842,7 +37843,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e6950",
+      "name": "PS_CreatePunctuationTable",
       "addr": "0x004e6950",
       "size": 238,
       "callers": 1,
@@ -38157,7 +38158,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f5090",
+      "name": "SND_InitDriver",
       "addr": "0x004f5090",
       "size": 236,
       "callers": 2,
@@ -38191,7 +38192,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00506090",
+      "name": "Material_Process2DTextureCoordsForAtlasing",
       "addr": "0x00506090",
       "size": 236,
       "callers": 5,
@@ -38201,7 +38202,7 @@
       "imports": [
         "WINMM.DLL!timeGetTime"
       ],
-      "category": "other"
+      "category": "render"
     },
     {
       "name": "FUN_00586170",
@@ -38557,7 +38558,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049cf70",
+      "name": "Steam_JoinLobby",
       "addr": "0x0049cf70",
       "size": 234,
       "callers": 2,
@@ -38965,7 +38966,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00502a30",
+      "name": "SE_Load",
       "addr": "0x00502a30",
       "size": 232,
       "callers": 1,
@@ -39466,7 +39467,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cdc50",
+      "name": "DB_GetRawBuffer",
       "addr": "0x004cdc50",
       "size": 229,
       "callers": 8,
@@ -39480,7 +39481,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ff220",
+      "name": "Com_InitParse",
       "addr": "0x004ff220",
       "size": 229,
       "callers": 1,
@@ -39777,7 +39778,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004511f0",
+      "name": "G_TempEntity",
       "addr": "0x004511f0",
       "size": 227,
       "callers": 20,
@@ -39955,7 +39956,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c0e70",
+      "name": "Scr_AddClassField",
       "addr": "0x004c0e70",
       "size": 226,
       "callers": 5,
@@ -39963,7 +39964,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004eed90",
@@ -40184,7 +40185,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004226f0",
+      "name": "G_Spawn",
       "addr": "0x004226f0",
       "size": 225,
       "callers": 14,
@@ -40341,7 +40342,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00490a70",
+      "name": "PC_Directive_if_def",
       "addr": "0x00490a70",
       "size": 224,
       "callers": 1,
@@ -40370,7 +40371,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049c0d0",
+      "name": "UI_DrawText",
       "addr": "0x0049c0d0",
       "size": 224,
       "callers": 51,
@@ -40762,7 +40763,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00446e20",
+      "name": "Com_SetSlowMotion",
       "addr": "0x00446e20",
       "size": 221,
       "callers": 2,
@@ -41194,7 +41195,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00469880",
+      "name": "NET_AdrToString",
       "addr": "0x00469880",
       "size": 219,
       "callers": 29,
@@ -41207,10 +41208,10 @@
         "%02x%02x%02x%02x.%02x%02x%02x%02x%02x%02x:%i"
       ],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
-      "name": "FUN_004d7030",
+      "name": "upnp",
       "addr": "0x004d7030",
       "size": 219,
       "callers": 2,
@@ -41436,7 +41437,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_006242b0",
+      "name": "SV_GetPlayerByName",
       "addr": "0x006242b0",
       "size": 218,
       "callers": 3,
@@ -41624,7 +41625,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043fd90",
+      "name": "FS_FOpenTextFileWrite",
       "addr": "0x0043fd90",
       "size": 216,
       "callers": 2,
@@ -41781,7 +41782,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b0150",
+      "name": "G_LogPrintf",
       "addr": "0x004b0150",
       "size": 215,
       "callers": 8,
@@ -42085,7 +42086,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00682170",
+      "name": "Telling",
       "addr": "0x00682170",
       "size": 214,
       "callers": 2,
@@ -42288,7 +42289,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041fde0",
+      "name": "Com_Frame",
       "addr": "0x0041fde0",
       "size": 212,
       "callers": 1,
@@ -42312,7 +42313,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043d570",
+      "name": "Sys_Error",
       "addr": "0x0043d570",
       "size": 212,
       "callers": 81,
@@ -42324,7 +42325,7 @@
         "USER32.DLL!TranslateMessage",
         "USER32.DLL!DispatchMessageA"
       ],
-      "category": "other"
+      "category": "log"
     },
     {
       "name": "FUN_00460370",
@@ -42791,7 +42792,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00464f30",
+      "name": "Con_DrawMiniConsole",
       "addr": "0x00464f30",
       "size": 210,
       "callers": 1,
@@ -43159,7 +43160,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00410bb0",
+      "name": "FS_FOpenFileAppend",
       "addr": "0x00410bb0",
       "size": 208,
       "callers": 2,
@@ -43401,7 +43402,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fb010",
+      "name": "UI_CheckStringTranslation",
       "addr": "0x004fb010",
       "size": 207,
       "callers": 23,
@@ -44170,7 +44171,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f8c70",
+      "name": "Print",
       "addr": "0x004f8c70",
       "size": 203,
       "callers": 510,
@@ -44465,7 +44466,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a04c0",
+      "name": "FS_Read",
       "addr": "0x004a04c0",
       "size": 202,
       "callers": 17,
@@ -44473,7 +44474,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_0053eed0",
@@ -45034,7 +45035,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d3210",
+      "name": "Load_GfxTextureLoad",
       "addr": "0x004d3210",
       "size": 199,
       "callers": 1,
@@ -45272,7 +45273,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00475b30",
+      "name": "Hunk_AllocateTempMemoryHigh",
       "addr": "0x00475b30",
       "size": 198,
       "callers": 27,
@@ -45663,7 +45664,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00411560",
+      "name": "Scr_GetVector",
       "addr": "0x00411560",
       "size": 196,
       "callers": 90,
@@ -45674,7 +45675,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004130d0",
@@ -45942,7 +45943,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d0ea0",
+      "name": "UI_DrawHandlePic",
       "addr": "0x004d0ea0",
       "size": 195,
       "callers": 58,
@@ -46084,7 +46085,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00624390",
+      "name": "SV_GetPlayerByNum",
       "addr": "0x00624390",
       "size": 195,
       "callers": 1,
@@ -46480,7 +46481,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044f450",
+      "name": "SV_FindClientByAddress",
       "addr": "0x0044f450",
       "size": 192,
       "callers": 5,
@@ -46759,7 +46760,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00504f20",
+      "name": "CG_GetBoneIndex",
       "addr": "0x00504f20",
       "size": 191,
       "callers": 37,
@@ -47301,7 +47302,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f2470",
+      "name": "FireWeaponMelee",
       "addr": "0x004f2470",
       "size": 188,
       "callers": 1,
@@ -47926,7 +47927,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00406d10",
+      "name": "Win_InitLocalization",
       "addr": "0x00406d10",
       "size": 185,
       "callers": 1,
@@ -48055,7 +48056,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00534ea0",
+      "name": "RB_DrawCursor",
       "addr": "0x00534ea0",
       "size": 185,
       "callers": 2,
@@ -48063,7 +48064,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "render"
     },
     {
       "name": "FUN_0054adb0",
@@ -48259,7 +48260,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00430d50",
+      "name": "Menus_CloseRequest",
       "addr": "0x00430d50",
       "size": 184,
       "callers": 8,
@@ -48281,7 +48282,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004aea60",
+      "name": "UI_GetFontHandle",
       "addr": "0x004aea60",
       "size": 184,
       "callers": 30,
@@ -48292,7 +48293,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c0700",
+      "name": "FS_FOpenFileByMode",
       "addr": "0x004c0700",
       "size": 184,
       "callers": 10,
@@ -48300,7 +48301,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_004df000",
@@ -48561,7 +48562,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cc5d0",
+      "name": "LiveStorage_SetStat",
       "addr": "0x004cc5d0",
       "size": 183,
       "callers": 4,
@@ -49306,7 +49307,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ee430",
+      "name": "Dvar_SetCommand",
       "addr": "0x004ee430",
       "size": 180,
       "callers": 8,
@@ -49316,7 +49317,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004f7bf0",
@@ -49424,7 +49425,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00630ae0",
+      "name": "UI_SortArenas",
       "addr": "0x00630ae0",
       "size": 180,
       "callers": 2,
@@ -49523,7 +49524,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00462100",
+      "name": "Scr_GetObject",
       "addr": "0x00462100",
       "size": 179,
       "callers": 4,
@@ -49534,7 +49535,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00468e70",
@@ -49595,7 +49596,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f31d0",
+      "name": "Scr_GetInt",
       "addr": "0x004f31d0",
       "size": 179,
       "callers": 36,
@@ -49606,7 +49607,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00500ca0",
@@ -50165,7 +50166,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00404b20",
+      "name": "Cbuf_AddText",
       "addr": "0x00404b20",
       "size": 177,
       "callers": 69,
@@ -50262,7 +50263,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0064c490",
+      "name": "IN_MouseMove",
       "addr": "0x0064c490",
       "size": 177,
       "callers": 3,
@@ -50274,7 +50275,7 @@
         "USER32.DLL!GetCursorPos",
         "USER32.DLL!ScreenToClient"
       ],
-      "category": "other"
+      "category": "input"
     },
     {
       "name": "FUN_006a6820",
@@ -50890,7 +50891,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bcf80",
+      "name": "Common_GetFunction",
       "addr": "0x004bcf80",
       "size": 174,
       "callers": 1,
@@ -51039,7 +51040,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005fa2b0",
+      "name": "BuiltIn_GetFunction",
       "addr": "0x005fa2b0",
       "size": 174,
       "callers": 1,
@@ -51053,7 +51054,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005fa360",
+      "name": "Player_GetMethod",
       "addr": "0x005fa360",
       "size": 174,
       "callers": 1,
@@ -51236,7 +51237,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00496850",
+      "name": "TeleportPlayer",
       "addr": "0x00496850",
       "size": 173,
       "callers": 1,
@@ -51810,7 +51811,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fcc90",
+      "name": "NET_OutOfBandVoiceData",
       "addr": "0x004fcc90",
       "size": 171,
       "callers": 2,
@@ -51818,7 +51819,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_00582ad0",
@@ -51896,7 +51897,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060b2d0",
+      "name": "Com_UpdateSlowMotion",
       "addr": "0x0060b2d0",
       "size": 171,
       "callers": 1,
@@ -51940,7 +51941,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00429080",
+      "name": "FS_InitFileSystem",
       "addr": "0x00429080",
       "size": 170,
       "callers": 1,
@@ -51986,7 +51987,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c98d0",
+      "name": "Com_Memset",
       "addr": "0x004c98d0",
       "size": 170,
       "callers": 64,
@@ -52357,7 +52358,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060a8d0",
+      "name": "Com_OpenLogFile",
       "addr": "0x0060a8d0",
       "size": 169,
       "callers": 1,
@@ -52463,7 +52464,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ac180",
+      "name": "StringTable_LookupRowNumForValue",
       "addr": "0x004ac180",
       "size": 168,
       "callers": 6,
@@ -53293,7 +53294,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0053fb50",
+      "name": "R_FlushSun",
       "addr": "0x0053fb50",
       "size": 165,
       "callers": 1,
@@ -53477,7 +53478,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00498220",
+      "name": "Com_Compress",
       "addr": "0x00498220",
       "size": 164,
       "callers": 1,
@@ -53521,7 +53522,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f2c80",
+      "name": "StringTable_GetColumnValueForRow",
       "addr": "0x004f2c80",
       "size": 164,
       "callers": 35,
@@ -53734,7 +53735,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049c4a0",
+      "name": "GetPlayerEntity",
       "addr": "0x0049c4a0",
       "size": 163,
       "callers": 2,
@@ -53943,7 +53944,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004255a0",
+      "name": "SV_SendServerCommand",
       "addr": "0x004255a0",
       "size": 162,
       "callers": 7,
@@ -54093,7 +54094,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004dba50",
+      "name": "Player_GetMethod",
       "addr": "0x004dba50",
       "size": 162,
       "callers": 1,
@@ -54120,7 +54121,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005056c0",
+      "name": "R_TextWidth",
       "addr": "0x005056c0",
       "size": 162,
       "callers": 29,
@@ -54436,7 +54437,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048e6a0",
+      "name": "DB_IsXAssetDefault",
       "addr": "0x0048e6a0",
       "size": 161,
       "callers": 14,
@@ -54587,7 +54588,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a8c70",
+      "name": "CL_HandleRelayPacket",
       "addr": "0x005a8c70",
       "size": 161,
       "callers": 1,
@@ -55059,7 +55060,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00430630",
+      "name": "LargeLocalReset",
       "addr": "0x00430630",
       "size": 159,
       "callers": 7,
@@ -55096,7 +55097,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004527c0",
+      "name": "MSG_ReadData",
       "addr": "0x004527c0",
       "size": 159,
       "callers": 23,
@@ -55975,7 +55976,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ff8a0",
+      "name": "CL_GetRankForXP",
       "addr": "0x004ff8a0",
       "size": 156,
       "callers": 6,
@@ -56221,7 +56222,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00497de0",
+      "name": "Sys_QueEvent",
       "addr": "0x00497de0",
       "size": 155,
       "callers": 12,
@@ -56595,7 +56596,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b55b0",
+      "name": "PC_Directive_else",
       "addr": "0x004b55b0",
       "size": 154,
       "callers": 1,
@@ -56609,7 +56610,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d2060",
+      "name": "PC_ReadTokenHandle",
       "addr": "0x004d2060",
       "size": 154,
       "callers": 53,
@@ -56875,7 +56876,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00403960",
+      "name": "Load_MaterialHandle",
       "addr": "0x00403960",
       "size": 153,
       "callers": 28,
@@ -56941,7 +56942,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00443140",
+      "name": "Scr_GetFloat",
       "addr": "0x00443140",
       "size": 153,
       "callers": 92,
@@ -56952,7 +56953,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00444760",
@@ -57078,7 +57079,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047e990",
+      "name": "Load_PhysCollmapPtr",
       "addr": "0x0047e990",
       "size": 153,
       "callers": 3,
@@ -57122,7 +57123,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00493090",
+      "name": "Load_TracerDefPtr",
       "addr": "0x00493090",
       "size": 153,
       "callers": 2,
@@ -57243,7 +57244,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c13d0",
+      "name": "Load_GfxImagePtr",
       "addr": "0x004c13d0",
       "size": 153,
       "callers": 11,
@@ -57265,7 +57266,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9b90",
+      "name": "Load_FxEffectDefHandle",
       "addr": "0x004d9b90",
       "size": 153,
       "callers": 16,
@@ -57298,7 +57299,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fad30",
+      "name": "Load_PhysPresetPtr",
       "addr": "0x004fad30",
       "size": 153,
       "callers": 5,
@@ -57309,7 +57310,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fca70",
+      "name": "Load_XModelPtr",
       "addr": "0x004fca70",
       "size": 153,
       "callers": 12,
@@ -57898,7 +57899,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f84c0",
+      "name": "R_Init",
       "addr": "0x004f84c0",
       "size": 151,
       "callers": 8,
@@ -57909,7 +57910,7 @@
         "fonts/consoleFont"
       ],
       "imports": [],
-      "category": "other"
+      "category": "render"
     },
     {
       "name": "FUN_004ff420",
@@ -58213,7 +58214,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c3900",
+      "name": "MSG_ReadBits",
       "addr": "0x004c3900",
       "size": 150,
       "callers": 83,
@@ -58471,7 +58472,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00412370",
+      "name": "SV_SteamAuthClient",
       "addr": "0x00412370",
       "size": 149,
       "callers": 1,
@@ -58495,7 +58496,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00458980",
+      "name": "PM_playerTrace",
       "addr": "0x00458980",
       "size": 149,
       "callers": 11,
@@ -58544,7 +58545,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f4b90",
+      "name": "FS_ReadFile",
       "addr": "0x004f4b90",
       "size": 149,
       "callers": 10,
@@ -58552,7 +58553,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_0050fcf0",
@@ -58838,7 +58839,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00475e10",
+      "name": "IN_Frame",
       "addr": "0x00475e10",
       "size": 148,
       "callers": 3,
@@ -58876,7 +58877,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004940b0",
+      "name": "Cbuf_InsertText",
       "addr": "0x004940b0",
       "size": 148,
       "callers": 2,
@@ -59260,7 +59261,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b4b40",
+      "name": "NetadrToSockadr",
       "addr": "0x004b4b40",
       "size": 147,
       "callers": 2,
@@ -59293,7 +59294,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e8390",
+      "name": "Scr_GetEntityField",
       "addr": "0x004e8390",
       "size": 147,
       "callers": 1,
@@ -59301,10 +59302,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
-      "name": "FUN_004fef30",
+      "name": "MSG_ReadStringLine",
       "addr": "0x004fef30",
       "size": 147,
       "callers": 5,
@@ -59341,7 +59342,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a8020",
+      "name": "CL_WriteDemoClientArchive",
       "addr": "0x005a8020",
       "size": 147,
       "callers": 1,
@@ -59399,7 +59400,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060e2b0",
+      "name": "MSG_ReadBigString",
       "addr": "0x0060e2b0",
       "size": 147,
       "callers": 3,
@@ -60235,7 +60236,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00462000",
+      "name": "FS_FCloseFile",
       "addr": "0x00462000",
       "size": 144,
       "callers": 47,
@@ -60746,7 +60747,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004977f0",
+      "name": "Load_XStringArray",
       "addr": "0x004977f0",
       "size": 143,
       "callers": 6,
@@ -60945,7 +60946,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060fdc0",
+      "name": "Sys_SendPacket",
       "addr": "0x0060fdc0",
       "size": 143,
       "callers": 5,
@@ -61384,7 +61385,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004165e0",
+      "name": "Scr_GetEntityId",
       "addr": "0x004165e0",
       "size": 141,
       "callers": 3,
@@ -61392,7 +61393,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00418b60",
@@ -61406,7 +61407,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044add0",
+      "name": "SV_ClientThink",
       "addr": "0x0044add0",
       "size": 141,
       "callers": 2,
@@ -61718,7 +61719,7 @@
       "category": "audio"
     },
     {
-      "name": "FUN_0043d140",
+      "name": "Com_EventLoop",
       "addr": "0x0043d140",
       "size": 140,
       "callers": 3,
@@ -61770,7 +61771,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00476d20",
+      "name": "MSG_ReadBit",
       "addr": "0x00476d20",
       "size": 140,
       "callers": 94,
@@ -61830,7 +61831,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bff90",
+      "name": "DB_BeginRecoverLostDevice",
       "addr": "0x004bff90",
       "size": 140,
       "callers": 1,
@@ -62087,7 +62088,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00466060",
+      "name": "Huff_offsetReceive",
       "addr": "0x00466060",
       "size": 139,
       "callers": 1,
@@ -62109,7 +62110,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004828e0",
+      "name": "Scr_GetPointerType",
       "addr": "0x004828e0",
       "size": 139,
       "callers": 13,
@@ -62120,7 +62121,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0048e610",
@@ -62134,7 +62135,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c0350",
+      "name": "Com_ParseOnLine",
       "addr": "0x004c0350",
       "size": 139,
       "callers": 67,
@@ -62413,7 +62414,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048a4f0",
+      "name": "ScriptParse",
       "addr": "0x0048a4f0",
       "size": 138,
       "callers": 1,
@@ -62660,7 +62661,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004234f0",
+      "name": "Scr_GetFunctionHandle",
       "addr": "0x004234f0",
       "size": 137,
       "callers": 15,
@@ -62668,7 +62669,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00446790",
@@ -62750,7 +62751,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004dce00",
+      "name": "Cmd_AddServerCommand",
       "addr": "0x004dce00",
       "size": 137,
       "callers": 29,
@@ -62799,7 +62800,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005bb0a0",
+      "name": "DB_EnumXAssets_Internal",
       "addr": "0x005bb0a0",
       "size": 137,
       "callers": 3,
@@ -63336,7 +63337,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b6a70",
+      "name": "Svcmd_EntityList_f",
       "addr": "0x004b6a70",
       "size": 135,
       "callers": 1,
@@ -63695,7 +63696,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043ebb0",
+      "name": "check",
       "addr": "0x0043ebb0",
       "size": 134,
       "callers": 4,
@@ -63909,7 +63910,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0060c3d0",
+      "name": "Com_AddStartupCommands",
       "addr": "0x0060c3d0",
       "size": 134,
       "callers": 2,
@@ -64504,7 +64505,7 @@
       "category": "audio"
     },
     {
-      "name": "FUN_0047a530",
+      "name": "MSG_ReadString",
       "addr": "0x0047a530",
       "size": 132,
       "callers": 18,
@@ -65378,7 +65379,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00474d60",
+      "name": "Com_Parse",
       "addr": "0x00474d60",
       "size": 130,
       "callers": 159,
@@ -65501,7 +65502,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a5040",
+      "name": "Con_DrawSolidConsole",
       "addr": "0x005a5040",
       "size": 130,
       "callers": 1,
@@ -65801,7 +65802,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00464a90",
+      "name": "Com_ParseCommandLine",
       "addr": "0x00464a90",
       "size": 129,
       "callers": 1,
@@ -65870,7 +65871,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ad0b0",
+      "name": "Scr_ExecThread",
       "addr": "0x004ad0b0",
       "size": 129,
       "callers": 5,
@@ -65878,7 +65879,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004b7a20",
@@ -66127,7 +66128,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00412490",
+      "name": "CL_DrawStretchPic",
       "addr": "0x00412490",
       "size": 128,
       "callers": 53,
@@ -66138,7 +66139,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004256f0",
+      "name": "SV_WaitServer",
       "addr": "0x004256f0",
       "size": 128,
       "callers": 8,
@@ -66182,7 +66183,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00453500",
+      "name": "Vec3Normalize",
       "addr": "0x00453500",
       "size": 128,
       "callers": 163,
@@ -66204,7 +66205,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004705e0",
+      "name": "DB_ReadXFileUncompressed",
       "addr": "0x004705e0",
       "size": 128,
       "callers": 5,
@@ -66536,7 +66537,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004aa830",
+      "name": "Com_PrintMessage",
       "addr": "0x004aa830",
       "size": 127,
       "callers": 10,
@@ -66544,7 +66545,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "log"
     },
     {
       "name": "FUN_004b11c0",
@@ -66805,7 +66806,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041aab0",
+      "name": "PC_Directive_elif",
       "addr": "0x0041aab0",
       "size": 126,
       "callers": 1,
@@ -66854,7 +66855,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004576c0",
+      "name": "FS_Write",
       "addr": "0x004576c0",
       "size": 126,
       "callers": 29,
@@ -66862,10 +66863,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
-      "name": "FUN_0046b660",
+      "name": "DB_EndRecoverLostDevice",
       "addr": "0x0046b660",
       "size": 126,
       "callers": 1,
@@ -66879,7 +66880,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00478f80",
+      "name": "Vec3NormalizeFast",
       "addr": "0x00478f80",
       "size": 126,
       "callers": 3,
@@ -66923,7 +66924,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00494830",
+      "name": "Scr_GetConstString",
       "addr": "0x00494830",
       "size": 126,
       "callers": 16,
@@ -66933,7 +66934,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004a11a0",
@@ -66947,7 +66948,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b8300",
+      "name": "Com_SkipRestOfLine",
       "addr": "0x004b8300",
       "size": 126,
       "callers": 60,
@@ -67408,7 +67409,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f5b40",
+      "name": "Field_Draw",
       "addr": "0x004f5b40",
       "size": 125,
       "callers": 2,
@@ -68096,7 +68097,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00438dc0",
+      "name": "AngleNormalize360",
       "addr": "0x00438dc0",
       "size": 123,
       "callers": 58,
@@ -68107,7 +68108,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004454c0",
+      "name": "Item_SetupKeywordHash",
       "addr": "0x004454c0",
       "size": 123,
       "callers": 1,
@@ -68143,7 +68144,7 @@
       "category": "network"
     },
     {
-      "name": "FUN_00466320",
+      "name": "Dvar_SetFloatByName",
       "addr": "0x00466320",
       "size": 123,
       "callers": 2,
@@ -68153,7 +68154,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_0048ac90",
@@ -68740,7 +68741,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c63e0",
+      "name": "SL_FindLowercaseString",
       "addr": "0x004c63e0",
       "size": 122,
       "callers": 11,
@@ -69479,7 +69480,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e0200",
+      "name": "Com_PrintWarning",
       "addr": "0x004e0200",
       "size": 120,
       "callers": 298,
@@ -69487,7 +69488,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "log"
     },
     {
       "name": "FUN_004ec870",
@@ -69515,7 +69516,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00501bc0",
+      "name": "Menu_SetupKeywordHash",
       "addr": "0x00501bc0",
       "size": 120,
       "callers": 1,
@@ -69643,7 +69644,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005a3ff0",
+      "name": "Con_IsDvarCommand",
       "addr": "0x005a3ff0",
       "size": 120,
       "callers": 3,
@@ -69938,7 +69939,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d2280",
+      "name": "SL_Init",
       "addr": "0x004d2280",
       "size": 119,
       "callers": 1,
@@ -69960,7 +69961,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004eb0b0",
+      "name": "UI_GetGameTypeDisplayName",
       "addr": "0x004eb0b0",
       "size": 119,
       "callers": 4,
@@ -70278,7 +70279,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004533c0",
+      "name": "UI_AddMenuList",
       "addr": "0x004533c0",
       "size": 118,
       "callers": 6,
@@ -70407,7 +70408,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d6970",
+      "name": "Sys_Quit",
       "addr": "0x004d6970",
       "size": 118,
       "callers": 2,
@@ -70732,7 +70733,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00471500",
+      "name": "Dvar_RegisterVec4",
       "addr": "0x00471500",
       "size": 117,
       "callers": 27,
@@ -70740,7 +70741,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004909f0",
@@ -71169,7 +71170,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00420700",
+      "name": "UI_GetMapDisplayName",
       "addr": "0x00420700",
       "size": 116,
       "callers": 2,
@@ -71287,7 +71288,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fc120",
+      "name": "CL_DrawStretchPicPhysical",
       "addr": "0x004fc120",
       "size": 116,
       "callers": 17,
@@ -71649,7 +71650,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00492630",
+      "name": "G_GetItemClassname",
       "addr": "0x00492630",
       "size": 115,
       "callers": 1,
@@ -71673,7 +71674,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d8220",
+      "name": "Dvar_Init",
       "addr": "0x004d8220",
       "size": 115,
       "callers": 1,
@@ -71683,7 +71684,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004e8430",
@@ -72153,7 +72154,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045ad10",
+      "name": "vectoryaw",
       "addr": "0x0045ad10",
       "size": 114,
       "callers": 20,
@@ -72164,7 +72165,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045c4d0",
+      "name": "Dvar_SetBoolByName",
       "addr": "0x0045c4d0",
       "size": 114,
       "callers": 13,
@@ -72174,7 +72175,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_0047d030",
@@ -72267,7 +72268,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e1f30",
+      "name": "G_SetupWeaponDef",
       "addr": "0x004e1f30",
       "size": 114,
       "callers": 2,
@@ -72640,7 +72641,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004127a0",
+      "name": "LargeLocalBegin",
       "addr": "0x004127a0",
       "size": 113,
       "callers": 1,
@@ -72735,7 +72736,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045ca90",
+      "name": "Vec3UnpackUnitVec",
       "addr": "0x0045ca90",
       "size": 113,
       "callers": 11,
@@ -73307,7 +73308,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00420830",
+      "name": "Com_InitHunkMemory",
       "addr": "0x00420830",
       "size": 111,
       "callers": 1,
@@ -73367,7 +73368,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00469a50",
+      "name": "G_AddEvent",
       "addr": "0x00469a50",
       "size": 111,
       "callers": 23,
@@ -73776,7 +73777,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00416f70",
+      "name": "Vec2Normalize",
       "addr": "0x00416f70",
       "size": 110,
       "callers": 29,
@@ -73812,7 +73813,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00447130",
+      "name": "Com_MatchToken",
       "addr": "0x00447130",
       "size": 110,
       "callers": 11,
@@ -73825,7 +73826,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044a430",
+      "name": "CL_ConsoleFixPosition",
       "addr": "0x0044a430",
       "size": 110,
       "callers": 4,
@@ -74388,7 +74389,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ef8e0",
+      "name": "Dvar_RegisterVec3",
       "addr": "0x004ef8e0",
       "size": 109,
       "callers": 19,
@@ -74396,7 +74397,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004f2210",
@@ -74906,7 +74907,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005bac50",
+      "name": "DB_XModelSurfsFixup",
       "addr": "0x005bac50",
       "size": 108,
       "callers": 3,
@@ -75177,7 +75178,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004918b0",
+      "name": "Dvar_RegisterVec3Color",
       "addr": "0x004918b0",
       "size": 107,
       "callers": 4,
@@ -75185,7 +75186,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00491dc0",
@@ -75210,7 +75211,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00497330",
+      "name": "PartyHost_CountMembers",
       "addr": "0x00497330",
       "size": 107,
       "callers": 30,
@@ -75312,7 +75313,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fc770",
+      "name": "Dvar_SetFromStringByNameFromSource",
       "addr": "0x004fc770",
       "size": 107,
       "callers": 2,
@@ -75322,7 +75323,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004fca00",
@@ -75387,7 +75388,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005fc830",
+      "name": "Vec2NormalizeFast",
       "addr": "0x005fc830",
       "size": 107,
       "callers": 1,
@@ -75433,7 +75434,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00644140",
+      "name": "LargeLocalBeginRight",
       "addr": "0x00644140",
       "size": 107,
       "callers": 1,
@@ -75659,7 +75660,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c37f0",
+      "name": "GamerProfile_UpdateProfileAndSaveIfNeeded",
       "addr": "0x004c37f0",
       "size": 106,
       "callers": 2,
@@ -75683,7 +75684,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d7c50",
+      "name": "CL_MouseEvent",
       "addr": "0x004d7c50",
       "size": 106,
       "callers": 1,
@@ -76414,7 +76415,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00426450",
+      "name": "FS_WriteFile",
       "addr": "0x00426450",
       "size": 104,
       "callers": 1,
@@ -76424,7 +76425,7 @@
         "Failed to open %s\n"
       ],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_00427c90",
@@ -76451,7 +76452,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044f060",
+      "name": "Dvar_SetStringByName",
       "addr": "0x0044f060",
       "size": 104,
       "callers": 36,
@@ -76461,7 +76462,7 @@
         "External Dvar"
       ],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00455eb0",
@@ -76491,7 +76492,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00467a00",
+      "name": "PC_SourceError",
       "addr": "0x00467a00",
       "size": 104,
       "callers": 50,
@@ -76537,7 +76538,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00486220",
+      "name": "PC_Directive_if",
       "addr": "0x00486220",
       "size": 104,
       "callers": 2,
@@ -76548,7 +76549,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a7b30",
+      "name": "CL_GetRankIcon",
       "addr": "0x004a7b30",
       "size": 104,
       "callers": 4,
@@ -76572,7 +76573,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e6a50",
+      "name": "G_PrintEntities",
       "addr": "0x004e6a50",
       "size": 104,
       "callers": 1,
@@ -77644,7 +77645,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00462460",
+      "name": "Scr_GetGameTypeNameForScript",
       "addr": "0x00462460",
       "size": 102,
       "callers": 1,
@@ -77652,7 +77653,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0048c550",
@@ -77712,7 +77713,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c8aa0",
+      "name": "NET_DeferPacketToClient",
       "addr": "0x004c8aa0",
       "size": 102,
       "callers": 1,
@@ -77722,7 +77723,7 @@
       "imports": [
         "KERNEL32.DLL!InterlockedIncrement"
       ],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_004d0810",
@@ -78215,7 +78216,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f6070",
+      "name": "Dvar_RegisterVec2",
       "addr": "0x004f6070",
       "size": 101,
       "callers": 33,
@@ -78223,7 +78224,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_005019f0",
@@ -78581,7 +78582,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c84d0",
+      "name": "IN_MouseEvent",
       "addr": "0x004c84d0",
       "size": 100,
       "callers": 1,
@@ -78589,7 +78590,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "input"
     },
     {
       "name": "FUN_004ead00",
@@ -78603,7 +78604,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004eff10",
+      "name": "Scr_GetTypeName",
       "addr": "0x004eff10",
       "size": 100,
       "callers": 5,
@@ -78613,7 +78614,7 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004f3060",
@@ -78913,7 +78914,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041b9f0",
+      "name": "called",
       "addr": "0x0041b9f0",
       "size": 99,
       "callers": 9,
@@ -79178,7 +79179,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0051e7a0",
+      "name": "R_AllocStaticIndexBuffer",
       "addr": "0x0051e7a0",
       "size": 99,
       "callers": 4,
@@ -79609,7 +79610,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b80b0",
+      "name": "Com_EndParseSession",
       "addr": "0x004b80b0",
       "size": 98,
       "callers": 37,
@@ -80022,7 +80023,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00413490",
+      "name": "Com_DPrintf",
       "addr": "0x00413490",
       "size": 97,
       "callers": 166,
@@ -80110,7 +80111,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047cd00",
+      "name": "PC_UnreadSourceToken",
       "addr": "0x0047cd00",
       "size": 97,
       "callers": 17,
@@ -80643,7 +80644,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00493b50",
+      "name": "CG_ScrollScoreboardDown",
       "addr": "0x00493b50",
       "size": 96,
       "callers": 1,
@@ -81172,7 +81173,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e0d60",
+      "name": "PC_FreeDefine",
       "addr": "0x004e0d60",
       "size": 95,
       "callers": 1,
@@ -81552,7 +81553,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00426080",
+      "name": "I_strnicmp",
       "addr": "0x00426080",
       "size": 94,
       "callers": 26,
@@ -82069,7 +82070,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00422900",
+      "name": "Scr_GetType",
       "addr": "0x00422900",
       "size": 93,
       "callers": 19,
@@ -82079,10 +82080,10 @@
         "parameter %d does not exist"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
-      "name": "FUN_004301b0",
+      "name": "Com_InitMainThread",
       "addr": "0x004301b0",
       "size": 93,
       "callers": 1,
@@ -82098,7 +82099,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00435880",
+      "name": "Sys_LockWrite",
       "addr": "0x00435880",
       "size": 93,
       "callers": 44,
@@ -82147,7 +82148,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044c6c0",
+      "name": "SourceError",
       "addr": "0x0044c6c0",
       "size": 93,
       "callers": 58,
@@ -82160,7 +82161,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045d620",
+      "name": "IN_Init",
       "addr": "0x0045d620",
       "size": 93,
       "callers": 2,
@@ -82210,7 +82211,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e6870",
+      "name": "GamerProfile_UpdateSystemVarsFromProfile",
       "addr": "0x004e6870",
       "size": 93,
       "callers": 4,
@@ -82405,7 +82406,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00648440",
+      "name": "Dvar_RegisterFloat",
       "addr": "0x00648440",
       "size": 93,
       "callers": 743,
@@ -82413,7 +82414,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_006aea90",
@@ -82559,7 +82560,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047cd70",
+      "name": "SL_RemoveRefToString",
       "addr": "0x0047cd70",
       "size": 92,
       "callers": 81,
@@ -83078,7 +83079,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004326e0",
+      "name": "Sys_DefaultInstallPath",
       "addr": "0x004326e0",
       "size": 91,
       "callers": 3,
@@ -83640,7 +83641,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00471f60",
+      "name": "LiveStorage_GetStat",
       "addr": "0x00471f60",
       "size": 90,
       "callers": 7,
@@ -83651,7 +83652,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00480b40",
+      "name": "RemoveVariable",
       "addr": "0x00480b40",
       "size": 90,
       "callers": 18,
@@ -83732,7 +83733,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fc710",
+      "name": "Com_SetSpaceDelimited",
       "addr": "0x004fc710",
       "size": 90,
       "callers": 2,
@@ -83968,7 +83969,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00421e00",
+      "name": "PC_FindHashedDefine",
       "addr": "0x00421e00",
       "size": 89,
       "callers": 7,
@@ -83995,7 +83996,7 @@
       "category": "network"
     },
     {
-      "name": "FUN_004499f0",
+      "name": "Load_snd_alias_list_nameArray",
       "addr": "0x004499f0",
       "size": 89,
       "callers": 4,
@@ -84039,7 +84040,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00454e40",
+      "name": "allocator",
       "addr": "0x00454e40",
       "size": 89,
       "callers": 2,
@@ -84407,7 +84408,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005af0d0",
+      "name": "GamerProfile_SaveProfile",
       "addr": "0x005af0d0",
       "size": 89,
       "callers": 2,
@@ -84613,7 +84614,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00459320",
+      "name": "FS_Printf",
       "addr": "0x00459320",
       "size": 88,
       "callers": 10,
@@ -84659,7 +84660,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047fda0",
+      "name": "Load_XString",
       "addr": "0x0047fda0",
       "size": 88,
       "callers": 88,
@@ -84782,7 +84783,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e1480",
+      "name": "Add_Ammo",
       "addr": "0x004e1480",
       "size": 88,
       "callers": 4,
@@ -85194,7 +85195,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a46c0",
+      "name": "FS_Shutdown",
       "addr": "0x004a46c0",
       "size": 87,
       "callers": 2,
@@ -85216,7 +85217,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b2e60",
+      "name": "Sys_OutOfMemErrorInternal",
       "addr": "0x004b2e60",
       "size": 87,
       "callers": 16,
@@ -85280,7 +85281,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cfba0",
+      "name": "Z_VirtualAlloc",
       "addr": "0x004cfba0",
       "size": 87,
       "callers": 29,
@@ -85443,7 +85444,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0057b5f0",
+      "name": "BG_LoadWeaponDef_LoadObj",
       "addr": "0x0057b5f0",
       "size": 87,
       "callers": 2,
@@ -85555,7 +85556,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061db10",
+      "name": "Scr_ErrorInternal",
       "addr": "0x0061db10",
       "size": 87,
       "callers": 24,
@@ -85563,7 +85564,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0062f340",
@@ -85785,7 +85786,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c1c20",
+      "name": "MSG_ReadByte",
       "addr": "0x004c1c20",
       "size": 86,
       "callers": 62,
@@ -85818,7 +85819,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004dcc30",
+      "name": "MSG_ReadBitsCompress",
       "addr": "0x004dcc30",
       "size": 86,
       "callers": 2,
@@ -86091,7 +86092,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00412e40",
+      "name": "Dvar_RegisterEnum",
       "addr": "0x00412e40",
       "size": 85,
       "callers": 35,
@@ -86099,7 +86100,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00430780",
@@ -86113,7 +86114,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00430e10",
+      "name": "CG_PlayBoltedEffect",
       "addr": "0x00430e10",
       "size": 85,
       "callers": 13,
@@ -86656,7 +86657,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00445460",
+      "name": "DB_LoadXFileData",
       "addr": "0x00445460",
       "size": 84,
       "callers": 5,
@@ -86803,7 +86804,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e79e0",
+      "name": "BG_GetEquippedWeaponState",
       "addr": "0x004e79e0",
       "size": 84,
       "callers": 7,
@@ -87248,7 +87249,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048b9d0",
+      "name": "GetObject",
       "addr": "0x0048b9d0",
       "size": 83,
       "callers": 7,
@@ -87393,7 +87394,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f8460",
+      "name": "SockadrToNetadr",
       "addr": "0x004f8460",
       "size": 83,
       "callers": 3,
@@ -87717,7 +87718,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00412310",
+      "name": "Scr_AddString",
       "addr": "0x00412310",
       "size": 82,
       "callers": 37,
@@ -87727,7 +87728,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00424fd0",
@@ -87890,7 +87891,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004aff10",
+      "name": "Menu_GetFocused",
       "addr": "0x004aff10",
       "size": 82,
       "callers": 10,
@@ -87967,7 +87968,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004defa0",
+      "name": "FS_FileExists",
       "addr": "0x004defa0",
       "size": 82,
       "callers": 2,
@@ -87989,7 +87990,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f1850",
+      "name": "MSG_ReadInt64",
       "addr": "0x004f1850",
       "size": 82,
       "callers": 5,
@@ -88404,7 +88405,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00468380",
+      "name": "DB_GetLoadedFraction",
       "addr": "0x00468380",
       "size": 81,
       "callers": 4,
@@ -88547,7 +88548,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b2ef0",
+      "name": "Sys_CreateFile",
       "addr": "0x004b2ef0",
       "size": 81,
       "callers": 2,
@@ -88621,7 +88622,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d8840",
+      "name": "G_SpawnEntitiesFromString",
       "addr": "0x004d8840",
       "size": 81,
       "callers": 1,
@@ -88643,7 +88644,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f20f0",
+      "name": "Scr_SetObjectField",
       "addr": "0x004f20f0",
       "size": 81,
       "callers": 1,
@@ -88653,7 +88654,7 @@
         "vehicle node is read-only"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004f4fa0",
@@ -89168,7 +89169,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004319d0",
+      "name": "MSG_WriteBitsCompress",
       "addr": "0x004319d0",
       "size": 80,
       "callers": 3,
@@ -89225,7 +89226,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00454f40",
+      "name": "CL_AddReliableCommand",
       "addr": "0x00454f40",
       "size": 80,
       "callers": 11,
@@ -89282,7 +89283,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00487240",
+      "name": "Menus_FindByName",
       "addr": "0x00487240",
       "size": 80,
       "callers": 17,
@@ -89328,7 +89329,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b76d0",
+      "name": "DB_EnumXAssets",
       "addr": "0x004b76d0",
       "size": 80,
       "callers": 2,
@@ -89778,7 +89779,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00430f40",
+      "name": "Scr_AddObject",
       "addr": "0x00430f40",
       "size": 79,
       "callers": 3,
@@ -89788,7 +89789,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004341c0",
@@ -89849,7 +89850,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00470090",
+      "name": "Cmd_AddCommand",
       "addr": "0x00470090",
       "size": 79,
       "callers": 294,
@@ -89862,7 +89863,7 @@
       "category": "cmd"
     },
     {
-      "name": "FUN_00470e30",
+      "name": "Load_Stream",
       "addr": "0x00470e30",
       "size": 79,
       "callers": 572,
@@ -89906,7 +89907,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00488860",
+      "name": "Scr_AddConstString",
       "addr": "0x00488860",
       "size": 79,
       "callers": 28,
@@ -89916,7 +89917,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0049aa70",
@@ -89930,7 +89931,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ad470",
+      "name": "I_CleanStr",
       "addr": "0x004ad470",
       "size": 79,
       "callers": 7,
@@ -89952,7 +89953,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ce1a0",
+      "name": "Dvar_RegisterBool",
       "addr": "0x004ce1a0",
       "size": 79,
       "callers": 403,
@@ -89960,7 +89961,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004d0b50",
@@ -90524,7 +90525,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048a5b0",
+      "name": "FS_Delete",
       "addr": "0x0048a5b0",
       "size": 78,
       "callers": 2,
@@ -90532,7 +90533,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_00495900",
@@ -91333,7 +91334,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00633ca0",
+      "name": "GamerProfile_SetPercentCompleteMP",
       "addr": "0x00633ca0",
       "size": 77,
       "callers": 2,
@@ -91388,7 +91389,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00402500",
+      "name": "Com_DPrintf",
       "addr": "0x00402500",
       "size": 76,
       "callers": 1415,
@@ -91655,7 +91656,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ff3d0",
+      "name": "Scr_GetObjectField",
       "addr": "0x004ff3d0",
       "size": 76,
       "callers": 1,
@@ -91663,7 +91664,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00501fc0",
@@ -92287,7 +92288,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a62a0",
+      "name": "LargeLocalInit",
       "addr": "0x004a62a0",
       "size": 75,
       "callers": 1,
@@ -92750,7 +92751,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00463d80",
+      "name": "IN_RecenterMouse",
       "addr": "0x00463d80",
       "size": 74,
       "callers": 2,
@@ -92764,7 +92765,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00479830",
+      "name": "Dvar_RegisterInt",
       "addr": "0x00479830",
       "size": 74,
       "callers": 271,
@@ -92772,7 +92773,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_0047fe00",
@@ -92797,7 +92798,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00491860",
+      "name": "NET_Init",
       "addr": "0x00491860",
       "size": 74,
       "callers": 1,
@@ -92810,10 +92811,10 @@
       "imports": [
         "WSOCK32.DLL!Ordinal_115"
       ],
-      "category": "other"
+      "category": "network"
     },
     {
-      "name": "FUN_004a1280",
+      "name": "something",
       "addr": "0x004a1280",
       "size": 74,
       "callers": 1,
@@ -93185,7 +93186,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0040bb60",
+      "name": "SV_Cmd_ArgvBuffer",
       "addr": "0x0040bb60",
       "size": 73,
       "callers": 7,
@@ -93193,7 +93194,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "cmd"
     },
     {
       "name": "FUN_00416dc0",
@@ -93275,7 +93276,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045a190",
+      "name": "Sys_SuspendOtherThreads",
       "addr": "0x0045a190",
       "size": 73,
       "callers": 1,
@@ -93383,7 +93384,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a7cf0",
+      "name": "GScr_AddFieldsForClient",
       "addr": "0x004a7cf0",
       "size": 73,
       "callers": 1,
@@ -93393,10 +93394,10 @@
         "sessionteam"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
-      "name": "FUN_004ab530",
+      "name": "BG_PlayerHasWeapon",
       "addr": "0x004ab530",
       "size": 73,
       "callers": 30,
@@ -93497,7 +93498,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f3680",
+      "name": "Z_Malloc",
       "addr": "0x004f3680",
       "size": 73,
       "callers": 110,
@@ -93768,7 +93769,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00437280",
+      "name": "Scr_MakeArray",
       "addr": "0x00437280",
       "size": 72,
       "callers": 3,
@@ -93778,7 +93779,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00445090",
@@ -93891,7 +93892,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ab650",
+      "name": "FindVariable",
       "addr": "0x004ab650",
       "size": 72,
       "callers": 37,
@@ -93935,7 +93936,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9210",
+      "name": "Cbuf_Init",
       "addr": "0x004d9210",
       "size": 72,
       "callers": 2,
@@ -94156,7 +94157,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041d7d0",
+      "name": "Scr_AddInt",
       "addr": "0x0041d7d0",
       "size": 71,
       "callers": 51,
@@ -94166,7 +94167,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0041fec0",
@@ -94339,7 +94340,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00494060",
+      "name": "DB_LoadDelayedImages",
       "addr": "0x00494060",
       "size": 71,
       "callers": 1,
@@ -94457,7 +94458,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0051f010",
+      "name": "Image_Release",
       "addr": "0x0051f010",
       "size": 71,
       "callers": 1,
@@ -94581,7 +94582,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061e860",
+      "name": "Scr_AddFloat",
       "addr": "0x0061e860",
       "size": 71,
       "callers": 28,
@@ -94591,7 +94592,7 @@
         "Internal script stack overflow"
       ],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0062b670",
@@ -94959,7 +94960,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045fca0",
+      "name": "MSG_Init",
       "addr": "0x0045fca0",
       "size": 70,
       "callers": 54,
@@ -95003,7 +95004,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00492d50",
+      "name": "Scr_RegisterFunction",
       "addr": "0x00492d50",
       "size": 70,
       "callers": 11,
@@ -95011,7 +95012,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00492da0",
@@ -95047,7 +95048,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a0220",
+      "name": "Scr_CreateCanonicalFilename",
       "addr": "0x004a0220",
       "size": 70,
       "callers": 6,
@@ -95055,7 +95056,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004a1f60",
@@ -95163,7 +95164,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e0dd0",
+      "name": "Load_XStringCustom",
       "addr": "0x004e0dd0",
       "size": 70,
       "callers": 13,
@@ -95359,7 +95360,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061aab0",
+      "name": "Scr_ReadFile_FastFile",
       "addr": "0x0061aab0",
       "size": 70,
       "callers": 1,
@@ -95367,7 +95368,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0062a050",
@@ -95665,7 +95666,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00482740",
+      "name": "AddRefToValue",
       "addr": "0x00482740",
       "size": 69,
       "callers": 6,
@@ -96680,7 +96681,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042f0e0",
+      "name": "StringTable_Lookup",
       "addr": "0x0042f0e0",
       "size": 67,
       "callers": 9,
@@ -96818,7 +96819,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bc3a0",
+      "name": "SV_GameSendServerCommand",
       "addr": "0x004bc3a0",
       "size": 67,
       "callers": 25,
@@ -97139,7 +97140,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00422e70",
+      "name": "GetClearedMemory",
       "addr": "0x00422e70",
       "size": 66,
       "callers": 1,
@@ -97150,7 +97151,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004305e0",
+      "name": "Sys_ShowConsole",
       "addr": "0x004305e0",
       "size": 66,
       "callers": 2,
@@ -97226,7 +97227,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00463500",
+      "name": "Com_LoadInfoString",
       "addr": "0x00463500",
       "size": 66,
       "callers": 3,
@@ -97237,7 +97238,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004707c0",
+      "name": "CL_WriteDemoMessage",
       "addr": "0x004707c0",
       "size": 66,
       "callers": 1,
@@ -97316,7 +97317,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00494c90",
+      "name": "Key_SetBinding",
       "addr": "0x00494c90",
       "size": 66,
       "callers": 4,
@@ -97362,7 +97363,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b0100",
+      "name": "I_strcmp",
       "addr": "0x004b0100",
       "size": 66,
       "callers": 26,
@@ -97779,7 +97780,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_006315c0",
+      "name": "UI_TextWidth",
       "addr": "0x006315c0",
       "size": 66,
       "callers": 35,
@@ -98030,7 +98031,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004be6e0",
+      "name": "CG_ExecuteNewServerCommands",
       "addr": "0x004be6e0",
       "size": 65,
       "callers": 1,
@@ -98312,7 +98313,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0063d880",
+      "name": "Original",
       "addr": "0x0063d880",
       "size": 65,
       "callers": 1,
@@ -98384,7 +98385,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00406530",
+      "name": "Dvar_GetUnpackedColorByName",
       "addr": "0x00406530",
       "size": 64,
       "callers": 6,
@@ -98392,7 +98393,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00411fb0",
@@ -98509,7 +98510,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cc520",
+      "name": "GetNewVariable",
       "addr": "0x004cc520",
       "size": 64,
       "callers": 14,
@@ -98553,7 +98554,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f6440",
+      "name": "Live_GetMapIndex",
       "addr": "0x004f6440",
       "size": 64,
       "callers": 2,
@@ -98924,7 +98925,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0040d7a0",
+      "name": "Load_XModelSurfsFixup",
       "addr": "0x0040d7a0",
       "size": 63,
       "callers": 1,
@@ -99139,7 +99140,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cce60",
+      "name": "Menus_OpenByName",
       "addr": "0x004cce60",
       "size": 63,
       "callers": 26,
@@ -99214,7 +99215,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fc7e0",
+      "name": "Dvar_RegisterString",
       "addr": "0x004fc7e0",
       "size": 63,
       "callers": 108,
@@ -99222,7 +99223,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_005033e0",
@@ -99465,7 +99466,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0040bdd0",
+      "name": "MSG_ReadShort",
       "addr": "0x0040bdd0",
       "size": 62,
       "callers": 30,
@@ -99544,7 +99545,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00475eb0",
+      "name": "StringTable_HashString",
       "addr": "0x00475eb0",
       "size": 62,
       "callers": 1,
@@ -99643,7 +99644,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bd520",
+      "name": "CG_SetupWeaponConfigString",
       "addr": "0x004bd520",
       "size": 62,
       "callers": 2,
@@ -100128,7 +100129,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048e170",
+      "name": "RemoveRefToValue",
       "addr": "0x0048e170",
       "size": 61,
       "callers": 37,
@@ -100150,7 +100151,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00491920",
+      "name": "PC_Directive_endif",
       "addr": "0x00491920",
       "size": 61,
       "callers": 1,
@@ -100207,7 +100208,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c9550",
+      "name": "MSG_ReadLong",
       "addr": "0x004c9550",
       "size": 61,
       "callers": 53,
@@ -100456,7 +100457,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0064a020",
+      "name": "PMem_Init",
       "addr": "0x0064a020",
       "size": 61,
       "callers": 1,
@@ -100669,7 +100670,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00452690",
+      "name": "XNAddrToString",
       "addr": "0x00452690",
       "size": 60,
       "callers": 2,
@@ -100783,7 +100784,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b5f10",
+      "name": "BG_LoadWeaponCompleteDefInternal",
       "addr": "0x004b5f10",
       "size": 60,
       "callers": 2,
@@ -100827,7 +100828,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c47e0",
+      "name": "Dvar_GetVariantString",
       "addr": "0x004c47e0",
       "size": 60,
       "callers": 30,
@@ -100835,7 +100836,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004d1220",
@@ -101652,7 +101653,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a8830",
+      "name": "CL_ResetViewport",
       "addr": "0x004a8830",
       "size": 59,
       "callers": 2,
@@ -101809,7 +101810,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fbc70",
+      "name": "Scr_ParamError",
       "addr": "0x004fbc70",
       "size": 59,
       "callers": 73,
@@ -101817,7 +101818,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004fc580",
@@ -102128,7 +102129,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045ce80",
+      "name": "Scr_AddArray",
       "addr": "0x0045ce80",
       "size": 58,
       "callers": 1,
@@ -102136,7 +102137,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00463e90",
@@ -102576,7 +102577,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042ef40",
+      "name": "Scr_ObjectError",
       "addr": "0x0042ef40",
       "size": 57,
       "callers": 51,
@@ -102584,7 +102585,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00430bb0",
@@ -102609,7 +102610,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00441f60",
+      "name": "PM_Trace",
       "addr": "0x00441f60",
       "size": 57,
       "callers": 9,
@@ -102675,7 +102676,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044e100",
+      "name": "PartyHost_GetMemberAddressBySlot",
       "addr": "0x0044e100",
       "size": 57,
       "callers": 24,
@@ -103324,7 +103325,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c8630",
+      "name": "UI_TextHeight",
       "addr": "0x004c8630",
       "size": 56,
       "callers": 16,
@@ -103335,7 +103336,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d8ba0",
+      "name": "BG_GetEquippedWeaponIndex",
       "addr": "0x004d8ba0",
       "size": 56,
       "callers": 31,
@@ -103385,7 +103386,7 @@
       "category": "network"
     },
     {
-      "name": "FUN_004f4120",
+      "name": "MSG_WriteData",
       "addr": "0x004f4120",
       "size": 56,
       "callers": 33,
@@ -103701,7 +103702,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043bd00",
+      "name": "Key_SetCatcher",
       "addr": "0x0043bd00",
       "size": 55,
       "callers": 14,
@@ -103796,7 +103797,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047acb0",
+      "name": "Menus_MenuIsInStack",
       "addr": "0x0047acb0",
       "size": 55,
       "callers": 3,
@@ -104405,7 +104406,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004386e0",
+      "name": "Scr_ClearOutParams",
       "addr": "0x004386e0",
       "size": 54,
       "callers": 12,
@@ -104413,7 +104414,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00441130",
@@ -104464,7 +104465,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00458a20",
+      "name": "DB_PushStreamPos",
       "addr": "0x00458a20",
       "size": 54,
       "callers": 123,
@@ -105119,7 +105120,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a6df0",
+      "name": "Scr_SetClientField",
       "addr": "0x004a6df0",
       "size": 53,
       "callers": 1,
@@ -105127,7 +105128,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004aa370",
@@ -105402,7 +105403,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005e1120",
+      "name": "Scr_FreeHudElemConstStrings",
       "addr": "0x005e1120",
       "size": 53,
       "callers": 1,
@@ -105410,7 +105411,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_005f3660",
@@ -105643,7 +105644,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047e310",
+      "name": "SL_GetString_",
       "addr": "0x0047e310",
       "size": 52,
       "callers": 15,
@@ -105698,7 +105699,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d5c50",
+      "name": "StructuredDataDef_GetAsset",
       "addr": "0x004d5c50",
       "size": 52,
       "callers": 27,
@@ -105762,7 +105763,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00503b50",
+      "name": "Party_SetDisplayMapName",
       "addr": "0x00503b50",
       "size": 52,
       "callers": 8,
@@ -106330,7 +106331,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005084d0",
+      "name": "_VectorMA",
       "addr": "0x005084d0",
       "size": 51,
       "callers": 35,
@@ -106669,7 +106670,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041bf20",
+      "name": "unzClose",
       "addr": "0x0041bf20",
       "size": 50,
       "callers": 2,
@@ -106930,7 +106931,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ba5b0",
+      "name": "Menus_CloseAll",
       "addr": "0x004ba5b0",
       "size": 50,
       "callers": 17,
@@ -106974,7 +106975,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d1d60",
+      "name": "DB_PopStreamPos",
       "addr": "0x004d1d60",
       "size": 50,
       "callers": 167,
@@ -107535,7 +107536,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00415ad0",
+      "name": "Menu_Setup",
       "addr": "0x00415ad0",
       "size": 49,
       "callers": 2,
@@ -107857,7 +107858,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cdc10",
+      "name": "SL_GetString",
       "addr": "0x004cdc10",
       "size": 49,
       "callers": 15,
@@ -108383,7 +108384,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f1700",
+      "name": "UI_SafeTranslateString",
       "addr": "0x004f1700",
       "size": 48,
       "callers": 90,
@@ -108796,7 +108797,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044ba30",
+      "name": "CL_GetMaxRank",
       "addr": "0x0044ba30",
       "size": 47,
       "callers": 1,
@@ -108991,7 +108992,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049b6b0",
+      "name": "Load_SndAliasCustom",
       "addr": "0x0049b6b0",
       "size": 47,
       "callers": 71,
@@ -109193,7 +109194,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ec6b0",
+      "name": "Dvar_GetString",
       "addr": "0x004ec6b0",
       "size": 47,
       "callers": 23,
@@ -109201,7 +109202,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004f0b30",
@@ -109259,7 +109260,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00501f00",
+      "name": "CG_WorldTrace",
       "addr": "0x00501f00",
       "size": 47,
       "callers": 5,
@@ -109380,7 +109381,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061e8b0",
+      "name": "Scr_Error",
       "addr": "0x0061e8b0",
       "size": 47,
       "callers": 157,
@@ -109388,7 +109389,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00649be0",
@@ -109505,7 +109506,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00437eb0",
+      "name": "Field_Clear",
       "addr": "0x00437eb0",
       "size": 46,
       "callers": 7,
@@ -109573,7 +109574,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047a5c0",
+      "name": "CG_ScrollScoreboardUp",
       "addr": "0x0047a5c0",
       "size": 46,
       "callers": 1,
@@ -109584,7 +109585,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048b1d0",
+      "name": "CG_LocationalTrace",
       "addr": "0x0048b1d0",
       "size": 46,
       "callers": 4,
@@ -109639,7 +109640,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b6210",
+      "name": "CG_GetTeamName",
       "addr": "0x004b6210",
       "size": 46,
       "callers": 4,
@@ -109713,7 +109714,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fefd0",
+      "name": "Dvar_Reset",
       "addr": "0x004fefd0",
       "size": 46,
       "callers": 2,
@@ -109721,7 +109722,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00504a10",
@@ -110476,7 +110477,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00436ae0",
+      "name": "Info_Validate",
       "addr": "0x00436ae0",
       "size": 44,
       "callers": 3,
@@ -110520,7 +110521,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044bb30",
+      "name": "SEH_StringEd_GetString",
       "addr": "0x0044bb30",
       "size": 44,
       "callers": 24,
@@ -110887,7 +110888,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00412540",
+      "name": "PM_GetEffectiveStance",
       "addr": "0x00412540",
       "size": 43,
       "callers": 3,
@@ -110898,7 +110899,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00415ba0",
+      "name": "BG_IsWeaponValid",
       "addr": "0x00415ba0",
       "size": 43,
       "callers": 3,
@@ -110931,7 +110932,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042a660",
+      "name": "Sys_Milliseconds",
       "addr": "0x0042a660",
       "size": 43,
       "callers": 302,
@@ -110955,7 +110956,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043a0e0",
+      "name": "BG_GetEntityTypeName",
       "addr": "0x0043a0e0",
       "size": 43,
       "callers": 9,
@@ -110968,7 +110969,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00441bb0",
+      "name": "FS_ListFiles",
       "addr": "0x00441bb0",
       "size": 43,
       "callers": 5,
@@ -111111,7 +111112,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e6760",
+      "name": "FS_FTell",
       "addr": "0x004e6760",
       "size": 43,
       "callers": 2,
@@ -111437,7 +111438,7 @@
       "category": "audio"
     },
     {
-      "name": "FUN_00419970",
+      "name": "GetVariable",
       "addr": "0x00419970",
       "size": 42,
       "callers": 23,
@@ -111459,7 +111460,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00426130",
+      "name": "other",
       "addr": "0x00426130",
       "size": 42,
       "callers": 3,
@@ -111481,7 +111482,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00434ee0",
+      "name": "SL_FindString",
       "addr": "0x00434ee0",
       "size": 42,
       "callers": 13,
@@ -111626,7 +111627,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00478680",
+      "name": "Sys_TempPriorityAtLeastNormalBegin",
       "addr": "0x00478680",
       "size": 42,
       "callers": 7,
@@ -111663,7 +111664,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00486560",
+      "name": "SEH_ReadCharFromString",
       "addr": "0x00486560",
       "size": 42,
       "callers": 5,
@@ -111707,7 +111708,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b5530",
+      "name": "Dvar_DisplayableValue",
       "addr": "0x004b5530",
       "size": 42,
       "callers": 12,
@@ -111715,10 +111716,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
-      "name": "FUN_004bc270",
+      "name": "GetEntity",
       "addr": "0x004bc270",
       "size": 42,
       "callers": 5,
@@ -111777,7 +111778,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f78c0",
+      "name": "AllocThread",
       "addr": "0x004f78c0",
       "size": 42,
       "callers": 8,
@@ -111799,7 +111800,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00503b90",
+      "name": "MSG_WriteShort",
       "addr": "0x00503b90",
       "size": 42,
       "callers": 31,
@@ -112149,7 +112150,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00435580",
+      "name": "Con_CancelAutoComplete",
       "addr": "0x00435580",
       "size": 41,
       "callers": 4,
@@ -112397,7 +112398,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e0fb0",
+      "name": "DB_InitThread",
       "addr": "0x004e0fb0",
       "size": 41,
       "callers": 1,
@@ -112659,7 +112660,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041ca20",
+      "name": "MSG_WriteLong",
       "addr": "0x0041ca20",
       "size": 40,
       "callers": 66,
@@ -112795,7 +112796,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00464750",
+      "name": "SV_Cmd_EndTokenizedString",
       "addr": "0x00464750",
       "size": 40,
       "callers": 10,
@@ -113637,7 +113638,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00413de0",
+      "name": "Com_sprintf",
       "addr": "0x00413de0",
       "size": 38,
       "callers": 232,
@@ -113870,7 +113871,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b5780",
+      "name": "SV_Cmd_TokenizeString",
       "addr": "0x004b5780",
       "size": 38,
       "callers": 3,
@@ -113949,7 +113950,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e2c80",
+      "name": "Cbuf_Execute",
       "addr": "0x004e2c80",
       "size": 38,
       "callers": 10,
@@ -114353,7 +114354,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045d940",
+      "name": "Scr_LoadScript",
       "addr": "0x0045d940",
       "size": 37,
       "callers": 15,
@@ -114361,7 +114362,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00461770",
@@ -114432,7 +114433,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00495580",
+      "name": "RandWithSeed",
       "addr": "0x00495580",
       "size": 37,
       "callers": 10,
@@ -114630,7 +114631,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f8940",
+      "name": "ScrPlace_GetActivePlacement",
       "addr": "0x004f8940",
       "size": 37,
       "callers": 164,
@@ -114899,7 +114900,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045fcf0",
+      "name": "Sys_QuitAndStartProcess",
       "addr": "0x0045fcf0",
       "size": 36,
       "callers": 1,
@@ -114912,7 +114913,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00464a60",
+      "name": "Com_SyncThreads",
       "addr": "0x00464a60",
       "size": 36,
       "callers": 14,
@@ -114923,7 +114924,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00474320",
+      "name": "SV_InitGameMode",
       "addr": "0x00474320",
       "size": 36,
       "callers": 1,
@@ -114948,7 +114949,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0047f390",
+      "name": "Swap_Init",
       "addr": "0x0047f390",
       "size": 36,
       "callers": 3,
@@ -114983,7 +114984,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0048c520",
+      "name": "MSG_WriteByte",
       "addr": "0x0048c520",
       "size": 36,
       "callers": 91,
@@ -115005,7 +115006,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004acc70",
+      "name": "free_expression",
       "addr": "0x004acc70",
       "size": 36,
       "callers": 1,
@@ -115038,7 +115039,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c3280",
+      "name": "G_DebugLineWithDuration",
       "addr": "0x004c3280",
       "size": 36,
       "callers": 22,
@@ -115049,7 +115050,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d6f80",
+      "name": "I_strncpyz",
       "addr": "0x004d6f80",
       "size": 36,
       "callers": 422,
@@ -115480,7 +115481,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042f0a0",
+      "name": "Com_InitCriticalSections",
       "addr": "0x0042f0a0",
       "size": 35,
       "callers": 1,
@@ -116123,7 +116124,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045d680",
+      "name": "Cmd_ForEach",
       "addr": "0x0045d680",
       "size": 34,
       "callers": 7,
@@ -116642,7 +116643,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00434320",
+      "name": "AllocObject",
       "addr": "0x00434320",
       "size": 33,
       "callers": 7,
@@ -116822,7 +116823,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0049e540",
+      "name": "G_GetWeaponIndexForName",
       "addr": "0x0049e540",
       "size": 33,
       "callers": 12,
@@ -116866,7 +116867,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b2f50",
+      "name": "Sys_SetValue",
       "addr": "0x004b2f50",
       "size": 33,
       "callers": 3,
@@ -117011,7 +117012,7 @@
       "category": "audio"
     },
     {
-      "name": "FUN_00507b80",
+      "name": "start",
       "addr": "0x00507b80",
       "size": 33,
       "callers": 1,
@@ -117424,7 +117425,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c06e0",
+      "name": "FS_WriteToDemo",
       "addr": "0x004c06e0",
       "size": 32,
       "callers": 8,
@@ -117432,7 +117433,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_004cc5b0",
@@ -117683,7 +117684,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00404c60",
+      "name": "Live_GetXp",
       "addr": "0x00404c60",
       "size": 31,
       "callers": 4,
@@ -117773,7 +117774,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00430f90",
+      "name": "Live_GetPrestige",
       "addr": "0x00430f90",
       "size": 31,
       "callers": 8,
@@ -117821,7 +117822,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00441fc0",
+      "name": "Live_GetLocalClientName",
       "addr": "0x00441fc0",
       "size": 31,
       "callers": 2,
@@ -117891,7 +117892,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0046cbf0",
+      "name": "FS_FOpenFileRead",
       "addr": "0x0046cbf0",
       "size": 31,
       "callers": 8,
@@ -117899,7 +117900,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_00471440",
@@ -118074,7 +118075,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d98a0",
+      "name": "Dvar_InfoString_Big",
       "addr": "0x004d98a0",
       "size": 31,
       "callers": 1,
@@ -118082,10 +118083,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
-      "name": "FUN_004e67b0",
+      "name": "GetMemory",
       "addr": "0x004e67b0",
       "size": 31,
       "callers": 14,
@@ -118107,7 +118108,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f10c0",
+      "name": "Party_InParty",
       "addr": "0x004f10c0",
       "size": 31,
       "callers": 35,
@@ -118186,7 +118187,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061abc0",
+      "name": "Scr_AddSourceBuffer",
       "addr": "0x0061abc0",
       "size": 31,
       "callers": 2,
@@ -118194,7 +118195,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0068f4d0",
@@ -118544,7 +118545,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004702c0",
+      "name": "FS_BuildPathToFile",
       "addr": "0x004702c0",
       "size": 30,
       "callers": 7,
@@ -119167,7 +119168,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a4750",
+      "name": "Scr_Notify",
       "addr": "0x004a4750",
       "size": 29,
       "callers": 107,
@@ -119175,7 +119176,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004b0440",
@@ -119255,7 +119256,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9d20",
+      "name": "Voice_IsClientTalking",
       "addr": "0x004d9d20",
       "size": 29,
       "callers": 2,
@@ -119578,7 +119579,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00444810",
+      "name": "IsDynClassname",
       "addr": "0x00444810",
       "size": 28,
       "callers": 1,
@@ -120117,7 +120118,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00408260",
+      "name": "Key_RemoveCatcher",
       "addr": "0x00408260",
       "size": 27,
       "callers": 11,
@@ -120288,7 +120289,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b24e0",
+      "name": "Scr_IsSystemActive",
       "addr": "0x004b24e0",
       "size": 27,
       "callers": 15,
@@ -120296,10 +120297,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
-      "name": "FUN_004b3830",
+      "name": "PM_IsSprinting",
       "addr": "0x004b3830",
       "size": 27,
       "callers": 3,
@@ -120332,7 +120333,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004be4d0",
+      "name": "BG_GetViewModelWeaponIndex",
       "addr": "0x004be4d0",
       "size": 27,
       "callers": 52,
@@ -120376,7 +120377,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cf2f0",
+      "name": "FindObject",
       "addr": "0x004cf2f0",
       "size": 27,
       "callers": 32,
@@ -120786,7 +120787,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00438720",
+      "name": "Scr_StartupGameType",
       "addr": "0x00438720",
       "size": 26,
       "callers": 1,
@@ -120794,7 +120795,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004397e0",
@@ -120898,7 +120899,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00455510",
+      "name": "NET_CompareBaseAdr",
       "addr": "0x00455510",
       "size": 26,
       "callers": 8,
@@ -120906,7 +120907,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "Catch@004557a2",
@@ -121309,7 +121310,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d0aa0",
+      "name": "NET_CompareAdr",
       "addr": "0x004d0aa0",
       "size": 26,
       "callers": 9,
@@ -121317,7 +121318,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_004d4de0",
@@ -121364,7 +121365,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9520",
+      "name": "Scr_LoadGameType",
       "addr": "0x004d9520",
       "size": 26,
       "callers": 1,
@@ -121372,7 +121373,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004e1ac0",
@@ -121474,7 +121475,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f3c80",
+      "name": "CopyStringInternal",
       "addr": "0x004f3c80",
       "size": 26,
       "callers": 12,
@@ -121573,7 +121574,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005056a0",
+      "name": "R_NormalizedTextScale",
       "addr": "0x005056a0",
       "size": 26,
       "callers": 21,
@@ -122164,7 +122165,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d6640",
+      "name": "FreeMemory",
       "addr": "0x004d6640",
       "size": 25,
       "callers": 13,
@@ -122175,7 +122176,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9c30",
+      "name": "Scr_NotifyLevel",
       "addr": "0x004d9c30",
       "size": 25,
       "callers": 1,
@@ -122183,7 +122184,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004da8e0",
@@ -122208,7 +122209,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ec1d0",
+      "name": "SL_ConvertToString",
       "addr": "0x004ec1d0",
       "size": 25,
       "callers": 141,
@@ -122505,7 +122506,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0040bb20",
+      "name": "Dvar_SetFloat",
       "addr": "0x0040bb20",
       "size": 24,
       "callers": 28,
@@ -122513,7 +122514,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00418270",
@@ -122582,7 +122583,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00440ec0",
+      "name": "DB_Update",
       "addr": "0x00440ec0",
       "size": 24,
       "callers": 2,
@@ -122670,7 +122671,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00469ac0",
+      "name": "SV_GameClientNum_Score",
       "addr": "0x00469ac0",
       "size": 24,
       "callers": 2,
@@ -122816,7 +122817,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d9b00",
+      "name": "SL_AddRefToString",
       "addr": "0x004d9b00",
       "size": 24,
       "callers": 21,
@@ -122895,7 +122896,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f56d0",
+      "name": "MSG_Discard",
       "addr": "0x004f56d0",
       "size": 24,
       "callers": 10,
@@ -123275,7 +123276,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004613a0",
+      "name": "TempMalloc",
       "addr": "0x004613a0",
       "size": 23,
       "callers": 126,
@@ -123563,7 +123564,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00402bd0",
+      "name": "NET_IsLocalAddress",
       "addr": "0x00402bd0",
       "size": 22,
       "callers": 5,
@@ -123571,7 +123572,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_004081a0",
@@ -123607,7 +123608,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041a0b0",
+      "name": "StringTable_GetAsset_FastFile",
       "addr": "0x0041a0b0",
       "size": 22,
       "callers": 1,
@@ -123618,7 +123619,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0041b8c0",
+      "name": "Sys_LeaveCriticalSection",
       "addr": "0x0041b8c0",
       "size": 22,
       "callers": 136,
@@ -123631,7 +123632,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00425900",
+      "name": "Scr_GetString",
       "addr": "0x00425900",
       "size": 22,
       "callers": 47,
@@ -123639,7 +123640,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_0042a740",
@@ -123686,7 +123687,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00441280",
+      "name": "Sys_IsDatabaseReady2",
       "addr": "0x00441280",
       "size": 22,
       "callers": 11,
@@ -123710,7 +123711,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044be90",
+      "name": "PartyHost_GetMemberName",
       "addr": "0x0044be90",
       "size": 22,
       "callers": 2,
@@ -123732,7 +123733,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00453580",
+      "name": "DB_SetXAssetName",
       "addr": "0x00453580",
       "size": 22,
       "callers": 4,
@@ -123754,7 +123755,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00470e80",
+      "name": "Free_String",
       "addr": "0x00470e80",
       "size": 22,
       "callers": 27,
@@ -123890,7 +123891,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ba530",
+      "name": "FS_FOpenFileWrite",
       "addr": "0x004ba530",
       "size": 22,
       "callers": 5,
@@ -123898,7 +123899,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "FUN_004c10a0",
@@ -123912,7 +123913,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ca4a0",
+      "name": "Sys_IsDatabaseReady",
       "addr": "0x004ca4a0",
       "size": 22,
       "callers": 6,
@@ -123973,7 +123974,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004dcf00",
+      "name": "Sys_TempPriorityEnd",
       "addr": "0x004dcf00",
       "size": 22,
       "callers": 26,
@@ -124052,7 +124053,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004fc200",
+      "name": "Sys_EnterCriticalSection",
       "addr": "0x004fc200",
       "size": 22,
       "callers": 114,
@@ -124131,7 +124132,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0061c360",
+      "name": "AddRefToObject",
       "addr": "0x0061c360",
       "size": 22,
       "callers": 22,
@@ -124320,7 +124321,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00418380",
+      "name": "DB_AllocStreamPos",
       "addr": "0x00418380",
       "size": 21,
       "callers": 331,
@@ -124342,7 +124343,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00421da0",
+      "name": "Dvar_SetInt",
       "addr": "0x00421da0",
       "size": 21,
       "callers": 65,
@@ -124350,7 +124351,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_00421e60",
@@ -124789,7 +124790,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a9510",
+      "name": "Dvar_SetBool",
       "addr": "0x004a9510",
       "size": 21,
       "callers": 75,
@@ -124797,10 +124798,10 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
-      "name": "FUN_004a9580",
+      "name": "Dvar_SetString",
       "addr": "0x004a9580",
       "size": 21,
       "callers": 55,
@@ -124808,7 +124809,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004ac890",
@@ -124910,7 +124911,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d8580",
+      "name": "Sys_FreeFileList",
       "addr": "0x004d8580",
       "size": 21,
       "callers": 2,
@@ -125033,7 +125034,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f52e0",
+      "name": "Dvar_SetFromStringByName",
       "addr": "0x004f52e0",
       "size": 21,
       "callers": 14,
@@ -125041,7 +125042,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004f8440",
@@ -125088,7 +125089,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00505670",
+      "name": "R_RegisterFont",
       "addr": "0x00505670",
       "size": 21,
       "callers": 2,
@@ -125325,7 +125326,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00467cc0",
+      "name": "LiveSteam_Client_SteamDisconnect",
       "addr": "0x00467cc0",
       "size": 20,
       "callers": 1,
@@ -125335,7 +125336,7 @@
       "imports": [
         "IW4X.DLL!SteamUser"
       ],
-      "category": "other"
+      "category": "network"
     },
     {
       "name": "FUN_004683e0",
@@ -125437,7 +125438,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b0270",
+      "name": "Sys_IsServerThread",
       "addr": "0x004b0270",
       "size": 20,
       "callers": 26,
@@ -125450,7 +125451,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b20e0",
+      "name": "Sys_IsRenderThread",
       "addr": "0x004b20e0",
       "size": 20,
       "callers": 38,
@@ -125463,7 +125464,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b3890",
+      "name": "Jump_ClearState",
       "addr": "0x004b3890",
       "size": 20,
       "callers": 5,
@@ -125485,7 +125486,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c37d0",
+      "name": "Sys_IsMainThread",
       "addr": "0x004c37d0",
       "size": 20,
       "callers": 84,
@@ -125498,7 +125499,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004c6020",
+      "name": "Sys_IsDatabaseThread",
       "addr": "0x004c6020",
       "size": 20,
       "callers": 25,
@@ -125522,7 +125523,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004dcc10",
+      "name": "Sys_InitCmdEvents",
       "addr": "0x004dcc10",
       "size": 20,
       "callers": 1,
@@ -125546,7 +125547,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e71e0",
+      "name": "I_isdigit",
       "addr": "0x004e71e0",
       "size": 20,
       "callers": 6,
@@ -125557,7 +125558,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f1b60",
+      "name": "Scr_IsValidGameType",
       "addr": "0x004f1b60",
       "size": 20,
       "callers": 1,
@@ -125565,7 +125566,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004fd8c0",
@@ -125792,7 +125793,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00446b60",
+      "name": "FS_FileOpenReadText",
       "addr": "0x00446b60",
       "size": 19,
       "callers": 1,
@@ -125906,7 +125907,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004a5de0",
+      "name": "FS_FreeFileList",
       "addr": "0x004a5de0",
       "size": 19,
       "callers": 7,
@@ -126416,7 +126417,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bfb40",
+      "name": "Scr_AddEntity",
       "addr": "0x004bfb40",
       "size": 18,
       "callers": 50,
@@ -126424,7 +126425,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004d55b0",
@@ -126658,7 +126659,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044adb0",
+      "name": "CL_GetConfigString",
       "addr": "0x0044adb0",
       "size": 17,
       "callers": 93,
@@ -126880,7 +126881,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d6e40",
+      "name": "SV_IsTestClient",
       "addr": "0x004d6e40",
       "size": 17,
       "callers": 2,
@@ -126935,7 +126936,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f5d60",
+      "name": "Party_GetMaxPlayers",
       "addr": "0x004f5d60",
       "size": 17,
       "callers": 25,
@@ -127034,7 +127035,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004014c0",
+      "name": "SV_GetClientPersistentDataBuffer",
       "addr": "0x004014c0",
       "size": 16,
       "callers": 5,
@@ -127421,7 +127422,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004da010",
+      "name": "Key_IsCatcherActive",
       "addr": "0x004da010",
       "size": 16,
       "callers": 17,
@@ -127443,7 +127444,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f4ac0",
+      "name": "SV_GetClientPersistentDataModifiedFlags",
       "addr": "0x004f4ac0",
       "size": 16,
       "callers": 3,
@@ -128200,7 +128201,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004eb810",
+      "name": "G_GetEntityTypeName",
       "addr": "0x004eb810",
       "size": 15,
       "callers": 1,
@@ -128567,7 +128568,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bd320",
+      "name": "Scr_FreeThread",
       "addr": "0x004bd320",
       "size": 14,
       "callers": 13,
@@ -128575,7 +128576,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004c8720",
@@ -128613,7 +128614,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004e6ec0",
+      "name": "BG_GetWeaponName",
       "addr": "0x004e6ec0",
       "size": 14,
       "callers": 58,
@@ -128993,7 +128994,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00441650",
+      "name": "Scr_ShutdownAllocNode",
       "addr": "0x00441650",
       "size": 13,
       "callers": 2,
@@ -129001,7 +129002,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_00446330",
@@ -129050,7 +129051,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00468500",
+      "name": "SV_GetConfigstringConst",
       "addr": "0x00468500",
       "size": 13,
       "callers": 22,
@@ -129339,7 +129340,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004ee3e0",
+      "name": "SV_Loaded",
       "addr": "0x004ee3e0",
       "size": 13,
       "callers": 2,
@@ -129589,7 +129590,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004169c0",
+      "name": "Sys_Sleep",
       "addr": "0x004169c0",
       "size": 12,
       "callers": 39,
@@ -129679,7 +129680,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00440eb0",
+      "name": "BG_GetWeaponDef",
       "addr": "0x00440eb0",
       "size": 12,
       "callers": 329,
@@ -129723,7 +129724,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0044ce00",
+      "name": "BG_GetWeaponCompleteDef",
       "addr": "0x0044ce00",
       "size": 12,
       "callers": 59,
@@ -130033,7 +130034,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004cfcf0",
+      "name": "DB_GetXAssetTypeName",
       "addr": "0x004cfcf0",
       "size": 12,
       "callers": 4,
@@ -130066,7 +130067,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004d5390",
+      "name": "Dvar_FindVar",
       "addr": "0x004d5390",
       "size": 12,
       "callers": 27,
@@ -130074,7 +130075,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004ea720",
@@ -130728,7 +130729,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004daa80",
+      "name": "DB_GetRawFileLen",
       "addr": "0x004daa80",
       "size": 11,
       "callers": 5,
@@ -131720,7 +131721,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00494290",
+      "name": "Dvar_ClearModified",
       "addr": "0x00494290",
       "size": 9,
       "callers": 26,
@@ -131728,7 +131729,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "dvar"
     },
     {
       "name": "FUN_004b2ec0",
@@ -131808,7 +131809,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f5cc0",
+      "name": "BG_GetNumWeapons",
       "addr": "0x004f5cc0",
       "size": 9,
       "callers": 31,
@@ -131819,7 +131820,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f6110",
+      "name": "SEH_GetCurrentLanguage",
       "addr": "0x004f6110",
       "size": 9,
       "callers": 9,
@@ -132259,7 +132260,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0043eb20",
+      "name": "CL_IsCgameInitialized",
       "addr": "0x0043eb20",
       "size": 8,
       "callers": 28,
@@ -132534,7 +132535,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00505770",
+      "name": "R_TextHeight",
       "addr": "0x00505770",
       "size": 8,
       "callers": 17,
@@ -133020,7 +133021,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0042bbb0",
+      "name": "DB_GetLoadedFlags",
       "addr": "0x0042bbb0",
       "size": 6,
       "callers": 7,
@@ -133053,7 +133054,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00433700",
+      "name": "CG_GetClientNum",
       "addr": "0x00433700",
       "size": 6,
       "callers": 2,
@@ -133196,7 +133197,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_0045cba0",
+      "name": "Win_GetLanguage",
       "addr": "0x0045cba0",
       "size": 6,
       "callers": 1,
@@ -133427,7 +133428,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004b0e90",
+      "name": "Scr_GetNumParam",
       "addr": "0x004b0e90",
       "size": 6,
       "callers": 76,
@@ -133435,7 +133436,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "scriptengine"
     },
     {
       "name": "FUN_004b0ea0",
@@ -133515,7 +133516,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004be790",
+      "name": "UI_GetActiveMenu",
       "addr": "0x004be790",
       "size": 6,
       "callers": 11,
@@ -133713,7 +133714,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004f5cb0",
+      "name": "Live_IsSystemUiActive",
       "addr": "0x004f5cb0",
       "size": 6,
       "callers": 1,
@@ -133803,7 +133804,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_005bad90",
+      "name": "CL_GetLocalClientActiveCount",
       "addr": "0x005bad90",
       "size": 6,
       "callers": 27,
@@ -135145,7 +135146,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_005a7f00",
+      "name": "Key_ClearStates",
       "addr": "0x00435490",
       "size": 5,
       "callers": 5,
@@ -135211,7 +135212,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00437190",
+      "name": "RemoveRefToObject",
       "addr": "0x0044bb80",
       "size": 5,
       "callers": 1,
@@ -135233,7 +135234,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_004bb9b0",
+      "name": "Cbuf_AddServerText_f",
       "addr": "0x0044c610",
       "size": 5,
       "callers": 1,
@@ -135332,7 +135333,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00441fc0",
+      "name": "Live_GetLocalClientName",
       "addr": "0x004708b0",
       "size": 5,
       "callers": 1,
@@ -135343,7 +135344,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_004169c0",
+      "name": "Sys_Sleep",
       "addr": "0x00470cd0",
       "size": 5,
       "callers": 1,
@@ -135398,7 +135399,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_004576c0",
+      "name": "FS_Write",
       "addr": "0x0048d4e0",
       "size": 5,
       "callers": 2,
@@ -135406,7 +135407,7 @@
       "is_external": false,
       "strings": [],
       "imports": [],
-      "category": "other"
+      "category": "filesystem"
     },
     {
       "name": "thunk_FUN_004b2080",
@@ -135453,7 +135454,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_0041a0b0",
+      "name": "StringTable_GetAsset_FastFile",
       "addr": "0x0049bb60",
       "size": 5,
       "callers": 34,
@@ -135497,7 +135498,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_004f3680",
+      "name": "Z_Malloc",
       "addr": "0x004a46b0",
       "size": 5,
       "callers": 1,
@@ -135574,7 +135575,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00441fc0",
+      "name": "Live_GetLocalClientName",
       "addr": "0x004b3ac0",
       "size": 5,
       "callers": 14,
@@ -135596,7 +135597,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_004b76d0",
+      "name": "DB_EnumXAssets",
       "addr": "0x004b7720",
       "size": 5,
       "callers": 8,
@@ -135695,7 +135696,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00462000",
+      "name": "FS_FCloseFile",
       "addr": "0x004e5f00",
       "size": 5,
       "callers": 2,
@@ -135728,7 +135729,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00505670",
+      "name": "R_RegisterFont",
       "addr": "0x004eb8b0",
       "size": 5,
       "callers": 11,
@@ -135783,7 +135784,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00454e40",
+      "name": "allocator",
       "addr": "0x004efa40",
       "size": 5,
       "callers": 1,
@@ -135827,7 +135828,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00505670",
+      "name": "R_RegisterFont",
       "addr": "0x00505690",
       "size": 5,
       "callers": 2,
@@ -135926,7 +135927,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00440ec0",
+      "name": "DB_Update",
       "addr": "0x0060b4c0",
       "size": 5,
       "callers": 1,
@@ -135937,7 +135938,7 @@
       "category": "other"
     },
     {
-      "name": "thunk_FUN_00468380",
+      "name": "DB_GetLoadedFraction",
       "addr": "0x00629fc0",
       "size": 5,
       "callers": 1,
@@ -136058,7 +136059,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_00449e30",
+      "name": "CL_ControllerIndexFromClientNum",
       "addr": "0x00449e30",
       "size": 3,
       "callers": 241,
@@ -136113,7 +136114,7 @@
       "category": "other"
     },
     {
-      "name": "FUN_004bb9b0",
+      "name": "Cbuf_AddServerText_f",
       "addr": "0x004bb9b0",
       "size": 1,
       "callers": 331,

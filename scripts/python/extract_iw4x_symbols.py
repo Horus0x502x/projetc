@@ -23,17 +23,25 @@ OUT_JSON = Path("findings/iw4x-symbols.json")
 OUT_MD = Path("findings/iw4x-symbols.md")
 
 
-# Patterns à détecter :
-# 1. ADDR // Name             (pattern le plus courant)
-# 2. // ADDR = Name           (commentaire avant)
-# 3. // ADDR Name             (descriptif)
-# 4. Game::Function = Name   ?  trop spécialisé, on saute
-# 5. Hook::Set<T>(ADDR, ...) // Name
+# Patterns détectés (par ordre de fiabilité décroissante) :
+# 1. SourceCode dans Game/Functions.cpp et Game/Dvars.cpp (canonique typed) :
+#    SomeFunc_t SomeFunc = SomeFunc_t(0xADDR);
+#    Type* SomeVar = reinterpret_cast<Type*>(0xADDR);
+# 2. Commentaires inline patches : 0xADDR // Name
+# 3. Commentaires explicatifs : // 0xADDR = Name
 PATTERNS = [
-    # 0x12345678 // some name
-    re.compile(r"0x([0-9a-fA-F]{6,8})\b[^/\n]*//\s*([A-Za-z_][A-Za-z0-9_:]{1,50})"),
+    # SomeFunc_t SomeFunc = SomeFunc_t(0xADDR)   <- canonique
+    ("typed_function", re.compile(
+        r"\b(\w+)_t\s+(\w+)\s*=\s*\w+_t\(\s*0x([0-9a-fA-F]+)\s*\)")),
+    # Type* var = reinterpret_cast<Type*>(0xADDR)   <- variables globales
+    ("typed_variable", re.compile(
+        r"\b(\w+\*?)\s+(\w+)\s*=\s*reinterpret_cast<\w+\*?>\(\s*0x([0-9a-fA-F]+)\s*\)")),
+    # 0x12345678 // some name (inline comment)
+    ("inline_comment", re.compile(
+        r"0x([0-9a-fA-F]{6,8})\b[^/\n]*//\s*([A-Za-z_][A-Za-z0-9_:]{1,50})")),
     # // 0x12345678 = SomeName  ou  // 0x12345678 SomeName
-    re.compile(r"//\s*0x([0-9a-fA-F]{6,8})\s*=?\s*([A-Za-z_][A-Za-z0-9_:]{1,50})"),
+    ("explanatory",    re.compile(
+        r"//\s*0x([0-9a-fA-F]{6,8})\s*=?\s*([A-Za-z_][A-Za-z0-9_:]{1,50})")),
 ]
 
 # Filtrer les noms qui sont en fait des keywords ou trivialités.
@@ -55,9 +63,14 @@ def extract_from_file(path: Path) -> list[tuple[int, str, int]]:
     except Exception:
         return out
     for ln_idx, line in enumerate(content.splitlines(), 1):
-        for pat in PATTERNS:
+        for kind, pat in PATTERNS:
             for m in pat.finditer(line):
-                addr_hex, name = m.group(1), m.group(2).strip()
+                if kind in ("typed_function", "typed_variable"):
+                    # Group order : type_or_typename, varname, addr
+                    name = m.group(2).strip()
+                    addr_hex = m.group(3)
+                else:
+                    addr_hex, name = m.group(1), m.group(2).strip()
                 # Trim trailing junk
                 name = re.split(r"[\s,;\(]", name, maxsplit=1)[0]
                 if not name or name.lower() in JUNK_NAMES or name.isdigit():
