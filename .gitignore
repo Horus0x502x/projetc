@@ -1,0 +1,38 @@
+# Artifacts lourds — non versionnés
+traces/*
+!traces/.gitkeep
+dumps/*
+!dumps/.gitkeep
+
+# Refs (clones upstream) — gérés à part, pas committés
+refs/*
+!refs/.gitkeep
+
+# Ghidra — fichiers temporaires et locks
+ghidra/*.lock
+ghidra/*.lock~
+ghidra/*.bak
+ghidra/.ghidra/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Éditeurs
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Crash dumps locaux
+*.dmp
+
+# Frida outputs bruts
+*.frida-trace
