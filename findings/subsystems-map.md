@@ -161,4 +161,22 @@ Linux (Wine traduit).
 Plus de détails par binaire :
 - `findings/iw4x.exe-functions.json` + `findings/iw4x.exe-interesting-functions.md`
 - `findings/iw4x-functions.json` + `findings/iw4x-interesting-functions.md`
+- `findings/iw4v.dll-functions.json` + `findings/iw4v.dll-interesting-functions.md`
 - `findings/iw4x-cross-ref.md` (correspondances binaire↔source)
+- `findings/iw4x-symbols.json` (915 symboles nommés depuis le source IW4x)
+- `findings/iw4x-patches.md` (1051 patches IW4x dans iw4x.exe)
+- `findings/iw4v-fork-analysis.md` (fork "scfge/eliott")
+- `findings/iw4v-vs-iw4x-diff.md` (diff DLLs)
+- `findings/q3-engine-structures.md` (playerState_s, gentity_s, etc.)
+- `findings/iw4x-security-analysis.md` (16 patches anti-exploit, défensif)
+- `findings/render-pipeline.md` (pipeline D3D9 + R_/RB_ functions)
+
+## État du projet
+
+- **15+ commits** sur `main`, repo public à <https://github.com/Horus0x502x/projetc>
+- **3 binaires PE analysés** dans Ghidra : iw4x.dll (15207 fns), iw4x.exe (11479 fns), iw4v.dll (14240 fns)
+- **746 fonctions iw4x.exe nommées** (Q3-style : Cmd_*, FS_*, CL_*, SV_*, Com_*, Scr_*, R_*)
+- **1051 patches IW4x** sur iw4x.exe documentés (adresse + module + type)
+- **24 fonctions** décompilées en pseudo-C lisible
+- **5 agents Frida** : libc-net, internals, gameplay-mega, commands, named
+- **Pipeline complète** statique → dynamique → cross-réf source IW4x
