@@ -1,0 +1,2881 @@
+{
+  "symbol_count": 317,
+  "symbols": [
+    {
+      "addr": "0x00401950",
+      "addr_int": 4200784,
+      "name": "SV_UserinfoChanged",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:145"
+      ]
+    },
+    {
+      "addr": "0x00402500",
+      "addr_int": 4203776,
+      "name": "Com_DPrintf",
+      "alt_names": [
+        "logger"
+      ],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:357",
+        "src/Components/Modules/Sound.cpp:10"
+      ]
+    },
+    {
+      "addr": "0x00402d30",
+      "addr_int": 4205872,
+      "name": "StuckInClient",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:208"
+      ]
+    },
+    {
+      "addr": "0x00403547",
+      "addr_int": 4207943,
+      "name": "CL_Disconnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:387"
+      ]
+    },
+    {
+      "addr": "0x00403582",
+      "addr_int": 4208002,
+      "name": "CL_Disconnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:366"
+      ]
+    },
+    {
+      "addr": "0x00404ca0",
+      "addr_int": 4213920,
+      "name": "CL_InitOnceForAllClients",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:188"
+      ]
+    },
+    {
+      "addr": "0x004059ea",
+      "addr_int": 4217322,
+      "name": "GamerProfile_RegisterCommands",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:602"
+      ]
+    },
+    {
+      "addr": "0x004059ef",
+      "addr_int": 4217327,
+      "name": "GamerProfile_RegisterDvars",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:603"
+      ]
+    },
+    {
+      "addr": "0x00406d10",
+      "addr_int": 4222224,
+      "name": "Win_InitLocalization",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:947"
+      ]
+    },
+    {
+      "addr": "0x004077a1",
+      "addr_int": 4224929,
+      "name": "PartyMigrate_Frame",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Party.cpp:318"
+      ]
+    },
+    {
+      "addr": "0x004081fd",
+      "addr_int": 4227581,
+      "name": "defaultweapon",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:562"
+      ]
+    },
+    {
+      "addr": "0x00408228",
+      "addr_int": 4227624,
+      "name": "find",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:563"
+      ]
+    },
+    {
+      "addr": "0x0040823a",
+      "addr_int": 4227642,
+      "name": "jump",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:565"
+      ]
+    },
+    {
+      "addr": "0x0040bdd0",
+      "addr_int": 4242896,
+      "name": "MSG_ReadShort",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:907"
+      ]
+    },
+    {
+      "addr": "0x0040d7a0",
+      "addr_int": 4249504,
+      "name": "Load_XModelSurfsFixup",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Zones.cpp:179"
+      ]
+    },
+    {
+      "addr": "0x00411c16",
+      "addr_int": 4267030,
+      "name": "CL_WritePacket",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Huffman.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x00412370",
+      "addr_int": 4268912,
+      "name": "SV_SteamAuthClient",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Security.cpp:183"
+      ]
+    },
+    {
+      "addr": "0x00414d92",
+      "addr_int": 4279698,
+      "name": "SV_ExecuteClientCommands",
+      "alt_names": [
+        "SV_ExecuteClientMessage"
+      ],
+      "sources": [
+        "src/Components/Modules/Huffman.cpp:7",
+        "src/Components/Modules/Security.cpp:176"
+      ]
+    },
+    {
+      "addr": "0x004158d9",
+      "addr_int": 4282585,
+      "name": "main",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FastFiles.cpp:609"
+      ]
+    },
+    {
+      "addr": "0x0041698e",
+      "addr_int": 4286862,
+      "name": "Disable",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Security.cpp:186"
+      ]
+    },
+    {
+      "addr": "0x0041b9f0",
+      "addr_int": 4307440,
+      "name": "called",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:205"
+      ]
+    },
+    {
+      "addr": "0x0041bed2",
+      "addr_int": 4308690,
+      "name": "SetEntityFieldValue",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Field.cpp:161"
+      ]
+    },
+    {
+      "addr": "0x0041d010",
+      "addr_int": 4313104,
+      "name": "CL_CheckForResend",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:206"
+      ]
+    },
+    {
+      "addr": "0x0041fde0",
+      "addr_int": 4324832,
+      "name": "Com_Frame",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:204"
+      ]
+    },
+    {
+      "addr": "0x00420830",
+      "addr_int": 4327472,
+      "name": "Com_InitHunkMemory",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:955"
+      ]
+    },
+    {
+      "addr": "0x00421ee0",
+      "addr_int": 4333280,
+      "name": "Scr_ShutdownSystem",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:173"
+      ]
+    },
+    {
+      "addr": "0x004236a5",
+      "addr_int": 4339365,
+      "name": "CL_InitCGame",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:377"
+      ]
+    },
+    {
+      "addr": "0x00426080",
+      "addr_int": 4350080,
+      "name": "I_strnicmp",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/NetworkDebug.cpp:52"
+      ]
+    },
+    {
+      "addr": "0x00426130",
+      "addr_int": 4350256,
+      "name": "other",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:195"
+      ]
+    },
+    {
+      "addr": "0x00426c8a",
+      "addr_int": 4353162,
+      "name": "ScriptCompile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:899"
+      ]
+    },
+    {
+      "addr": "0x00428951",
+      "addr_int": 4360529,
+      "name": "Reduce",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:627"
+      ]
+    },
+    {
+      "addr": "0x0042895d",
+      "addr_int": 4360541,
+      "name": "Reduce",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:628"
+      ]
+    },
+    {
+      "addr": "0x00428a8e",
+      "addr_int": 4360846,
+      "name": "Adjust",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:623"
+      ]
+    },
+    {
+      "addr": "0x00428a90",
+      "addr_int": 4360848,
+      "name": "Adjust",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:624"
+      ]
+    },
+    {
+      "addr": "0x00428ac0",
+      "addr_int": 4360896,
+      "name": "Reduce",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:629"
+      ]
+    },
+    {
+      "addr": "0x00428ac5",
+      "addr_int": 4360901,
+      "name": "Adjust",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:626"
+      ]
+    },
+    {
+      "addr": "0x00428aed",
+      "addr_int": 4360941,
+      "name": "Reduce",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:630"
+      ]
+    },
+    {
+      "addr": "0x00428af2",
+      "addr_int": 4360946,
+      "name": "Adjust",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Console.cpp:625"
+      ]
+    },
+    {
+      "addr": "0x0042904b",
+      "addr_int": 4362315,
+      "name": "Scr_FreeScripts",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:897"
+      ]
+    },
+    {
+      "addr": "0x00429080",
+      "addr_int": 4362368,
+      "name": "FS_InitFileSystem",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:968"
+      ]
+    },
+    {
+      "addr": "0x004290c6",
+      "addr_int": 4362438,
+      "name": "FS_InitFilesystem",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:467"
+      ]
+    },
+    {
+      "addr": "0x004290d8",
+      "addr_int": 4362456,
+      "name": "FS_IsBasePathValid",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:493"
+      ]
+    },
+    {
+      "addr": "0x0042961c",
+      "addr_int": 4363804,
+      "name": "Playlist_ParsePlaylists",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Playlist.cpp:181"
+      ]
+    },
+    {
+      "addr": "0x0042bbb0",
+      "addr_int": 4373424,
+      "name": "DB_GetLoadedFlags",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:761"
+      ]
+    },
+    {
+      "addr": "0x0042e398",
+      "addr_int": 4383640,
+      "name": "safeArea_horizontal",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dvar.cpp:497"
+      ]
+    },
+    {
+      "addr": "0x0042e3c4",
+      "addr_int": 4383684,
+      "name": "safeArea_vertical",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dvar.cpp:498"
+      ]
+    },
+    {
+      "addr": "0x0042e3f5",
+      "addr_int": 4383733,
+      "name": "safeArea_adjusted_horizontal",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dvar.cpp:495"
+      ]
+    },
+    {
+      "addr": "0x0042e423",
+      "addr_int": 4383779,
+      "name": "safeArea_adjusted_vertical",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dvar.cpp:496"
+      ]
+    },
+    {
+      "addr": "0x0042f0a0",
+      "addr_int": 4386976,
+      "name": "Com_InitCriticalSections",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:945"
+      ]
+    },
+    {
+      "addr": "0x004301b0",
+      "addr_int": 4391344,
+      "name": "Com_InitMainThread",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:946"
+      ]
+    },
+    {
+      "addr": "0x00434bd4",
+      "addr_int": 4410324,
+      "name": "CL_CheckNotify",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Command.cpp:227"
+      ]
+    },
+    {
+      "addr": "0x00435950",
+      "addr_int": 4413776,
+      "name": "LSP",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:410"
+      ]
+    },
+    {
+      "addr": "0x0043d140",
+      "addr_int": 4444480,
+      "name": "Com_EventLoop",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1008",
+        "src/Components/Modules/ZoneBuilder.cpp:1035",
+        "src/Components/Modules/ZoneBuilder.cpp:963"
+      ]
+    },
+    {
+      "addr": "0x0043ebb0",
+      "addr_int": 4451248,
+      "name": "check",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1032"
+      ]
+    },
+    {
+      "addr": "0x00440eb0",
+      "addr_int": 4460208,
+      "name": "BG_GetWeaponDef",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:331",
+        "src/Components/Modules/Weapon.cpp:352"
+      ]
+    },
+    {
+      "addr": "0x00440ec0",
+      "addr_int": 4460224,
+      "name": "DB_Update",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1007",
+        "src/Components/Modules/ZoneBuilder.cpp:1031"
+      ]
+    },
+    {
+      "addr": "0x00444810",
+      "addr_int": 4474896,
+      "name": "IsDynClassname",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:194"
+      ]
+    },
+    {
+      "addr": "0x004454c0",
+      "addr_int": 4478144,
+      "name": "Item_SetupKeywordHash",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:995"
+      ]
+    },
+    {
+      "addr": "0x0044e712",
+      "addr_int": 4515602,
+      "name": "Scr_GetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:357"
+      ]
+    },
+    {
+      "addr": "0x0044e72e",
+      "addr_int": 4515630,
+      "name": "Scr_GetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:353"
+      ]
+    },
+    {
+      "addr": "0x0045148b",
+      "addr_int": 4527243,
+      "name": "Disable",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:221"
+      ]
+    },
+    {
+      "addr": "0x00454e40",
+      "addr_int": 4542016,
+      "name": "allocator",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Sound.cpp:8"
+      ]
+    },
+    {
+      "addr": "0x0045a5bf",
+      "addr_int": 4564415,
+      "name": "SV_ClipMoveToEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:498"
+      ]
+    },
+    {
+      "addr": "0x0045b868",
+      "addr_int": 4569192,
+      "name": "profile_menuDvarsSetup",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:615"
+      ]
+    },
+    {
+      "addr": "0x0045b87e",
+      "addr_int": 4569214,
+      "name": "profile_menuDvarsFinish",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:616"
+      ]
+    },
+    {
+      "addr": "0x0045b894",
+      "addr_int": 4569236,
+      "name": "profile_toggleInvertedPitch",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:617"
+      ]
+    },
+    {
+      "addr": "0x0045b8aa",
+      "addr_int": 4569258,
+      "name": "profile_setViewSensitivity",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:618"
+      ]
+    },
+    {
+      "addr": "0x0045b8c3",
+      "addr_int": 4569283,
+      "name": "profile_setButtonsConfig",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:619"
+      ]
+    },
+    {
+      "addr": "0x0045b8d9",
+      "addr_int": 4569305,
+      "name": "profile_setSticksConfig",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:620"
+      ]
+    },
+    {
+      "addr": "0x0045b8ef",
+      "addr_int": 4569327,
+      "name": "profile_toggleAutoAim",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:621"
+      ]
+    },
+    {
+      "addr": "0x0045b905",
+      "addr_int": 4569349,
+      "name": "profile_SetHasEverPlayed_MainMenu",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:622"
+      ]
+    },
+    {
+      "addr": "0x0045b91e",
+      "addr_int": 4569374,
+      "name": "profile_SetHasEverPlayed_SP",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:623"
+      ]
+    },
+    {
+      "addr": "0x0045b934",
+      "addr_int": 4569396,
+      "name": "profile_SetHasEverPlayed_SO",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:624"
+      ]
+    },
+    {
+      "addr": "0x0045b94a",
+      "addr_int": 4569418,
+      "name": "profile_SetHasEverPlayed_MP",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:625"
+      ]
+    },
+    {
+      "addr": "0x0045b960",
+      "addr_int": 4569440,
+      "name": "profile_setVolume",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:626"
+      ]
+    },
+    {
+      "addr": "0x0045b979",
+      "addr_int": 4569465,
+      "name": "profile_setGamma",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:627"
+      ]
+    },
+    {
+      "addr": "0x0045b98f",
+      "addr_int": 4569487,
+      "name": "profile_setBlacklevel",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:628"
+      ]
+    },
+    {
+      "addr": "0x0045b9a5",
+      "addr_int": 4569509,
+      "name": "profile_toggleCanSkipOffensiveMissions",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:629"
+      ]
+    },
+    {
+      "addr": "0x0045d959",
+      "addr_int": 4577625,
+      "name": "Scr_LoadScript",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:900"
+      ]
+    },
+    {
+      "addr": "0x00460f6d",
+      "addr_int": 4591469,
+      "name": "SV_DirectConnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Security.cpp:208"
+      ]
+    },
+    {
+      "addr": "0x004611ca",
+      "addr_int": 4592074,
+      "name": "NET_OutOfBandPrint",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Auth.cpp:620"
+      ]
+    },
+    {
+      "addr": "0x004612bd",
+      "addr_int": 4592317,
+      "name": "SV_DirectConnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:364"
+      ]
+    },
+    {
+      "addr": "0x00461a50",
+      "addr_int": 4594256,
+      "name": "FS_Restart",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:308"
+      ]
+    },
+    {
+      "addr": "0x00461a55",
+      "addr_int": 4594261,
+      "name": "FS_Restart",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:476"
+      ]
+    },
+    {
+      "addr": "0x00461a88",
+      "addr_int": 4594312,
+      "name": "FS_Restart",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:468"
+      ]
+    },
+    {
+      "addr": "0x00463c61",
+      "addr_int": 4602977,
+      "name": "getBuildNumberAsInt",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:407"
+      ]
+    },
+    {
+      "addr": "0x00464a90",
+      "addr_int": 4606608,
+      "name": "Com_ParseCommandLine",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1000"
+      ]
+    },
+    {
+      "addr": "0x004656a7",
+      "addr_int": 4609703,
+      "name": "Scr_BeginLoadScripts",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:896"
+      ]
+    },
+    {
+      "addr": "0x00467cc0",
+      "addr_int": 4619456,
+      "name": "LiveSteam_Client_SteamDisconnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:158"
+      ]
+    },
+    {
+      "addr": "0x00468960",
+      "addr_int": 4622688,
+      "name": "some",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:209"
+      ]
+    },
+    {
+      "addr": "0x0046a630",
+      "addr_int": 4630064,
+      "name": "SND_Init",
+      "alt_names": [
+        "init"
+      ],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:203",
+        "src/Components/Modules/ZoneBuilder.cpp:974"
+      ]
+    },
+    {
+      "addr": "0x00474320",
+      "addr_int": 4670240,
+      "name": "SV_InitGameMode",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:293"
+      ]
+    },
+    {
+      "addr": "0x0047548b",
+      "addr_int": 4674699,
+      "name": "G_LoadGame",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:368"
+      ]
+    },
+    {
+      "addr": "0x0047a530",
+      "addr_int": 4695344,
+      "name": "MSG_ReadString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:909"
+      ]
+    },
+    {
+      "addr": "0x0047c820",
+      "addr_int": 4704288,
+      "name": "Info_ValueForKey",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ClanTags.cpp:147"
+      ]
+    },
+    {
+      "addr": "0x0047ddb2",
+      "addr_int": 4709810,
+      "name": "Com_Frame_Try_Block_Function",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:276"
+      ]
+    },
+    {
+      "addr": "0x0047df9a",
+      "addr_int": 4710298,
+      "name": "GamerProfile_UpdateSystemDvars",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:604"
+      ]
+    },
+    {
+      "addr": "0x0047f390",
+      "addr_int": 4715408,
+      "name": "Swap_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:953"
+      ]
+    },
+    {
+      "addr": "0x004823a0",
+      "addr_int": 4727712,
+      "name": "FS_Startup",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:301"
+      ]
+    },
+    {
+      "addr": "0x0048bb1f",
+      "addr_int": 4766495,
+      "name": "Exit",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:364"
+      ]
+    },
+    {
+      "addr": "0x0048f660",
+      "addr_int": 4781664,
+      "name": "Cmd_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:951"
+      ]
+    },
+    {
+      "addr": "0x0048fedd",
+      "addr_int": 4783837,
+      "name": "SV_SendMessageToClient",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Huffman.cpp:15"
+      ]
+    },
+    {
+      "addr": "0x00494060",
+      "addr_int": 4800608,
+      "name": "DB_LoadDelayedImages",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:322"
+      ]
+    },
+    {
+      "addr": "0x00494083",
+      "addr_int": 4800643,
+      "name": "DB_DelayLoadImages",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1454"
+      ]
+    },
+    {
+      "addr": "0x004a1280",
+      "addr_int": 4854400,
+      "name": "something",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:997"
+      ]
+    },
+    {
+      "addr": "0x004a1d97",
+      "addr_int": 4857239,
+      "name": "DB_AuthLoad_InflateInit",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FastFiles.cpp:610"
+      ]
+    },
+    {
+      "addr": "0x004a23eb",
+      "addr_int": 4858859,
+      "name": "voice",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Sound.cpp:12"
+      ]
+    },
+    {
+      "addr": "0x004a46c0",
+      "addr_int": 4867776,
+      "name": "FS_Shutdown",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:316"
+      ]
+    },
+    {
+      "addr": "0x004a4d50",
+      "addr_int": 4869456,
+      "name": "FireWeapon",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:76"
+      ]
+    },
+    {
+      "addr": "0x004a4f9b",
+      "addr_int": 4870043,
+      "name": "FireWeapon",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:493"
+      ]
+    },
+    {
+      "addr": "0x004a57d0",
+      "addr_int": 4872144,
+      "name": "CAll",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:339"
+      ]
+    },
+    {
+      "addr": "0x004a5d85",
+      "addr_int": 4873605,
+      "name": "Non",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Stats.cpp:232"
+      ]
+    },
+    {
+      "addr": "0x004a5d9d",
+      "addr_int": 4873629,
+      "name": "Modded",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Stats.cpp:233"
+      ]
+    },
+    {
+      "addr": "0x004a62a0",
+      "addr_int": 4874912,
+      "name": "LargeLocalInit",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:956"
+      ]
+    },
+    {
+      "addr": "0x004a745b",
+      "addr_int": 4879451,
+      "name": "SV_SpawnServer",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:471"
+      ]
+    },
+    {
+      "addr": "0x004a75a7",
+      "addr_int": 4879783,
+      "name": "SV_SpawnServer",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Party.cpp:253"
+      ]
+    },
+    {
+      "addr": "0x004a7cf0",
+      "addr_int": 4881648,
+      "name": "GScr_AddFieldsForClient",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Field.cpp:36"
+      ]
+    },
+    {
+      "addr": "0x004a9f56",
+      "addr_int": 4890454,
+      "name": "CL_ParseServerMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Huffman.cpp:9",
+        "src/Components/Modules/Security.cpp:177"
+      ]
+    },
+    {
+      "addr": "0x004a9f76",
+      "addr_int": 4890486,
+      "name": "CL_ParseServerMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:911"
+      ]
+    },
+    {
+      "addr": "0x004aa430",
+      "addr_int": 4891696,
+      "name": "ClientDisconnect",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:132"
+      ]
+    },
+    {
+      "addr": "0x004ae560",
+      "addr_int": 4908384,
+      "name": "Info_SetValueForKey",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ClanTags.cpp:111",
+        "src/Components/Modules/ClanTags.cpp:114"
+      ]
+    },
+    {
+      "addr": "0x004b0100",
+      "addr_int": 4915456,
+      "name": "I_strcmp",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ClanTags.cpp:180"
+      ]
+    },
+    {
+      "addr": "0x004b0fc3",
+      "addr_int": 4919235,
+      "name": "make",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:199"
+      ]
+    },
+    {
+      "addr": "0x004b3b10",
+      "addr_int": 4930320,
+      "name": "Party_UpdateClanName",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ClanTags.cpp:186"
+      ]
+    },
+    {
+      "addr": "0x004b4eef",
+      "addr_int": 4935407,
+      "name": "same",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:217"
+      ]
+    },
+    {
+      "addr": "0x004bcf80",
+      "addr_int": 4968320,
+      "name": "Common_GetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:205"
+      ]
+    },
+    {
+      "addr": "0x004bd900",
+      "addr_int": 4970752,
+      "name": "main",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:412"
+      ]
+    },
+    {
+      "addr": "0x004bfbe0",
+      "addr_int": 4979680,
+      "name": "Con_InitChannels",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:969"
+      ]
+    },
+    {
+      "addr": "0x004c1be4",
+      "addr_int": 4987876,
+      "name": "SEH_PrintStrlen",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/TextRenderer.cpp:1576"
+      ]
+    },
+    {
+      "addr": "0x004c1c20",
+      "addr_int": 4987936,
+      "name": "MSG_ReadByte",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:906"
+      ]
+    },
+    {
+      "addr": "0x004c37f0",
+      "addr_int": 4995056,
+      "name": "GamerProfile_UpdateProfileAndSaveIfNeeded",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:607"
+      ]
+    },
+    {
+      "addr": "0x004c8609",
+      "addr_int": 5015049,
+      "name": "FS_ConditionalRestart",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:472"
+      ]
+    },
+    {
+      "addr": "0x004c9550",
+      "addr_int": 5018960,
+      "name": "MSG_ReadLong",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:908"
+      ]
+    },
+    {
+      "addr": "0x004c98d0",
+      "addr_int": 5019856,
+      "name": "Com_Memset",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ConfigStrings.cpp:318"
+      ]
+    },
+    {
+      "addr": "0x004cdeec",
+      "addr_int": 5037804,
+      "name": "Don",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ServerList.cpp:1396"
+      ]
+    },
+    {
+      "addr": "0x004cff5c",
+      "addr_int": 5046108,
+      "name": "single",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:508"
+      ]
+    },
+    {
+      "addr": "0x004d06ba",
+      "addr_int": 5047994,
+      "name": "G_ShutdownGame",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:369"
+      ]
+    },
+    {
+      "addr": "0x004d2280",
+      "addr_int": 5055104,
+      "name": "SL_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:950"
+      ]
+    },
+    {
+      "addr": "0x004d3665",
+      "addr_int": 5060197,
+      "name": "SV_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:381"
+      ]
+    },
+    {
+      "addr": "0x004d40db",
+      "addr_int": 5062875,
+      "name": "Com_Quitf",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:477"
+      ]
+    },
+    {
+      "addr": "0x004d6f80",
+      "addr_int": 5074816,
+      "name": "I_strncpyz",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerName.cpp:88"
+      ]
+    },
+    {
+      "addr": "0x004d7030",
+      "addr_int": 5074992,
+      "name": "upnp",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:197"
+      ]
+    },
+    {
+      "addr": "0x004d8220",
+      "addr_int": 5079584,
+      "name": "Dvar_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:949"
+      ]
+    },
+    {
+      "addr": "0x004d9210",
+      "addr_int": 5083664,
+      "name": "Cbuf_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:952"
+      ]
+    },
+    {
+      "addr": "0x004dba50",
+      "addr_int": 5093968,
+      "name": "Player_GetMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:258"
+      ]
+    },
+    {
+      "addr": "0x004dcc10",
+      "addr_int": 5098512,
+      "name": "Sys_InitCmdEvents",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:957"
+      ]
+    },
+    {
+      "addr": "0x004dcec9",
+      "addr_int": 5099209,
+      "name": "some",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:212"
+      ]
+    },
+    {
+      "addr": "0x004dcee9",
+      "addr_int": 5099241,
+      "name": "some",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:215"
+      ]
+    },
+    {
+      "addr": "0x004e0fb0",
+      "addr_int": 5115824,
+      "name": "DB_InitThread",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:970"
+      ]
+    },
+    {
+      "addr": "0x004e1f30",
+      "addr_int": 5119792,
+      "name": "G_SetupWeaponDef",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:994"
+      ]
+    },
+    {
+      "addr": "0x004e2c80",
+      "addr_int": 5123200,
+      "name": "Cbuf_Execute",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1009",
+        "src/Components/Modules/ZoneBuilder.cpp:932"
+      ]
+    },
+    {
+      "addr": "0x004e3683",
+      "addr_int": 5125763,
+      "name": "Configstring",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:142"
+      ]
+    },
+    {
+      "addr": "0x004e532d",
+      "addr_int": 5133101,
+      "name": "PartyHost_TimeoutMembers",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Party.cpp:278"
+      ]
+    },
+    {
+      "addr": "0x004e6870",
+      "addr_int": 5138544,
+      "name": "GamerProfile_UpdateSystemVarsFromProfile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:606"
+      ]
+    },
+    {
+      "addr": "0x004ec721",
+      "addr_int": 5162785,
+      "name": "GScr_AddFieldsForEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Field.cpp:159"
+      ]
+    },
+    {
+      "addr": "0x004ec881",
+      "addr_int": 5163137,
+      "name": "Scr_GetMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:355"
+      ]
+    },
+    {
+      "addr": "0x004ec8dd",
+      "addr_int": 5163229,
+      "name": "Scr_GetMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:354"
+      ]
+    },
+    {
+      "addr": "0x004f2470",
+      "addr_int": 5186672,
+      "name": "FireWeaponMelee",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:103"
+      ]
+    },
+    {
+      "addr": "0x004f5090",
+      "addr_int": 5197968,
+      "name": "SND_InitDriver",
+      "alt_names": [
+        "init"
+      ],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:200",
+        "src/Components/Modules/ZoneBuilder.cpp:973"
+      ]
+    },
+    {
+      "addr": "0x004f84c0",
+      "addr_int": 5211328,
+      "name": "R_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:202"
+      ]
+    },
+    {
+      "addr": "0x004f88b6",
+      "addr_int": 5212342,
+      "name": "Save",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ConfigStrings.cpp:31"
+      ]
+    },
+    {
+      "addr": "0x004f8c70",
+      "addr_int": 5213296,
+      "name": "Print",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/AssetHandler.cpp:500"
+      ]
+    },
+    {
+      "addr": "0x004fd448",
+      "addr_int": 5231688,
+      "name": "Don",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:414"
+      ]
+    },
+    {
+      "addr": "0x004fd4d4",
+      "addr_int": 5231828,
+      "name": "NET_OpenIP",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:383"
+      ]
+    },
+    {
+      "addr": "0x004ff220",
+      "addr_int": 5239328,
+      "name": "Com_InitParse",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:948"
+      ]
+    },
+    {
+      "addr": "0x004ff413",
+      "addr_int": 5239827,
+      "name": "Scr_GetObjectField",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Field.cpp:163"
+      ]
+    },
+    {
+      "addr": "0x00501bc0",
+      "addr_int": 5249984,
+      "name": "Menu_SetupKeywordHash",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:996"
+      ]
+    },
+    {
+      "addr": "0x00502580",
+      "addr_int": 5252480,
+      "name": "Netchan_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:967"
+      ]
+    },
+    {
+      "addr": "0x00503b50",
+      "addr_int": 5258064,
+      "name": "Party_SetDisplayMapName",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/UIFeeder.cpp:349"
+      ]
+    },
+    {
+      "addr": "0x00505721",
+      "addr_int": 5265185,
+      "name": "R_TextWidth",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/TextRenderer.cpp:1580"
+      ]
+    },
+    {
+      "addr": "0x00507b80",
+      "addr_int": 5274496,
+      "name": "start",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:201"
+      ]
+    },
+    {
+      "addr": "0x00507c79",
+      "addr_int": 5274745,
+      "name": "another",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:213"
+      ]
+    },
+    {
+      "addr": "0x005196c0",
+      "addr_int": 5347008,
+      "name": "R_RegisterDvars",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:971"
+      ]
+    },
+    {
+      "addr": "0x00535629",
+      "addr_int": 5461545,
+      "name": "DrawText2d",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/TextRenderer.cpp:1575"
+      ]
+    },
+    {
+      "addr": "0x00570020",
+      "addr_int": 5701664,
+      "name": "Vec3Scale",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:504"
+      ]
+    },
+    {
+      "addr": "0x0057369e",
+      "addr_int": 5715614,
+      "name": "PM_GroundTrace",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Elevators.cpp:114"
+      ]
+    },
+    {
+      "addr": "0x00573fef",
+      "addr_int": 5717999,
+      "name": "pitch",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:512"
+      ]
+    },
+    {
+      "addr": "0x00574061",
+      "addr_int": 5718113,
+      "name": "camera",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:513"
+      ]
+    },
+    {
+      "addr": "0x00574960",
+      "addr_int": 5720416,
+      "name": "PmoveSingle",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:580"
+      ]
+    },
+    {
+      "addr": "0x00574af4",
+      "addr_int": 5720820,
+      "name": "single",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:509"
+      ]
+    },
+    {
+      "addr": "0x0058969a",
+      "addr_int": 5805722,
+      "name": "hint_health",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:115"
+      ]
+    },
+    {
+      "addr": "0x005896ab",
+      "addr_int": 5805739,
+      "name": "hint_friendly",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:116"
+      ]
+    },
+    {
+      "addr": "0x0058d003",
+      "addr_int": 5820419,
+      "name": "CG_DrawCursorhint",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Weapon.cpp:114"
+      ]
+    },
+    {
+      "addr": "0x005909e0",
+      "addr_int": 5835232,
+      "name": "DrawListString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ClanTags.cpp:172"
+      ]
+    },
+    {
+      "addr": "0x0059a896",
+      "addr_int": 5875862,
+      "name": "warning",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:216"
+      ]
+    },
+    {
+      "addr": "0x005a0cad",
+      "addr_int": 5901485,
+      "name": "CG_ClipMoveToEntity",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/PlayerMovement.cpp:499"
+      ]
+    },
+    {
+      "addr": "0x005a210d",
+      "addr_int": 5906701,
+      "name": "Game",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ConfigStrings.cpp:33"
+      ]
+    },
+    {
+      "addr": "0x005a85a1",
+      "addr_int": 5932449,
+      "name": "CL_Record_f",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Huffman.cpp:13"
+      ]
+    },
+    {
+      "addr": "0x005a8c70",
+      "addr_int": 5934192,
+      "name": "CL_HandleRelayPacket",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Security.cpp:184"
+      ]
+    },
+    {
+      "addr": "0x005a9c9f",
+      "addr_int": 5938335,
+      "name": "CL_ReadDemoNetworkPacket",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:915"
+      ]
+    },
+    {
+      "addr": "0x005a9f18",
+      "addr_int": 5938968,
+      "name": "CL_VoiceConnectionTestPacket",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:392"
+      ]
+    },
+    {
+      "addr": "0x005a9f77",
+      "addr_int": 5939063,
+      "name": "CL_WeNowCantHearSomeone",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:391"
+      ]
+    },
+    {
+      "addr": "0x005a9ff3",
+      "addr_int": 5939187,
+      "name": "CL_HandleRelayPacket",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:393"
+      ]
+    },
+    {
+      "addr": "0x005aa5b6",
+      "addr_int": 5940662,
+      "name": "CL_SteamServerAuth",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:388"
+      ]
+    },
+    {
+      "addr": "0x005aa69f",
+      "addr_int": 5940895,
+      "name": "echo",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:389"
+      ]
+    },
+    {
+      "addr": "0x005abd7c",
+      "addr_int": 5946748,
+      "name": "CL_ParseSnapshot",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:917"
+      ]
+    },
+    {
+      "addr": "0x005ac28d",
+      "addr_int": 5948045,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:916"
+      ]
+    },
+    {
+      "addr": "0x005ac2c3",
+      "addr_int": 5948099,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Party.cpp:255"
+      ]
+    },
+    {
+      "addr": "0x005ac2cf",
+      "addr_int": 5948111,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Party.cpp:254"
+      ]
+    },
+    {
+      "addr": "0x005ac347",
+      "addr_int": 5948231,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:912"
+      ]
+    },
+    {
+      "addr": "0x005ac542",
+      "addr_int": 5948738,
+      "name": "Game",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ConfigStrings.cpp:38"
+      ]
+    },
+    {
+      "addr": "0x005ac5fc",
+      "addr_int": 5948924,
+      "name": "CL_ParseGamestate",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:913"
+      ]
+    },
+    {
+      "addr": "0x005ac68e",
+      "addr_int": 5949070,
+      "name": "CL_ParseServerMessage",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/FileSystem.cpp:473"
+      ]
+    },
+    {
+      "addr": "0x005ac778",
+      "addr_int": 5949304,
+      "name": "CL_ParseCommandString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:918"
+      ]
+    },
+    {
+      "addr": "0x005ae212",
+      "addr_int": 5956114,
+      "name": "Profile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:611"
+      ]
+    },
+    {
+      "addr": "0x005af0d0",
+      "addr_int": 5959888,
+      "name": "GamerProfile_SaveProfile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:605"
+      ]
+    },
+    {
+      "addr": "0x005af1ec",
+      "addr_int": 5960172,
+      "name": "Profile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:610"
+      ]
+    },
+    {
+      "addr": "0x005b67ed",
+      "addr_int": 5990381,
+      "name": "PartyHost_HandleJoinPartyRequest",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Security.cpp:195"
+      ]
+    },
+    {
+      "addr": "0x005b696e",
+      "addr_int": 5990766,
+      "name": "Too",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Playlist.cpp:171"
+      ]
+    },
+    {
+      "addr": "0x005b69e9",
+      "addr_int": 5990889,
+      "name": "Too",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Playlist.cpp:170"
+      ]
+    },
+    {
+      "addr": "0x005bb9ad",
+      "addr_int": 6011309,
+      "name": "limit",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1458"
+      ]
+    },
+    {
+      "addr": "0x005bb9cc",
+      "addr_int": 6011340,
+      "name": "DB_AddXAsset",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1455"
+      ]
+    },
+    {
+      "addr": "0x005bc723",
+      "addr_int": 6014755,
+      "name": "DB_PostLoadXZone",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1456"
+      ]
+    },
+    {
+      "addr": "0x005f67ae",
+      "addr_int": 6252462,
+      "name": "Scr_LogString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Logger.cpp:502"
+      ]
+    },
+    {
+      "addr": "0x005f67ee",
+      "addr_int": 6252526,
+      "name": "ScrCmd_LogString_Stub",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Logger.cpp:503"
+      ]
+    },
+    {
+      "addr": "0x005fa2b0",
+      "addr_int": 6267568,
+      "name": "BuiltIn_GetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:232"
+      ]
+    },
+    {
+      "addr": "0x005fa360",
+      "addr_int": 6267744,
+      "name": "Player_GetMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:285"
+      ]
+    },
+    {
+      "addr": "0x005fbf01",
+      "addr_int": 6274817,
+      "name": "Scr_SetObjectField",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Field.cpp:162"
+      ]
+    },
+    {
+      "addr": "0x006094da",
+      "addr_int": 6329562,
+      "name": "Cmd_ExecuteServerString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/NetworkDebug.cpp:63"
+      ]
+    },
+    {
+      "addr": "0x006095d7",
+      "addr_int": 6329815,
+      "name": "Cmd_ExecuteSingleCommand",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/NetworkDebug.cpp:64"
+      ]
+    },
+    {
+      "addr": "0x0060ad10",
+      "addr_int": 6335760,
+      "name": "Com_InitDvars",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:308",
+        "src/Components/Modules/ZoneBuilder.cpp:954"
+      ]
+    },
+    {
+      "addr": "0x0060ad90",
+      "addr_int": 6335888,
+      "name": "masterServerName",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:210",
+        "src/Components/Modules/ServerList.cpp:1433"
+      ]
+    },
+    {
+      "addr": "0x0060adc6",
+      "addr_int": 6335942,
+      "name": "masterPort",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ServerList.cpp:1434"
+      ]
+    },
+    {
+      "addr": "0x0060bb3a",
+      "addr_int": 6339386,
+      "name": "Com_Init_Try_Block_Function",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:379"
+      ]
+    },
+    {
+      "addr": "0x0060bc52",
+      "addr_int": 6339666,
+      "name": "recommended",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:219"
+      ]
+    },
+    {
+      "addr": "0x0060be5b",
+      "addr_int": 6340187,
+      "name": "Com_Init_Try_Block_Function",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:371"
+      ]
+    },
+    {
+      "addr": "0x0060beb1",
+      "addr_int": 6340273,
+      "name": "GamerProfile_InitAllProfiles",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:600"
+      ]
+    },
+    {
+      "addr": "0x0060beb8",
+      "addr_int": 6340280,
+      "name": "GamerProfile_LogInProfile",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:601"
+      ]
+    },
+    {
+      "addr": "0x0060bee9",
+      "addr_int": 6340329,
+      "name": "Don",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:581"
+      ]
+    },
+    {
+      "addr": "0x0060bef6",
+      "addr_int": 6340342,
+      "name": "Don",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:582"
+      ]
+    },
+    {
+      "addr": "0x0060c3d0",
+      "addr_int": 6341584,
+      "name": "Com_AddStartupCommands",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:1001"
+      ]
+    },
+    {
+      "addr": "0x00611f7c",
+      "addr_int": 6365052,
+      "name": "Scr_CheckAnimsDefined",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:906"
+      ]
+    },
+    {
+      "addr": "0x0061228c",
+      "addr_int": 6365836,
+      "name": "EmitGetInteger",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:915"
+      ]
+    },
+    {
+      "addr": "0x00612702",
+      "addr_int": 6366978,
+      "name": "EmitGetString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:926"
+      ]
+    },
+    {
+      "addr": "0x00612772",
+      "addr_int": 6367090,
+      "name": "EmitGetIString",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:928"
+      ]
+    },
+    {
+      "addr": "0x006127e4",
+      "addr_int": 6367204,
+      "name": "EmitGetVector",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:930"
+      ]
+    },
+    {
+      "addr": "0x00612843",
+      "addr_int": 6367299,
+      "name": "EmitGetAnimation",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:932"
+      ]
+    },
+    {
+      "addr": "0x006128be",
+      "addr_int": 6367422,
+      "name": "EmitValue",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:922"
+      ]
+    },
+    {
+      "addr": "0x006128f3",
+      "addr_int": 6367475,
+      "name": "EmitGetFloat",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:924"
+      ]
+    },
+    {
+      "addr": "0x00612cf2",
+      "addr_int": 6368498,
+      "name": "EmitFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1106"
+      ]
+    },
+    {
+      "addr": "0x00612e76",
+      "addr_int": 6368886,
+      "name": "LinkThread",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:907"
+      ]
+    },
+    {
+      "addr": "0x00613eda",
+      "addr_int": 6373082,
+      "name": "Scr_GetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:363"
+      ]
+    },
+    {
+      "addr": "0x00613ef0",
+      "addr_int": 6373104,
+      "name": "Scr_GetMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/Script.cpp:364"
+      ]
+    },
+    {
+      "addr": "0x0061407e",
+      "addr_int": 6373502,
+      "name": "EmitOpcode",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1110"
+      ]
+    },
+    {
+      "addr": "0x006148d0",
+      "addr_int": 6375632,
+      "name": "EmitSafeSetWaittillVariableField",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1025"
+      ]
+    },
+    {
+      "addr": "0x00615021",
+      "addr_int": 6377505,
+      "name": "EmitLevelObject",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1102"
+      ]
+    },
+    {
+      "addr": "0x006150c1",
+      "addr_int": 6377665,
+      "name": "EmitAnimObject",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1100"
+      ]
+    },
+    {
+      "addr": "0x00615160",
+      "addr_int": 6377824,
+      "name": "EmitOrEvalLocalVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:938"
+      ]
+    },
+    {
+      "addr": "0x006151b6",
+      "addr_int": 6377910,
+      "name": "EmitLocalVariableRef",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:947"
+      ]
+    },
+    {
+      "addr": "0x00615261",
+      "addr_int": 6378081,
+      "name": "EmitGameRef",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:952"
+      ]
+    },
+    {
+      "addr": "0x00615309",
+      "addr_int": 6378249,
+      "name": "EmitClearArray",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:954"
+      ]
+    },
+    {
+      "addr": "0x00615319",
+      "addr_int": 6378265,
+      "name": "EmitClearArray",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:955"
+      ]
+    },
+    {
+      "addr": "0x006155b3",
+      "addr_int": 6378931,
+      "name": "EmitArrayVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:940"
+      ]
+    },
+    {
+      "addr": "0x006157b7",
+      "addr_int": 6379447,
+      "name": "EmitGetFunction",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1056"
+      ]
+    },
+    {
+      "addr": "0x006166dd",
+      "addr_int": 6383325,
+      "name": "EmitPreFunctionCall",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:934"
+      ]
+    },
+    {
+      "addr": "0x006167f2",
+      "addr_int": 6383602,
+      "name": "EmitCallBuiltinMethodOpcode",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1088"
+      ]
+    },
+    {
+      "addr": "0x00616bbd",
+      "addr_int": 6384573,
+      "name": "EmitMethod",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1060"
+      ]
+    },
+    {
+      "addr": "0x00616e6b",
+      "addr_int": 6385259,
+      "name": "EmitOrEvalPrimitiveExpressionList",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:981"
+      ]
+    },
+    {
+      "addr": "0x00616fb7",
+      "addr_int": 6385591,
+      "name": "EmitBoolOrExpression",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:977"
+      ]
+    },
+    {
+      "addr": "0x006170d7",
+      "addr_int": 6385879,
+      "name": "EmitBoolAndExpression",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:943"
+      ]
+    },
+    {
+      "addr": "0x006171ee",
+      "addr_int": 6386158,
+      "name": "EmitOrEvalBinaryOperatorExpression",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:979"
+      ]
+    },
+    {
+      "addr": "0x00617412",
+      "addr_int": 6386706,
+      "name": "EmitWaittillFrameEnd",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1033"
+      ]
+    },
+    {
+      "addr": "0x00617482",
+      "addr_int": 6386818,
+      "name": "EmitSafeSetVariableField",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1092"
+      ]
+    },
+    {
+      "addr": "0x00617860",
+      "addr_int": 6387808,
+      "name": "EmitBreakStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1046"
+      ]
+    },
+    {
+      "addr": "0x00617990",
+      "addr_int": 6388112,
+      "name": "EmitContinueStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1048"
+      ]
+    },
+    {
+      "addr": "0x00617b61",
+      "addr_int": 6388577,
+      "name": "EmitFormalParameterList",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1094"
+      ]
+    },
+    {
+      "addr": "0x00617bb8",
+      "addr_int": 6388664,
+      "name": "InitThread",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1053"
+      ]
+    },
+    {
+      "addr": "0x00617c6f",
+      "addr_int": 6388847,
+      "name": "EmitClearFieldVariable",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1090"
+      ]
+    },
+    {
+      "addr": "0x00617d10",
+      "addr_int": 6389008,
+      "name": "EmitOrEvalVariableExpression",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:936"
+      ]
+    },
+    {
+      "addr": "0x00618199",
+      "addr_int": 6390169,
+      "name": "EmitReturnStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:983"
+      ]
+    },
+    {
+      "addr": "0x0061826a",
+      "addr_int": 6390378,
+      "name": "EmitWaitStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:987"
+      ]
+    },
+    {
+      "addr": "0x0061832e",
+      "addr_int": 6390574,
+      "name": "EmitIfStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:991"
+      ]
+    },
+    {
+      "addr": "0x006184a6",
+      "addr_int": 6390950,
+      "name": "EmitIfElseStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:995"
+      ]
+    },
+    {
+      "addr": "0x00618876",
+      "addr_int": 6391926,
+      "name": "EmitWhileStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1001"
+      ]
+    },
+    {
+      "addr": "0x00618cc2",
+      "addr_int": 6393026,
+      "name": "EmitForStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1006"
+      ]
+    },
+    {
+      "addr": "0x0061909d",
+      "addr_int": 6394013,
+      "name": "EmitWaittillStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1020"
+      ]
+    },
+    {
+      "addr": "0x006192b3",
+      "addr_int": 6394547,
+      "name": "EmitWaittillmatchStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1027"
+      ]
+    },
+    {
+      "addr": "0x0061944b",
+      "addr_int": 6394955,
+      "name": "EmitNotifyStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1036"
+      ]
+    },
+    {
+      "addr": "0x0061965e",
+      "addr_int": 6395486,
+      "name": "EmitEndOnStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1041"
+      ]
+    },
+    {
+      "addr": "0x00619835",
+      "addr_int": 6395957,
+      "name": "EmitSwitchStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1044"
+      ]
+    },
+    {
+      "addr": "0x00619cc1",
+      "addr_int": 6397121,
+      "name": "EmitArrayVariableRef",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:949"
+      ]
+    },
+    {
+      "addr": "0x0061a0c7",
+      "addr_int": 6398151,
+      "name": "EmitIncStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1011"
+      ]
+    },
+    {
+      "addr": "0x0061a1a7",
+      "addr_int": 6398375,
+      "name": "EmitDecStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1014"
+      ]
+    },
+    {
+      "addr": "0x0061a239",
+      "addr_int": 6398521,
+      "name": "EmitBinaryEqualsOperatorExpression",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1017"
+      ]
+    },
+    {
+      "addr": "0x0061a2f2",
+      "addr_int": 6398706,
+      "name": "EmitEndStatement",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:985"
+      ]
+    },
+    {
+      "addr": "0x0061a70d",
+      "addr_int": 6399757,
+      "name": "EmitThreadInternal",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:1050"
+      ]
+    },
+    {
+      "addr": "0x0061e3ad",
+      "addr_int": 6415277,
+      "name": "VM_Notify",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:902"
+      ]
+    },
+    {
+      "addr": "0x00621976",
+      "addr_int": 6429046,
+      "name": "VM_Execute",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:903"
+      ]
+    },
+    {
+      "addr": "0x0062246e",
+      "addr_int": 6431854,
+      "name": "VM_Execute_0",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/GSC/ScriptError.cpp:904"
+      ]
+    },
+    {
+      "addr": "0x00625235",
+      "addr_int": 6443573,
+      "name": "SV_FreeClient",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Events.cpp:362"
+      ]
+    },
+    {
+      "addr": "0x006310a0",
+      "addr_int": 6492320,
+      "name": "Dvar_RegisterVec2",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Branding.cpp:127"
+      ]
+    },
+    {
+      "addr": "0x00633ca0",
+      "addr_int": 6503584,
+      "name": "GamerProfile_SetPercentCompleteMP",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:608"
+      ]
+    },
+    {
+      "addr": "0x006388bb",
+      "addr_int": 6523067,
+      "name": "skip",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/News.cpp:130"
+      ]
+    },
+    {
+      "addr": "0x0063b1dd",
+      "addr_int": 6533597,
+      "name": "Flag",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/UIFeeder.cpp:440"
+      ]
+    },
+    {
+      "addr": "0x0063b1e6",
+      "addr_int": 6533606,
+      "name": "Flag",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/UIFeeder.cpp:441"
+      ]
+    },
+    {
+      "addr": "0x0063b1f7",
+      "addr_int": 6533623,
+      "name": "Flag",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/UIFeeder.cpp:442"
+      ]
+    },
+    {
+      "addr": "0x0063d880",
+      "addr_int": 6543488,
+      "name": "Original",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:935"
+      ]
+    },
+    {
+      "addr": "0x00646515",
+      "addr_int": 6579477,
+      "name": "Dvar_IsCheatProtected",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:844"
+      ]
+    },
+    {
+      "addr": "0x0064a020",
+      "addr_int": 6594592,
+      "name": "PMem_Init",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ZoneBuilder.cpp:958"
+      ]
+    },
+    {
+      "addr": "0x0064cf77",
+      "addr_int": 6606711,
+      "name": "function",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:218"
+      ]
+    },
+    {
+      "addr": "0x00682170",
+      "addr_int": 6824304,
+      "name": "Telling",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Network.cpp:413"
+      ]
+    },
+    {
+      "addr": "0x00683370",
+      "addr_int": 6828912,
+      "name": "steam",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Dedicated.cpp:192"
+      ]
+    },
+    {
+      "addr": "0x00739bb8",
+      "addr_int": 7576504,
+      "name": "Count",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:372"
+      ]
+    },
+    {
+      "addr": "0x0073c9c4",
+      "addr_int": 7588292,
+      "name": "Count",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:368"
+      ]
+    },
+    {
+      "addr": "0x007982f0",
+      "addr_int": 7963376,
+      "name": "Count",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:341"
+      ]
+    },
+    {
+      "addr": "0x0079b174",
+      "addr_int": 7975284,
+      "name": "config",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Sound.cpp:7"
+      ]
+    },
+    {
+      "addr": "0x0079d260",
+      "addr_int": 7983712,
+      "name": "Count",
+      "alt_names": [],
+      "sources": [
+        "src/Game/Functions.cpp:343"
+      ]
+    },
+    {
+      "addr": "0x007ed658",
+      "addr_int": 8312408,
+      "name": "Don",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/ModelCache.cpp:11"
+      ]
+    },
+    {
+      "addr": "0x00a5ea0c",
+      "addr_int": 10873356,
+      "name": "clientConnections",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Theatre.cpp:509",
+        "src/Components/Modules/Theatre.cpp:528"
+      ]
+    },
+    {
+      "addr": "0x0112ade0",
+      "addr_int": 18001376,
+      "name": "varAddonMapEnts",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Zones.cpp:1405"
+      ]
+    },
+    {
+      "addr": "0x0112b388",
+      "addr_int": 18002824,
+      "name": "varMapEntsPtr",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Zones.cpp:2562"
+      ]
+    },
+    {
+      "addr": "0x0112b3e8",
+      "addr_int": 18002920,
+      "name": "varMapEnts",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Zones.cpp:2561"
+      ]
+    },
+    {
+      "addr": "0x01a83554",
+      "addr_int": 27800916,
+      "name": "level",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/QuickPatch.cpp:69",
+        "src/Components/Modules/QuickPatch.cpp:97"
+      ]
+    },
+    {
+      "addr": "0x01aa4908",
+      "addr_int": 27937032,
+      "name": "global",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Sound.cpp:5"
+      ]
+    },
+    {
+      "addr": "0x01aa490c",
+      "addr_int": 27937036,
+      "name": "global",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Sound.cpp:6"
+      ]
+    },
+    {
+      "addr": "0x01aa651c",
+      "addr_int": 27944220,
+      "name": "Use",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Maps.cpp:780"
+      ]
+    },
+    {
+      "addr": "0x01ad5690",
+      "addr_int": 28137104,
+      "name": "LiveStorage_DoWeHaveStats",
+      "alt_names": [],
+      "sources": [
+        "src/Components/Modules/Friends.cpp:620"
+      ]
+    }
+  ]
+}
