@@ -8,7 +8,11 @@ dumps/*
 refs/*
 !refs/.gitkeep
 
-# Ghidra — fichiers temporaires et locks
+# Ghidra
+# Les projets analyzes (.rep/.gpr) peuvent atteindre des centaines de Mo
+# et sont reproductibles via : ~/tools/ghidra/support/analyzeHeadless ...
+# On commite seulement le log + les findings exports.
+ghidra/*-project/
 ghidra/*.lock
 ghidra/*.lock~
 ghidra/*.bak
