@@ -1,0 +1,1473 @@
+{
+  "structs": [
+    {
+      "name": "playerState_s",
+      "size_confirmed": "0x311c",
+      "size_computed": "incomplete",
+      "fields_complete": false,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "commandTime",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "pm_type",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "pm_time",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "pm_flags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "otherFlags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0014",
+          "name": "linkFlags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0018",
+          "name": "bobCycle",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x001c",
+          "name": "origin",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x0028",
+          "name": "velocity",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x0034",
+          "name": "grenadeTimeLeft",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0038",
+          "name": "throwbackGrenadeOwner",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x003c",
+          "name": "throwbackGrenadeTimeLeft",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0040",
+          "name": "throwbackWeaponIndex",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0044",
+          "name": "remoteEyesEnt",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0048",
+          "name": "remoteEyesTagname",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x004c",
+          "name": "remoteControlEnt",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0050",
+          "name": "foliageSoundTime",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0054",
+          "name": "gravity",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0058",
+          "name": "leanf",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x005c",
+          "name": "speed",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0060",
+          "name": "delta_angles",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x006c",
+          "name": "groundEntityNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0070",
+          "name": "vLadderVec",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x007c",
+          "name": "jumpTime",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0080",
+          "name": "jumpOriginZ",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0084",
+          "name": "legsTimer",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0088",
+          "name": "legsAnim",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x008c",
+          "name": "torsoTimer",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0090",
+          "name": "torsoAnim",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0094",
+          "name": "legsAnimDuration",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0098",
+          "name": "torsoAnimDuration",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x009c",
+          "name": "damageTimer",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a0",
+          "name": "damageDuration",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a4",
+          "name": "flinchYawAnim",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a8",
+          "name": "corpseIndex",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00ac",
+          "name": "movementDir",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b0",
+          "name": "eFlags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b4",
+          "name": "eventSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b8",
+          "name": "events",
+          "type": "int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x00c8",
+          "name": "eventParms",
+          "type": "unsigned int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x00d8",
+          "name": "oldEventSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00dc",
+          "name": "unpredictableEventSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00e0",
+          "name": "unpredictableEventSequenceOld",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00e4",
+          "name": "unpredictableEvents",
+          "type": "int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x00f4",
+          "name": "unpredictableEventParms",
+          "type": "unsigned int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0104",
+          "name": "clientNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0108",
+          "name": "viewmodelIndex",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x010c",
+          "name": "viewangles",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x0118",
+          "name": "viewHeightTarget",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x011c",
+          "name": "viewHeightCurrent",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0120",
+          "name": "viewHeightLerpTime",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0124",
+          "name": "viewHeightLerpTarget",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0128",
+          "name": "viewHeightLerpDown",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x012c",
+          "name": "viewAngleClampBase",
+          "type": "float[2]",
+          "size": 8,
+          "ok": true
+        },
+        {
+          "offset": "0x0134",
+          "name": "viewAngleClampRange",
+          "type": "float[2]",
+          "size": 8,
+          "ok": true
+        },
+        {
+          "offset": "0x013c",
+          "name": "damageEvent",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0140",
+          "name": "damageYaw",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0144",
+          "name": "damagePitch",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0148",
+          "name": "damageCount",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x014c",
+          "name": "damageFlags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0150",
+          "name": "stats",
+          "type": "int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0160",
+          "name": "proneDirection",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0164",
+          "name": "proneDirectionPitch",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0168",
+          "name": "proneTorsoPitch",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x016c",
+          "name": "viewlocked",
+          "type": "ViewLockTypes",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0170",
+          "name": "viewlocked_entNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0174",
+          "name": "linkAngles",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x0180",
+          "name": "linkWeaponAngles",
+          "type": "float[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x018c",
+          "name": "linkWeaponEnt",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0190",
+          "name": "loopSound",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0194",
+          "name": "cursorHint",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0198",
+          "name": "cursorHintString",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x019c",
+          "name": "cursorHintEntIndex",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01a0",
+          "name": "cursorHintDualWield",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01a4",
+          "name": "iCompassPlayerInfo",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01a8",
+          "name": "radarEnabled",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01ac",
+          "name": "radarBlocked",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01b0",
+          "name": "radarMode",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01b4",
+          "name": "locationSelectionInfo",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x01b8",
+          "name": "sprintState",
+          "type": "SprintState",
+          "array": [],
+          "size": "?",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "usercmd_s",
+      "size_confirmed": "0x28",
+      "size_computed": "0x26",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "serverTime",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "buttons",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "angles",
+          "type": "int[3]",
+          "size": 12,
+          "ok": true
+        },
+        {
+          "offset": "0x0014",
+          "name": "weapon",
+          "type": "unsigned __int16",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x0016",
+          "name": "primaryWeaponForAltMode",
+          "type": "unsigned __int16",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x0018",
+          "name": "offHandIndex",
+          "type": "unsigned __int16",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x001a",
+          "name": "forwardmove",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x001b",
+          "name": "rightmove",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x001c",
+          "name": "meleeChargeYaw",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0020",
+          "name": "meleeChargeDist",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0021",
+          "name": "selectedLoc",
+          "type": "char[2]",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x0023",
+          "name": "selectedLocAngle",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0024",
+          "name": "remoteControlAngles",
+          "type": "char[2]",
+          "size": 2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "clientState_s",
+      "size_confirmed": "0x7c",
+      "size_computed": "0x7c",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "clientIndex",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "team",
+          "type": "team_t",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "modelindex",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "dualWielding",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "riotShieldNext",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0014",
+          "name": "attachModelIndex",
+          "type": "int[6]",
+          "size": 24,
+          "ok": true
+        },
+        {
+          "offset": "0x002c",
+          "name": "attachTagIndex",
+          "type": "int[6]",
+          "size": 24,
+          "ok": true
+        },
+        {
+          "offset": "0x0044",
+          "name": "name",
+          "type": "char[16]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0054",
+          "name": "maxSprintTimeMultiplier",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0058",
+          "name": "rank",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x005c",
+          "name": "prestige",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0060",
+          "name": "perks",
+          "type": "unsigned int[2]",
+          "size": 8,
+          "ok": true
+        },
+        {
+          "offset": "0x0068",
+          "name": "diveState",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x006c",
+          "name": "voiceConnectivityBits",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0070",
+          "name": "playerCardIcon",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0074",
+          "name": "playerCardTitle",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0078",
+          "name": "playerCardNameplate",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "netadr_t",
+      "size_confirmed": "0x14",
+      "size_computed": "incomplete",
+      "fields_complete": false,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "type",
+          "type": "netadrtype_t",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "ip",
+          "type": "netIP_t",
+          "array": [],
+          "size": "?",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "netchan_t",
+      "size_confirmed": "0x62c",
+      "size_computed": "0x62c",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "outgoingSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "sock",
+          "type": "netsrc_t",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "dropped",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "incomingSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "remoteAddress",
+          "type": "netadr_t",
+          "size": 20,
+          "ok": true
+        },
+        {
+          "offset": "0x0024",
+          "name": "qport",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0028",
+          "name": "fragmentSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x002c",
+          "name": "fragmentLength",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0030",
+          "name": "fragmentBuffer",
+          "type": "char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0034",
+          "name": "fragmentBufferSize",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0038",
+          "name": "unsentFragments",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x003c",
+          "name": "unsentFragmentStart",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0040",
+          "name": "unsentLength",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0044",
+          "name": "unsentBuffer",
+          "type": "char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0048",
+          "name": "unsentBufferSize",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x004c",
+          "name": "prof",
+          "type": "netProfileInfo_t",
+          "size": 1504,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "dvar_t",
+      "size_confirmed": "0x50",
+      "size_computed": "0x4c",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "name",
+          "type": "const char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "description",
+          "type": "const char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "flags",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "type",
+          "type": "dvar_type",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x000d",
+          "name": "modified",
+          "type": "bool",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "current",
+          "type": "DvarValue",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0020",
+          "name": "latched",
+          "type": "DvarValue",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0030",
+          "name": "reset",
+          "type": "DvarValue",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x0040",
+          "name": "domain",
+          "type": "DvarLimits",
+          "size": 8,
+          "ok": true
+        },
+        {
+          "offset": "0x0048",
+          "name": "hashNext",
+          "type": "dvar_t*",
+          "size": 4,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "gentity_s",
+      "size_confirmed": "0x274",
+      "size_computed": "incomplete",
+      "fields_complete": false,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "s",
+          "type": "entityState_s",
+          "size": 256,
+          "ok": true
+        },
+        {
+          "offset": "0x0100",
+          "name": "r",
+          "type": "entityShared_t",
+          "array": [],
+          "size": "?",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "entityState_s",
+      "size_confirmed": "0x100",
+      "size_computed": "incomplete",
+      "fields_complete": false,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "number",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "eType",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "lerp",
+          "type": "LerpEntityState",
+          "size": 112,
+          "ok": true
+        },
+        {
+          "offset": "0x0078",
+          "name": "time2",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x007c",
+          "name": "otherEntityNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0080",
+          "name": "attackerEntityNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0084",
+          "name": "groundEntityNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0088",
+          "name": "loopSound",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x008c",
+          "name": "surfType",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0090",
+          "name": "brushModel",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0094",
+          "name": "triggerModel",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0098",
+          "name": "item",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x009c",
+          "name": "xmodel",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a0",
+          "name": "primaryLight",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a4",
+          "name": "clientNum",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00a8",
+          "name": "iHeadIcon",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00ac",
+          "name": "iHeadIconTeam",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b0",
+          "name": "solid",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b4",
+          "name": "eventParm",
+          "type": "unsigned int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00b8",
+          "name": "eventSequence",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00bc",
+          "name": "events",
+          "type": "int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x00cc",
+          "name": "eventParms",
+          "type": "unsigned int[4]",
+          "size": 16,
+          "ok": true
+        },
+        {
+          "offset": "0x00dc",
+          "name": "weapon",
+          "type": "unsigned __int16",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x00e0",
+          "name": "legsAnim",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00e4",
+          "name": "torsoAnim",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00e8",
+          "name": "eventParm2",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00ec",
+          "name": "hintString",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00f0",
+          "name": "fxId",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00f4",
+          "name": "helicopterStage",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00f8",
+          "name": "hintType",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x00fc",
+          "name": "vehicleXModel",
+          "type": "unsigned __int16",
+          "size": 2,
+          "ok": true
+        },
+        {
+          "offset": "0x00fe",
+          "name": "weaponModel",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0100",
+          "name": "actorFlags",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0104",
+          "name": "clientLinkInfo",
+          "type": "clientLinkInfo_t",
+          "array": [],
+          "size": "?",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "entityShared_t",
+      "size_confirmed": null,
+      "size_computed": "incomplete",
+      "fields_complete": false,
+      "alignment": 1,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "isLinked",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0001",
+          "name": "modelType",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0002",
+          "name": "svFlags",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0003",
+          "name": "isInUse",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "box",
+          "type": "Bounds",
+          "array": [],
+          "size": "?",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "rectDef_s",
+      "size_confirmed": "0x14",
+      "size_computed": "0x12",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "x",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "y",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "w",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "h",
+          "type": "float",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "horzAlign",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        },
+        {
+          "offset": "0x0011",
+          "name": "vertAlign",
+          "type": "char",
+          "size": 1,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "msg_t",
+      "size_confirmed": null,
+      "size_computed": "0x28",
+      "fields_complete": true,
+      "alignment": 4,
+      "fields": [
+        {
+          "offset": "0x0000",
+          "name": "overflowed",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0004",
+          "name": "readOnly",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0008",
+          "name": "data",
+          "type": "unsigned char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x000c",
+          "name": "splitData",
+          "type": "unsigned char*",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0010",
+          "name": "maxsize",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0014",
+          "name": "cursize",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0018",
+          "name": "splitSize",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x001c",
+          "name": "readcount",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0020",
+          "name": "bit",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        },
+        {
+          "offset": "0x0024",
+          "name": "lastEntityRef",
+          "type": "int",
+          "size": 4,
+          "ok": true
+        }
+      ]
+    }
+  ]
+}
