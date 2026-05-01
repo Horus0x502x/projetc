@@ -1,0 +1,12 @@
+# Stack RE Python — installer dans .venv :
+#   python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+
+frida-tools          # frida + frida-trace + frida-ps (instrumentation dynamique)
+pefile               # parsing PE pur Python
+capstone             # disassembleur multi-arch
+keystone-engine      # assembleur multi-arch
+unicorn              # émulateur CPU multi-arch (utile pour run isolé d'une fonction)
+lief                 # parsing/manipulation PE/ELF/MachO
+pwntools             # CTF/exploit framework — gadgets ROP, format strings, helpers
+ipython              # REPL pour explorer interactivement
+requests             # HTTP côté scripts d'analyse

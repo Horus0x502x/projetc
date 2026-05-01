@@ -38,6 +38,31 @@ Voir [`targets/`](targets/) — symlinks vers :
 Voir [`METHODOLOGY.md`](METHODOLOGY.md). Workflow en 7 phases — un commit, une note de labo
 et un livrable concret par phase. **On ne saute pas les étapes.**
 
+## Stack installée
+
+| Catégorie | Outils |
+|---|---|
+| Statique CLI | `radare2 5.5`, `objdump`, `nm`, `strings`, `readelf`, `binwalk` |
+| Statique GUI | **Ghidra 12.0.4** (`~/tools/ghidra/ghidraRun`) |
+| Dynamique | `gdb 15.1` + **gef** (auto-loaded), `strace`, `ltrace`, `scanmem 0.17` |
+| Instrumentation | **frida 17.9** + frida-tools (frida-trace, frida-ps) |
+| Python RE | `pefile`, `capstone`, `keystone`, `unicorn`, `lief`, `pwntools`, `ipython` |
+| JDK pour Ghidra | OpenJDK 21 |
+| Refs | `refs/iw4x-client/` (clone upstream IW4x ; ignoré par git) |
+
+## Démarrer une session
+
+```bash
+cd /home/horus/Bureau/G/projetc
+source tools/env.sh    # active venv + alias ghidra
+```
+
+Une fois `tools/env.sh` sourcé :
+- `python3` → utilise le venv (frida, pefile, capstone…)
+- `ghidra` → lance Ghidra GUI
+- `iw4xpid` → renvoie le PID du process iw4x.exe s'il tourne
+- `maps` → cat `/proc/<pid_iw4x>/maps`
+
 ## Conventions
 
 - Commits : style **Conventional Commits** — `chore:`, `feat:`, `docs:`, `recon:`, `script:`, `findings:`.
