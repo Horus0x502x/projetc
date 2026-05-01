@@ -72,8 +72,10 @@ def detect_label(strings: list[str]) -> str | None:
 
 
 def main():
-    src = Path("findings/iw4x-functions.json")
-    out_path = Path("findings/iw4x-interesting-functions.md")
+    import sys
+    arg = sys.argv[1] if len(sys.argv) > 1 else "iw4x.dll"
+    src = Path(f"findings/{arg}-functions.json")
+    out_path = Path(f"findings/{arg}-interesting-functions.md")
     data = json.loads(src.read_text())
     funcs = data["functions"]
 

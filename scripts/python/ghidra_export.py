@@ -16,10 +16,15 @@ import os
 import sys
 from pathlib import Path
 
+import sys
+
 PROJECT_PATH = Path("ghidra/iw4x-project").resolve()
 PROJECT_NAME = "iw4x"
-BINARY = Path("targets/iw4x.dll").resolve()
-OUT = Path("findings/iw4x-functions.json")
+
+# Permet : ghidra_export.py iw4x.exe  -> findings/iw4x.exe-functions.json
+_arg = sys.argv[1] if len(sys.argv) > 1 else "iw4x.dll"
+BINARY = Path(f"targets/{_arg}").resolve()
+OUT = Path(f"findings/{_arg}-functions.json")
 
 os.environ.setdefault("GHIDRA_INSTALL_DIR", os.path.expanduser("~/tools/ghidra"))
 
@@ -74,7 +79,7 @@ def main():
         create=False,
     )
     try:
-        with pyghidra.program_context(project, "/iw4x.dll") as program:
+        with pyghidra.program_context(project, f"/{_arg}") as program:
             fm = program.getFunctionManager()
             refs = program.getReferenceManager()
             listing = program.getListing()
